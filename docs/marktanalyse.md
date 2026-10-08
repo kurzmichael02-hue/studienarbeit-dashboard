@@ -23,5 +23,5 @@ Anki: vokabeltrainer, voll offline, gratis ausser der iphone-app (~30 EUR). star
 Wanderlog: reiseplaner, liest buchungen automatisch aus, karten und budget. ansehen geht offline, bearbeiten meist nur mit Pro oder online. anfangs etwas ueberladen.
 
 ## Offen
-- rest der zellen fuellen
-- daraus die umfrage ableiten
+- bei TripIt, LingoDeer und AdventureLog die werte nochmal checken (die haben wir nur nachgelesen, nicht selbst getestet)
+- aus der tabelle dann die umfrage machen
