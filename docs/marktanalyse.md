@@ -17,10 +17,5 @@ Reise-funktionen, sprach-funktionen, kombi aus beidem, offline-faehigkeit, wo di
 | AdventureLog | ja | nein | nein | teilw. | ja (self-hosted) | self-hosted gratis, gehostet 25 EUR/jahr |
 | Unser Dashboard | ja | ja | ja | voll | ja (Pi) | eigen |
 
-## Die zwei die wir selbst angeschaut haben
-Anki: vokabeltrainer, voll offline, gratis ausser der iphone-app (~30 EUR). stark fuers lernen, aber altbackenes design und am anfang kompliziert.
-
-Wanderlog: reiseplaner, liest buchungen automatisch aus, karten und budget. ansehen geht offline, bearbeiten meist nur mit Pro oder online. anfangs etwas ueberladen.
-
 ## Offen
 - aus der tabelle die umfrage machen
