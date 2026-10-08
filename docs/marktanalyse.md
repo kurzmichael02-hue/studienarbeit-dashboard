@@ -11,10 +11,10 @@ Reise-funktionen, sprach-funktionen, kombi aus beidem, offline-faehigkeit, wo di
 | System | Reise | Sprache | Kombi | Offline | Daten lokal | Kosten |
 |---|---|---|---|---|---|---|
 | Wanderlog | ja | nein | nein | ansicht ja, bearbeiten meist Pro | nein | basis gratis, Pro-abo |
-| TripIt | teilw. | nein | nein | ja (abruf) | nein | freemium |
+| TripIt | teilw. | nein | nein | ja (abruf) | nein | gratis, Pro $49/jahr |
 | Anki | nein | ja | nein | ja, voll | teilw. | gratis (iOS ~30 EUR) |
-| LingoDeer | nein | ja | nein | ja, vorab laden | nein | freemium |
-| AdventureLog | ja | nein | nein | teilw. | ja (self-hosted) | open source |
+| LingoDeer | nein | ja | nein | ja, vorab laden | nein | gratis (nur erste lektionen), ab $14.99/mo |
+| AdventureLog | ja | nein | nein | teilw. | ja (self-hosted) | self-hosted gratis, gehostet 25 EUR/jahr |
 | Unser Dashboard | ja | ja | ja | voll | ja (Pi) | eigen |
 
 ## Die zwei die wir selbst angeschaut haben
@@ -23,5 +23,4 @@ Anki: vokabeltrainer, voll offline, gratis ausser der iphone-app (~30 EUR). star
 Wanderlog: reiseplaner, liest buchungen automatisch aus, karten und budget. ansehen geht offline, bearbeiten meist nur mit Pro oder online. anfangs etwas ueberladen.
 
 ## Offen
-- bei TripIt, LingoDeer und AdventureLog die werte nochmal checken (die haben wir nur nachgelesen, nicht selbst getestet)
-- aus der tabelle dann die umfrage machen
+- aus der tabelle die umfrage machen

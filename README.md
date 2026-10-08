@@ -1,6 +1,6 @@
 # Studienarbeit - Offlinefaehiges Reise- und Sprachlern-Dashboard
 
-DHBW Mannheim, Studiengang Informatik. Grosse Studienarbeit (2 Semester, 2026/27).
+DHBW Mannheim, Studiengang Informatik. Grosse Studienarbeit, 5. und 6. Semester (2026/27).
 
 ## Worum geht es
 Ein lokal auf einem Raspberry Pi betriebenes, offlinefaehiges Dashboard, das Reiseplanung und Sprachenlernen in einer Webanwendung verbindet. Konzeption, prototypische Umsetzung und Evaluation. Exemplarische Zielregionen: Russland, Japan, Korea.
