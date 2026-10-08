@@ -1,0 +1,11 @@
+:root {
+    --accent: #2C6BBF;
+}
+
+body {
+    background: #f6f7f9;
+}
+
+.navbar-brand {
+    font-size: 1rem;
+}
