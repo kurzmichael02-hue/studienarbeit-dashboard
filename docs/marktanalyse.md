@@ -7,6 +7,8 @@ Ergebnis: keins kombiniert reiseplanung und sprachenlernen in einem tool, komple
 ## Wonach wir vergleichen
 Reise-funktionen, sprach-funktionen, kombi aus beidem, offline-faehigkeit, wo die daten liegen, und kosten.
 
+Die kriterien sind nicht ausgedacht, sondern lehnen sich an zwei standards an: ISO 25010 (software-qualitaet) und ISO 9241-11 (usability).
+
 ## Vergleich
 | System | Reise | Sprache | Kombi | Offline | Daten lokal | Kosten |
 |---|---|---|---|---|---|---|
