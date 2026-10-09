@@ -1,0 +1,126 @@
+<svg viewBox="0 0 1200 560" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#081A22"/>
+      <stop offset="0.55" stop-color="#0B2A33"/>
+      <stop offset="1" stop-color="#05121A"/>
+    </linearGradient>
+    <linearGradient id="route" gradientUnits="userSpaceOnUse" x1="120" y1="0" x2="1090" y2="0">
+      <stop offset="0" stop-color="#F2B24C"/>
+      <stop offset="0.5" stop-color="#FF8A5B"/>
+      <stop offset="1" stop-color="#36D1C4"/>
+    </linearGradient>
+    <filter id="glow" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <style>
+      .t  { font-family: 'Segoe UI', system-ui, sans-serif; }
+      .nm { font-family: 'Segoe UI', system-ui, sans-serif; font-weight: 600; fill:#EAF3F1; }
+      .sb { font-family: 'Segoe UI', system-ui, sans-serif; fill:#8FB2AD; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="560" fill="url(#bg)"/>
+
+  <!-- faint globe-grid -->
+  <g stroke="#4F8C86" fill="none" opacity="0.10" stroke-width="1">
+    <ellipse cx="600" cy="320" rx="560" ry="220"/>
+    <ellipse cx="600" cy="320" rx="560" ry="120"/>
+    <ellipse cx="600" cy="320" rx="380" ry="220"/>
+    <ellipse cx="600" cy="320" rx="180" ry="220"/>
+    <line x1="40" y1="320" x2="1160" y2="320"/>
+  </g>
+  <g fill="#6FB0A8" opacity="0.18">
+    <circle cx="210" cy="140" r="1.6"/><circle cx="980" cy="160" r="1.6"/><circle cx="1090" cy="430" r="1.6"/>
+    <circle cx="150" cy="470" r="1.6"/><circle cx="430" cy="130" r="1.6"/><circle cx="760" cy="470" r="1.6"/>
+  </g>
+
+  <rect width="1200" height="560" filter="url(#grain)" opacity="0.05"/>
+
+  <!-- Titel -->
+  <text x="70" y="92" class="t" font-size="38" font-weight="800" fill="#F3F8F6" filter="url(#glow)">Iteratives Vorgehen</text>
+
+  <!-- Route glow -->
+  <path id="rt" d="M120 360 C 220 360 220 275 320 275 C 420 275 420 360 520 360 C 620 360 620 275 720 275 C 820 275 820 360 920 360 C 1010 360 1010 290 1090 290"
+        fill="none" stroke="url(#route)" stroke-width="10" stroke-linecap="round" opacity="0.22" filter="url(#soft)"/>
+  <!-- Route solide -->
+  <path d="M120 360 C 220 360 220 275 320 275 C 420 275 420 360 520 360 C 620 360 620 275 720 275 C 820 275 820 360 920 360 C 1010 360 1010 290 1090 290"
+        fill="none" stroke="url(#route)" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+  <!-- fliessende Punkte -->
+  <path d="M120 360 C 220 360 220 275 320 275 C 420 275 420 360 520 360 C 620 360 620 275 720 275 C 820 275 820 360 920 360 C 1010 360 1010 290 1090 290"
+        fill="none" stroke="url(#route)" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="2 16">
+    <animate attributeName="stroke-dashoffset" from="0" to="-36" dur="1.4s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Iterations-Ruecksprung -->
+  <path d="M720 254 C 630 196 410 196 320 254" fill="none" stroke="#36D1C4" stroke-width="1.6" stroke-dasharray="5 5" opacity="0.6" filter="url(#glow)"/>
+  <text x="520" y="190" class="sb" font-size="12.5" text-anchor="middle" fill="#6FD6CB">bei Änderungen zurück</text>
+
+  <!-- Wegpunkte 2-6 -->
+  <g>
+    <g filter="url(#glow)">
+      <circle cx="320" cy="275" r="15" fill="none" stroke="#F2B24C" stroke-width="1.3" opacity="0.5"/>
+      <circle cx="320" cy="275" r="5" fill="#F2B24C"/>
+    </g>
+    <g filter="url(#glow)">
+      <circle cx="520" cy="360" r="15" fill="none" stroke="#FF9A62" stroke-width="1.3" opacity="0.5"/>
+      <circle cx="520" cy="360" r="5" fill="#FF9A62"/>
+    </g>
+    <g filter="url(#glow)">
+      <circle cx="720" cy="275" r="15" fill="none" stroke="#FF8A5B" stroke-width="1.3" opacity="0.5"/>
+      <circle cx="720" cy="275" r="5" fill="#FF8A5B"/>
+    </g>
+    <g filter="url(#glow)">
+      <circle cx="920" cy="360" r="15" fill="none" stroke="#5BC7C0" stroke-width="1.3" opacity="0.5"/>
+      <circle cx="920" cy="360" r="5" fill="#5BC7C0"/>
+    </g>
+    <g filter="url(#glow)">
+      <circle cx="1090" cy="290" r="15" fill="none" stroke="#36D1C4" stroke-width="1.3" opacity="0.5"/>
+      <circle cx="1090" cy="290" r="5" fill="#36D1C4"/>
+    </g>
+  </g>
+
+  <!-- Wegpunkt 1 (aktiv, pulsierend) -->
+  <circle cx="120" cy="360" r="34" fill="#F2B24C" opacity="0.18" filter="url(#soft)"/>
+  <circle cx="120" cy="360" r="14" fill="none" stroke="#FFD27A" stroke-width="2" opacity="0.8">
+    <animate attributeName="r" values="12;30;12" dur="2.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0;0.8" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <g filter="url(#glow)">
+    <circle cx="120" cy="360" r="8" fill="#FFD27A"/>
+    <circle cx="120" cy="360" r="3" fill="#2A1A05"/>
+  </g>
+
+  <!-- Labels -->
+  <text x="120" y="330" class="t" font-size="12.5" font-weight="700" fill="#FFD27A" text-anchor="middle">du bist hier</text>
+  <text x="120" y="408" class="nm" font-size="15.5" text-anchor="middle">1  Daten sammeln</text>
+  <text x="120" y="428" class="sb" font-size="12.5" text-anchor="middle">Umfrage</text>
+
+  <text x="320" y="235" class="nm" font-size="15.5" text-anchor="middle">2  Anforderungen</text>
+  <text x="320" y="254" class="sb" font-size="12.5" text-anchor="middle">funktional + nicht-funktional</text>
+
+  <text x="520" y="403" class="nm" font-size="15.5" text-anchor="middle">3  Use Cases</text>
+  <text x="520" y="422" class="sb" font-size="12.5" text-anchor="middle">UML-Diagramm</text>
+
+  <text x="720" y="235" class="nm" font-size="15.5" text-anchor="middle">4  Konzeption</text>
+  <text x="720" y="254" class="sb" font-size="12.5" text-anchor="middle">Architektur + ER-Modell</text>
+
+  <text x="920" y="403" class="nm" font-size="15.5" text-anchor="middle">5  Implementierung</text>
+  <text x="920" y="422" class="sb" font-size="12.5" text-anchor="middle">Spring Boot auf dem Pi</text>
+
+  <text x="1090" y="250" class="nm" font-size="15.5" text-anchor="middle">6  Test</text>
+  <text x="1090" y="269" class="sb" font-size="12.5" text-anchor="middle">Funktion + Usability</text>
+
+  <!-- Doku -->
+  <line x1="70" y1="505" x2="1130" y2="505" stroke="#20414A" stroke-width="1"/>
+  <text x="70" y="528" class="sb" font-size="13">Dokumentation läuft die ganze Zeit mit</text>
+  <text x="1130" y="528" class="sb" font-size="13" text-anchor="end">Abgabe April 2027</text>
+</svg>
