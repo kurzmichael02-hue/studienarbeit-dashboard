@@ -1,14 +1,14 @@
-# Studienarbeit - Offlinefaehiges Reise- und Sprachlern-Dashboard
+# Studienarbeit - Offlinefähiges Reise- und Sprachlern-Dashboard
 
-DHBW Mannheim, Studiengang Informatik. Grosse Studienarbeit, 5. und 6. Semester (2026/27).
+DHBW Mannheim, Studiengang Informatik. Große Studienarbeit, 5. und 6. Semester (2026/27).
 
 ## Worum geht es
-Ein lokal auf einem Raspberry Pi betriebenes, offlinefaehiges Dashboard, das Reiseplanung und Sprachenlernen in einer Webanwendung verbindet. Konzeption, prototypische Umsetzung und Evaluation. Exemplarische Zielregionen: Russland, Japan, Korea.
+Ein lokal auf einem Raspberry Pi betriebenes, offlinefähiges Dashboard, das Reiseplanung und Sprachenlernen in einer Webanwendung verbindet. Konzeption, prototypische Umsetzung und Evaluation. Exemplarische Zielregionen: Russland, Japan, Korea.
 
 ## Team
 - Michael Kurz
 - Schayan Goudarzi
-- Betreuer: Juergen Schultheis (Kontakt ueber Discord)
+- Betreuer: Jürgen Schultheis (Kontakt über Discord)
 
 Aufgabenteilung:
 - Michael: Systemarchitektur, Backend + API, Datenmodell, Raspberry-Pi-Einrichtung, Deployment
@@ -22,8 +22,16 @@ Aufgabenteilung:
 - Betrieb: Raspberry Pi als lokaler Webserver im WLAN, offline
 
 ## Struktur
-- `/docs` - Recherche und Konzept (Marktanalyse, Vergleichskriterien, Grundlagen/Normen)
+- `/docs` - Marktanalyse und Literaturrecherche
 - `/src` - Quellcode (kommt noch)
 
+## Fortschritt
+- [ ] Daten sammeln (Umfrage) - aktuell
+- [ ] Anforderungen
+- [ ] Use Cases
+- [ ] Konzeption
+- [ ] Implementierung
+- [ ] Test
+
 ## Stand
-Planungsphase. Marktanalyse und Grundlagen als Entwurf vorhanden. Erster Betreuer-Termin am 26.10.2026. Abgabe geplant April 2027.
+Planungsphase. Marktanalyse und Literaturrecherche als Entwurf vorhanden. Erster Betreuer-Termin am 26.10.2026. Abgabe geplant April 2027.
