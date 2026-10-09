@@ -18,6 +18,3 @@ Die kriterien sind nicht ausgedacht, sondern lehnen sich an zwei standards an: I
 | LingoDeer | nein | ja | nein | ja, vorab laden | nein | gratis (nur erste lektionen), ab $14.99/mo |
 | AdventureLog | ja | nein | nein | teilw. | ja (self-hosted) | self-hosted gratis, gehostet 25 EUR/jahr |
 | Unser Dashboard | ja | ja | ja | voll | ja (Pi) | eigen |
-
-## Offen
-- aus der tabelle die umfrage machen
