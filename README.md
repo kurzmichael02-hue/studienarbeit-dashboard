@@ -22,7 +22,7 @@ Aufgabenteilung:
 - Betrieb: Raspberry Pi als lokaler Webserver im WLAN, offline
 
 ## Struktur
-- `/docs` - Marktanalyse und Literaturrecherche
+- `/docs/recherche` - Marktanalyse, Literaturrecherche, Anforderungen
 - `/src` - Quellcode (kommt noch)
 
 ## Fortschritt
@@ -34,4 +34,4 @@ Aufgabenteilung:
 - [ ] Test
 
 ## Stand
-Planungsphase. Marktanalyse und Literaturrecherche als Entwurf vorhanden. Erster Betreuer-Termin am 26.10.2026. Abgabe geplant April 2027.
+Umfrage läuft (Datenerhebung). Marktanalyse, Literaturrecherche und ein erster Anforderungs-Entwurf liegen vor. Erster Betreuer-Termin am 26.10.2026. Abgabe geplant April 2027.
