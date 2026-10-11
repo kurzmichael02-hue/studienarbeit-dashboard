@@ -1,51 +1,55 @@
 # Anforderungen
 
-aus der umfrage abgeleitet (12 antworten, anonym). rohdaten liegen im Studium-ordner (Umfrage_Rohdaten_1-12.xlsx). priorisierung aus den bewertungen + den freitext-antworten.
+Abgeleitet aus der Umfrage (12 Teilnehmer, anonym). Rohdaten im Studium-Ordner (Umfrage_Rohdaten_1-12.xlsx). Priorisierung aus den Bewertungen (quantitativ) und den Freitext-Antworten (qualitativ).
 
-## kurz zur stichprobe
-meistens vielreisende (8x mehrmals im jahr), altersmaessig vor allem 18-25. sprache vor der reise lernen: 3x immer, 6x manchmal, 3x nie. genutzt werden vor allem Google Maps + Notizen-app fuer die reise, Duolingo fuers lernen. 11 von 12 wuerden so eine app grundsaetzlich nutzen.
+## Überblick der Stichprobe
+- Reisehäufigkeit: überwiegend mehrmals im Jahr (8), dazu etwa 1x im Jahr (3), selten (1).
+- Sprache vor der Reise lernen: 3x immer, 6x manchmal, 3x nie.
+- Genutzte Apps: Reise vor allem Google Maps und Notizen-App, Sprache vor allem Duolingo (dazu Anki, Babbel).
+- 11 von 12 würden so eine App grundsätzlich nutzen.
+- Altersgruppen: vor allem 18-25 (7), dazu 26-35 (2), 36-50 (1), über 50 (2).
 
-## wie wichtig sind die funktionen (schnitt 1-5, n=12)
-| funktion | schnitt |
+## Wichtigkeit der Funktionen (Durchschnitt 1-5, n=12)
+| Funktion | Schnitt |
 |---|---|
-| reiseziele | 4,3 |
-| offline | 4,2 |
-| packlisten | 3,6 |
-| tagesplaene | 3,5 |
-| budget | 3,4 |
-| daten lokal | 3,4 |
-| vokabeln | 3,1 |
-| reisephrasen | 3,1 |
-| lernfortschritt | 3,1 |
-| notizen | 2,8 |
-| quiz | 2,5 |
+| Reiseziele | 4,3 |
+| Offline-Nutzung | 4,2 |
+| Packlisten | 3,6 |
+| Tagespläne | 3,5 |
+| Budget | 3,4 |
+| Daten lokal | 3,4 |
+| Vokabeln | 3,1 |
+| Reisephrasen | 3,1 |
+| Lernfortschritt | 3,1 |
+| Notizen | 2,8 |
+| Quiz | 2,5 |
 
-vokabeln/reisephrasen liegen im schnitt nur bei 3,1, aber das liegt an den 3 leuten die nie sprache lernen (die haben da 1 gegeben). bei den anderen sind reisephrasen klar wichtig, und im freitext ist der sprachteil ein hauptargument. also nicht nur am schnitt festmachen.
+Vokabeln und Reisephrasen liegen im Schnitt nur bei 3,1, weil 3 Teilnehmer nie Sprache lernen und dort 1 gaben. Bei den Sprachlernenden sind Reisephrasen klar wichtig, und im Freitext ist der Sprachteil ein Hauptargument.
 
-## was die leute im freitext sagen
-- hauptschmerz, kam mehrfach: alles auf mehrere apps verteilt, staendig wechseln. "reiseplan in der einen, sprache in der anderen, und offline geht duolingo kaum".
-- luecke bei nicht-europaeischen sprachen: "duolingo bringt mir fuer russisch oder japanisch kaum was praktisches" / "die meisten apps koennen nur die standard-europa-sprachen richtig". genau unser scope.
-- wunsch: reisephrasen nach situation (flughafen, restaurant, taxi) statt random vokabeln.
-- wunsch: offline + alles an einem ort + ohne account.
-- kritik an sprach-apps: push-spam, kosten, grammatik falsch oder "derbe trocken", zu viel spielkram.
-- zusatzwuensche: gemeinsam planen, reiseplaene/dateien importieren.
+## Was die Teilnehmer im Freitext sagen
+- Hauptschmerz, mehrfach genannt: alles auf mehrere Apps verteilt, ständiges Wechseln ("reiseplan in der einen, sprache in der anderen, und offline geht duolingo kaum").
+- Lücke bei nicht-europäischen Sprachen ("duolingo bringt mir für russisch oder japanisch kaum was praktisches", "die meisten apps können nur die standard-europa-sprachen richtig").
+- Wunsch: Reisephrasen nach Situation (Flughafen, Restaurant, Taxi) statt zufälliger Vokabeln.
+- Wunsch: offline, alles an einem Ort, ohne Account.
+- Kritik an Sprach-Apps: Push-Spam, Kosten, Grammatik falsch oder trocken, zu viel Spielkram.
+- Zusatzwünsche: gemeinsam planen, Reisepläne oder Dateien importieren.
 
-## funktionale anforderungen (priorisiert)
-- muss: reiseziele verwalten, reisephrasen (nach situation), vokabeln lernen, offline nutzbar, daten lokal ohne account
-- soll: tagesplaene, packlisten, budget, lernfortschritt
-- kann: notizen, quiz, gemeinsam planen, reiseplaene/dateien importieren
+## Funktionale Anforderungen (priorisiert)
+- Muss: Reiseziele verwalten, Reisephrasen nach Situation, Vokabeln lernen, offline nutzbar, lokale Daten ohne Account
+- Soll: Tagespläne, Packlisten, Budget, Lernfortschritt
+- Kann: Notizen, Quiz, gemeinsam planen, Reisepläne/Dateien importieren
 
-## nicht-funktionale anforderungen
-- offlinefaehig (laut daten eins der wichtigsten)
-- daten lokal, kein account noetig
-- kein push-spam, nicht trocken, praktische saetze statt random vokabeln
-- guenstig
-- sprach-fokus auf die schwierigen (russisch, japanisch, dazu chinesisch/koreanisch), wo die bestehenden apps schwach sind
+## Nicht-funktionale Anforderungen
+- Offlinefähig (laut Daten eine der wichtigsten Eigenschaften)
+- Lokale Datenhaltung, kein Account nötig
+- Keine Push-Spam, nicht trocken, praktische Sätze statt zufälliger Vokabeln
+- Günstig
+- Sprach-Fokus auf schwierige Sprachen (Russisch, Japanisch, Chinesisch, Koreanisch)
 
-## zielsprachen
-mehrfach genannt: russland, japan, china, korea (genau die luecke), dazu italien, spanien, frankreich, norwegen. passt zum geplanten RU/JA/KO-fokus.
+## Zielsprachen
+Mehrfach genannt: Russland, Japan, China, Korea (genau die Lücke), dazu Italien, Spanien, Frankreich, Norwegen. Passt zum geplanten Fokus RU/JA/KO.
 
-## offen / limitationen
-- kleine stichprobe (12), nicht repraesentativ (ueber SurveyCircle gestreut). in der arbeit als limitation nennen.
-- einer meinte die pflichtfragen zwingen zu antworten wo man keine passende hat. auch als limitation.
-- naechster schritt: use cases + konzept (architektur, datenmodell).
+## Offen
+- Kleine Stichprobe (12) und nicht repräsentativ, in der Arbeit als Limitation nennen.
+- Ein Teilnehmer merkte an, dass einige Pflichtfragen zu Antworten zwingen, auch das als Limitation.
+- Nächster Schritt: Use Cases und Konzeption.

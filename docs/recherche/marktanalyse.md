@@ -1,20 +1,20 @@
 # Marktanalyse
 
-Wir haben geschaut was es schon gibt: reiseplaner, sprachlern-apps und lokale self-hosted tools. Und ob eins davon beides kann.
+Wir haben uns angesehen, was es schon gibt: Reiseplaner, Sprachlern-Apps und lokale, self-hosted Tools. Und ob eins davon beides kann.
 
-Ergebnis: keins kombiniert reiseplanung und sprachenlernen in einem tool, komplett offline und lokal. Jede app deckt nur einen teil ab. Das ist unsere luecke.
+Ergebnis: keins kombiniert Reiseplanung und Sprachenlernen in einem Tool, komplett offline und lokal. Jede App deckt nur einen Teil ab. Das ist unsere Lücke.
 
 ## Wonach wir vergleichen
-Reise-funktionen, sprach-funktionen, kombi aus beidem, offline-faehigkeit, wo die daten liegen, und kosten.
+Reise-Funktionen, Sprach-Funktionen, Kombination aus beidem, Offline-Fähigkeit, wo die Daten liegen, und Kosten.
 
-kriterien angelehnt an ISO 25010 (software-qualitaet) und ISO 9241-11 (usability).
+Die Kriterien lehnen sich an zwei Normen an: ISO/IEC 25010 (Software-Qualität) und ISO 9241-11 (Usability). Beide stehen in `literatur.md`.
 
 ## Vergleich
 | System | Reise | Sprache | Kombi | Offline | Daten lokal | Kosten |
 |---|---|---|---|---|---|---|
-| Wanderlog | ja | nein | nein | ansicht ja, bearbeiten meist Pro | nein | basis gratis, Pro-abo |
-| TripIt | teilw. | nein | nein | ja (abruf) | nein | gratis, Pro $49/jahr |
-| Anki | nein | ja | nein | ja, voll | teilw. | gratis (iOS ~30 EUR) |
-| LingoDeer | nein | ja | nein | ja, vorab laden | nein | gratis (nur erste lektionen), ab $14.99/mo |
-| AdventureLog | ja | nein | nein | teilw. | ja (self-hosted) | self-hosted gratis, gehostet 25 EUR/jahr |
+| Wanderlog | ja | nein | nein | Ansicht ja, Bearbeiten meist Pro | nein | Basis gratis, Pro-Abo |
+| TripIt | teilw. | nein | nein | ja (Abruf) | nein | gratis, Pro 49 USD/Jahr |
+| Anki | nein | ja | nein | ja, voll | teilw. | gratis (iOS ca. 30 EUR) |
+| LingoDeer | nein | ja | nein | ja, vorab laden | nein | gratis (nur erste Lektionen), ab 14,99 USD/Monat |
+| AdventureLog | ja | nein | nein | teilw. | ja (self-hosted) | self-hosted gratis, gehostet 25 EUR/Jahr |
 | Unser Dashboard | ja | ja | ja | voll | ja (Pi) | eigen |

@@ -23,6 +23,7 @@ Aufgabenteilung:
 
 ## Struktur
 - `/docs/recherche` - Marktanalyse, Literaturrecherche, Anforderungen
+- `/docs/konzept` - Use Cases, Architektur, Datenmodell, Wireframes
 - `/src` - Quellcode (kommt noch)
 
 ## Fortschritt

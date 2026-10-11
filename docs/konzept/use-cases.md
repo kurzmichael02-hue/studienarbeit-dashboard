@@ -1,6 +1,6 @@
 # Use Cases
 
-Stand 11.10.2026. Textuelle Basis, abgeleitet aus den Anforderungen (`docs/recherche/anforderungen.md`). Das eigentliche UML-Use-Case-Diagramm wird daraus gezeichnet.
+Abgeleitet aus den Anforderungen (`docs/recherche/anforderungen.md`). Das UML-Use-Case-Diagramm dazu liegt in `use-case-diagramm.svg`.
 
 ## Akteur
 - Reisende/r: ein einzelner Nutzer. Die App läuft lokal auf dem Raspberry Pi, ohne Account und ohne Login. Es gibt also nur einen Akteur.
@@ -53,6 +53,4 @@ Alle Use Cases funktionieren offline.
 - Nachbedingung: Lernfortschritt ist lokal gespeichert
 
 ## Offen
-- UML-Diagramm zeichnen (Akteur + die 9 Use Cases, gruppiert in Reise und Sprache)
-- Restliche Use Cases (UC2-UC5, UC8, UC9) bei Bedarf ausführlich beschreiben
-- Priorität folgt den Anforderungen: UC1, UC6, UC7 sind Muss
+- Restliche Use Cases (UC2-UC5, UC8, UC9) bei Bedarf ausführlicher beschreiben
