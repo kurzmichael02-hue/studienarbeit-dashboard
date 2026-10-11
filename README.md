@@ -26,8 +26,8 @@ Aufgabenteilung:
 - `/src` - Quellcode (kommt noch)
 
 ## Fortschritt
-- [ ] Daten sammeln (Umfrage) - aktuell
-- [ ] Anforderungen
+- [x] Daten sammeln (Umfrage, 12 Antworten)
+- [ ] Anforderungen - aktuell
 - [ ] Use Cases
 - [ ] Konzeption
 - [ ] Implementierung
