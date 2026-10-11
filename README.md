@@ -35,4 +35,4 @@ Aufgabenteilung:
 - [ ] Test
 
 ## Stand
-Umfrage läuft (Datenerhebung). Marktanalyse, Literaturrecherche und ein erster Anforderungs-Entwurf liegen vor. Erster Betreuer-Termin am 26.10.2026. Abgabe geplant April 2027.
+Umfrage abgeschlossen (12 Antworten). Marktanalyse, Literaturrecherche, Anforderungen und Use Cases stehen. Aktuell: Konzeption (Architektur, Datenmodell, Wireframes). Erster Betreuer-Termin am 26.10.2026. Abgabe geplant April 2027.

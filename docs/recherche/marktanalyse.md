@@ -1,8 +1,8 @@
 # Marktanalyse
 
-Wir haben uns angesehen, was es schon gibt: Reiseplaner, Sprachlern-Apps und lokale, self-hosted Tools. Und ob eins davon beides kann.
+Betrachtet wurden bestehende Reiseplaner, Sprachlern-Apps und lokale, self-hosted Tools, und ob eines davon beides abdeckt.
 
-Ergebnis: keins kombiniert Reiseplanung und Sprachenlernen in einem Tool, komplett offline und lokal. Jede App deckt nur einen Teil ab. Das ist unsere Lücke.
+Ergebnis: keines kombiniert Reiseplanung und Sprachenlernen in einem Tool, komplett offline und lokal. Jede App deckt nur einen Teil ab. Das ist die Lücke, die unser Prototyp füllt.
 
 ## Wonach wir vergleichen
 Reise-Funktionen, Sprach-Funktionen, Kombination aus beidem, Offline-Fähigkeit, wo die Daten liegen, und Kosten.

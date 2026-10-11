@@ -52,4 +52,4 @@ Mehrfach genannt: Russland, Japan, China, Korea (genau die Lücke), dazu Italien
 ## Offen
 - Kleine Stichprobe (12) und nicht repräsentativ, in der Arbeit als Limitation nennen.
 - Ein Teilnehmer merkte an, dass einige Pflichtfragen zu Antworten zwingen, auch das als Limitation.
-- Nächster Schritt: Use Cases und Konzeption.
+- Nächster Schritt: Konzeption (Architektur und Datenmodell).

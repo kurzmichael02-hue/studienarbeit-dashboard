@@ -25,7 +25,7 @@ Grundlage für die Vergleichskriterien und die spätere Usability-Bewertung.
 - Beispiel-Abschlussarbeit zur heuristischen Evaluation (OPUS HAW). https://opus4.kobv.de/opus4-haw/files/3468/I001143453Abschlussarbeit.pdf
 
 ## 4. Offlinefähige Web-Apps (PWA)
-Hintergrund zum Thema offline. Unser Prototyp ist keine PWA, sondern ein lokaler Spring-Boot-Server auf dem Pi.
+Hintergrund zum Thema offline.
 - Liebel, Christian: Progressive Web Apps, Das Praxisbuch (Rheinwerk). https://www.rheinwerk-verlag.de/progressive-web-apps-das-praxisbuch/
 - HAW Hamburg: Bachelorarbeit Progressive Web Apps. https://reposit.haw-hamburg.de/bitstream/20.500.12738/16076/1/BA_Progressive_Web_Apps.pdf
 - HS Düsseldorf: Bachelorarbeit PWA (Libront). https://opus4.kobv.de/opus4-hs-duesseldorf/files/1639/Bachelorarbeit+_Libront.pdf

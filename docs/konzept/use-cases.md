@@ -41,7 +41,6 @@ Alle Use Cases funktionieren offline.
   2. System zeigt die passenden Phrasen in der Zielsprache
   3. Nutzer kann eine Phrase als gelernt markieren
 - Nachbedingung: Phrasen sind offline abrufbar, Markierung ist gespeichert
-- Hinweis: aus der Umfrage, Nutzer wollen situative Sätze statt zufälliger Vokabeln
 
 ### UC6 Vokabeln lernen
 - Akteur: Reisende/r
