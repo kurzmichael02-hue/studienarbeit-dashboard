@@ -27,9 +27,9 @@ Aufgabenteilung:
 
 ## Fortschritt
 - [x] Daten sammeln (Umfrage, 12 Antworten)
-- [ ] Anforderungen - aktuell
-- [ ] Use Cases
-- [ ] Konzeption
+- [x] Anforderungen
+- [x] Use Cases
+- [ ] Konzeption - aktuell
 - [ ] Implementierung
 - [ ] Test
 

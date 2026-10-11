@@ -25,8 +25,8 @@ Definition von gebrauchstauglichkeit, messung, design-prinzipien, heuristische e
 
 ## 4. Offlinefaehige Web-Apps (PWA)
 Architektur von PWAs, service worker, caching, web app manifest.
-Hinweis: unser prototyp ist KEINE PWA, sondern ein lokaler Spring-Boot-server auf dem Pi im WLAN. Die PWA-literatur ist hintergrund zum thema offline, nicht unsere konkrete loesung. Nicht als eigene architektur behaupten.
-- Liebel, Christian: Progressive Web Apps, Das Praxisbuch (Rheinwerk). https://www.rheinwerk-verlag.de/progressive-web-apps-das-praxisbuch/ (Autor ist Liebel, nicht Steyer. Manfred Steyer hat ein separates PWA-buch.)
+Hinweis: unser prototyp ist keine PWA, sondern ein lokaler Spring-Boot-server auf dem Pi. Die PWA-sachen sind nur hintergrund zum thema offline.
+- Liebel, Christian: Progressive Web Apps, Das Praxisbuch (Rheinwerk). https://www.rheinwerk-verlag.de/progressive-web-apps-das-praxisbuch/
 - HAW Hamburg: Bachelorarbeit Progressive Web Apps. https://reposit.haw-hamburg.de/bitstream/20.500.12738/16076/1/BA_Progressive_Web_Apps.pdf
 - HS Duesseldorf: Bachelorarbeit PWA (Libront). https://opus4.kobv.de/opus4-hs-duesseldorf/files/1639/Bachelorarbeit+_Libront.pdf
 
@@ -37,12 +37,6 @@ Systematische erhebung von anforderungen: interviews, leitfaden, fragebogen-desi
 - Uni Leipzig: Methodenportal Befragung. https://home.uni-leipzig.de/methodenportal/befragung/
 - KIT: Anforderungsmanagement. https://publikationen.bibliothek.kit.edu/1000028693/2225737
 - Dresing & Pehl: Praxisbuch Interview, Transkription und Analyse. Buch/PDF.
-
-## Link-check (08.10.2026, alle 16 einmal geprueft)
-- Leben + inhalt passt: Bitkom, StudySmarter, PFH, beide NN/g (Nielsen), Rheinwerk (Liebel), Springer (Herrmann), Uni Leipzig.
-- PDF laedt (existiert), inhalt aber nicht automatisch lesbar, selbst oeffnen: Think-with-Google, OPUS HAW, HAW Hamburg (reposit), HS Duesseldorf, UZH (Glinz), KIT.
-- Nicht bestaetigt / schwach: Welt (liess sich nicht laden, bot-schutz), NZZ Bellevue (paywall). Beides journalistisch, zur not durch bessere quellen ersetzen.
-- Ebbinghaus (1885) + Leitner (1973) sind buch-klassiker, keine URL.
 
 ## Offen
 - quellen antesten, die schwachen (reine blogs) durch primaer-/fachquellen ersetzen
