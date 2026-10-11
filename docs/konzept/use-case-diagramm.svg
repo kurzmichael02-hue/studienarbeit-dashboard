@@ -1,0 +1,58 @@
+<svg viewBox="0 0 700 620" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="700" height="620" fill="#FFFFFF"/>
+
+  <!-- Akteur -->
+  <g stroke="#1A1A1A" stroke-width="2" fill="none" stroke-linecap="round">
+    <circle cx="115" cy="307" r="13" fill="#FFFFFF"/>
+    <line x1="115" y1="320" x2="115" y2="367"/>
+    <line x1="93" y1="339" x2="137" y2="339"/>
+    <line x1="115" y1="367" x2="99" y2="395"/>
+    <line x1="115" y1="367" x2="131" y2="395"/>
+  </g>
+  <text x="115" y="418" font-size="14" font-weight="600" fill="#1A1A1A" text-anchor="middle">Reisende/r</text>
+
+  <!-- Assoziationen Akteur -> Use Cases (enden am linken Rand der Ovale) -->
+  <g stroke="#9AA3AA" stroke-width="1.2">
+    <line x1="137" y1="343" x2="382" y2="132"/>
+    <line x1="137" y1="343" x2="382" y2="182"/>
+    <line x1="137" y1="343" x2="382" y2="232"/>
+    <line x1="137" y1="343" x2="382" y2="282"/>
+    <line x1="137" y1="343" x2="382" y2="332"/>
+    <line x1="137" y1="343" x2="382" y2="404"/>
+    <line x1="137" y1="343" x2="382" y2="454"/>
+    <line x1="137" y1="343" x2="382" y2="504"/>
+    <line x1="137" y1="343" x2="382" y2="554"/>
+  </g>
+
+  <!-- System-Grenze -->
+  <rect x="360" y="48" width="300" height="544" rx="10" fill="none" stroke="#555555" stroke-width="1.5"/>
+  <text x="510" y="76" font-size="15" font-weight="700" fill="#1A1A1A" text-anchor="middle">Reise- und Sprachlern-Dashboard</text>
+
+  <!-- Gruppe Reiseplanung -->
+  <text x="510" y="104" font-size="12" font-weight="700" fill="#3B6EA5" text-anchor="middle">Reiseplanung</text>
+  <g font-size="12" fill="#1A1A1A" text-anchor="middle">
+    <ellipse cx="500" cy="132" rx="118" ry="22" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.5"/>
+    <text x="500" y="136">Reise anlegen / verwalten</text>
+    <ellipse cx="500" cy="182" rx="118" ry="22" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.5"/>
+    <text x="500" y="186">Tagesplan erstellen</text>
+    <ellipse cx="500" cy="232" rx="118" ry="22" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.5"/>
+    <text x="500" y="236">Packliste verwalten</text>
+    <ellipse cx="500" cy="282" rx="118" ry="22" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.5"/>
+    <text x="500" y="286">Budget verwalten</text>
+    <ellipse cx="500" cy="332" rx="118" ry="22" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.5"/>
+    <text x="500" y="336">Notizen erfassen</text>
+  </g>
+
+  <!-- Gruppe Sprachenlernen -->
+  <text x="510" y="378" font-size="12" font-weight="700" fill="#5E9E52" text-anchor="middle">Sprachenlernen</text>
+  <g font-size="12" fill="#1A1A1A" text-anchor="middle">
+    <ellipse cx="500" cy="404" rx="118" ry="22" fill="#D5E8D4" stroke="#82B366" stroke-width="1.5"/>
+    <text x="500" y="408">Vokabeln lernen</text>
+    <ellipse cx="500" cy="454" rx="118" ry="22" fill="#D5E8D4" stroke="#82B366" stroke-width="1.5"/>
+    <text x="500" y="458">Reisephrasen nachschlagen</text>
+    <ellipse cx="500" cy="504" rx="118" ry="22" fill="#D5E8D4" stroke="#82B366" stroke-width="1.5"/>
+    <text x="500" y="508">Quiz durchführen</text>
+    <ellipse cx="500" cy="554" rx="118" ry="22" fill="#D5E8D4" stroke="#82B366" stroke-width="1.5"/>
+    <text x="500" y="558">Lernfortschritt ansehen</text>
+  </g>
+</svg>
