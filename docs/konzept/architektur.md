@@ -40,4 +40,4 @@
 - Betrieb ohne Internetverbindung
 
 # Architekturdiagramm
-![Architekturdiagramm](image.png)
+![Architekturdiagramm](architektur-diagramm.png)
