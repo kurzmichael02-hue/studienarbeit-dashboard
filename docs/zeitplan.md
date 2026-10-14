@@ -3,7 +3,7 @@
 Geplanter Ablauf der Studienarbeit von Oktober 2026 bis zur Abgabe im April 2027. Die genauen DHBW-Fristen (Anmeldung und Abgabe) werden eingetragen, sobald sie feststehen.
 
 ```mermaid
-%%{init: {"theme":"base","themeVariables":{"fontFamily":"Arial, sans-serif","fontSize":"14px","primaryColor":"#B8D7F5","primaryTextColor":"#17365D","primaryBorderColor":"#3978B9","lineColor":"#64748B","sectionBkgColor":"#E8F1FA","altSectionBkgColor":"#F3F6F9","sectionTitleColor":"#17365D","taskBkgColor":"#B8D7F5","taskBorderColor":"#3978B9","taskTextColor":"#17365D","taskTextDarkColor":"#17365D","taskTextOutsideColor":"#17365D","gridColor":"#CBD5E1","todayLineColor":"#DC2626","titleColor":"#17365D"},"gantt":{"leftPadding":180,"rightPadding":30,"barHeight":24,"barGap":8,"topPadding":50,"fontSize":14,"numberSectionStyles":2}}}%%
+%%{init: {"theme":"base","themeVariables":{"fontFamily":"Arial, sans-serif","fontSize":"14px","background":"#FFFFFF","mainBkg":"#FFFFFF","primaryColor":"#D6E9FA","primaryTextColor":"#172B4D","primaryBorderColor":"#3978B9","secondaryColor":"#EDF4FA","tertiaryColor":"#FFFFFF","textColor":"#FFFFFF","titleColor":"#FFFFFF","sectionBkgColor":"#EDF4FA","altSectionBkgColor":"#FFFFFF","sectionTitleColor":"#172B4D","taskBkgColor":"#D6E9FA","taskBorderColor":"#3978B9","taskTextColor":"#172B4D","taskTextDarkColor":"#172B4D","taskTextOutsideColor":"#FFFFFF","gridColor":"#64748B","todayLineColor":"#DC2626"},"gantt":{"leftPadding":190,"rightPadding":40,"barHeight":22,"barGap":6,"topPadding":45,"fontSize":14,"numberSectionStyles":2,"useMaxWidth":true}}}%%
 gantt
     title Zeitplan Studienarbeit
     dateFormat YYYY-MM-DD
