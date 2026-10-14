@@ -24,7 +24,6 @@ Aufgabenteilung:
 ## Struktur
 - `/docs/recherche` - Marktanalyse, Literaturrecherche, Anforderungen
 - `/docs/konzept` - Use Cases, Architektur, Datenmodell, Wireframes
-- `/docs/zeitplan.md` - Zeitplan (Gantt)
 - `/src` - Quellcode (kommt noch)
 
 ## Fortschritt
