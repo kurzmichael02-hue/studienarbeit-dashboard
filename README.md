@@ -24,6 +24,7 @@ Aufgabenteilung:
 ## Struktur
 - `/docs/recherche` - Marktanalyse, Literaturrecherche, Anforderungen
 - `/docs/konzept` - Use Cases, Architektur, Datenmodell, Wireframes
+- `/docs/zeitplan.md` - Zeitplan (Gantt)
 - `/src` - Quellcode (kommt noch)
 
 ## Fortschritt
@@ -33,6 +34,3 @@ Aufgabenteilung:
 - [ ] Konzeption - aktuell
 - [ ] Implementierung
 - [ ] Test
-
-## Stand
-Umfrage abgeschlossen (12 Antworten). Marktanalyse, Literaturrecherche, Anforderungen und Use Cases stehen. Aktuell: Konzeption (Architektur, Datenmodell, Wireframes). Erster Betreuer-Termin am 26.10.2026. Abgabe geplant April 2027.
