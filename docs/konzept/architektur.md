@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Grundgerüst
 
 1. Client (Webbrowser)
@@ -14,10 +13,8 @@
 4. Datenbank H2
 - H2 speichert die Daten lokal (Reiseziele, Tagespläne, Packlisten, Vokabeln, Lernfortschritt)
 
-
 # Softwarearchitektur
 - MVC (Model-View-Controller)
-
 
 # Typischer Ablauf
 1. Dashboard im Browser öffnen
@@ -26,93 +23,21 @@
 4. Controller nimmt die Anfrage entgegen
 5. Anwendungslogik verarbeitet und validiert die Eingaben
 6. Datenzugriff speichert das Reiseziel in der H2-Datenbank
-7. Spring Boot erzeugt die aktualisierte
+7. Spring Boot erzeugt die aktualisierte Seite
 8. Browser zeigt das gespeicherte Reiseziel an (View)
 
-# Abbildung
-       Laptop / Smartphone / Tablet
-                    |
-                    | HTTP-Anfrage
-                    v
-          +----------------------+
-          |      Raspberry Pi    |
-          |                      |
-          |   Spring Boot        |
-          |   +--------------+   |
-          |   | Controller   |   |
-          |   +--------------+   |
-          |          |           |
-          |   +--------------+   |
-          |   | Fachlogik    |   |
-          |   +--------------+   |
-          |          |           |
-          |   +--------------+   |
-          |   | H2-Datenbank  |   |
-          |   +--------------+   |
-          |                      |
-          | Thymeleaf + Bootstrap|
-          +----------------------+
-                    |
-                    | HTML-Antwort
-                    v
-             Webbrowser des
-                Benutzers
-
-
-# Schichtenarchitektur Zusammenhang
-
-+--------------------------------+
-| Presentation Layer             |
-| Controller + Thymeleaf         |
-+--------------------------------+
-                |
-                v
-+--------------------------------+
-| Business Logic Layer           |
-| Services                       |
-+--------------------------------+
-                |
-                v
-+--------------------------------+
-| Data Access Layer              |
-| Repositories                   |
-+--------------------------------+
-                |
-                v
-+--------------------------------+
-| Database Layer                 |
-| H2                             |
-+--------------------------------+
-
-
+# Schichtenarchitektur
+- Presentation Layer: Controller + Thymeleaf
+- Business Logic Layer: Services
+- Data Access Layer: Repositories
+- Database Layer: H2
 
 # Rolle Raspberry Pi
-- laufen der Spring-Boot-Anwendung
-- stellt ihre Webseiten im lokalen Netzwerk bereit
-- anderes Gerät öffnet das Dashboard über seinen Webbrowser
-- Datenbank liegt lokal auf Raspberry Pi
-- Betrieb soll keine Internetverbindung benötigen
+- lässt die Spring-Boot-Anwendung laufen
+- stellt die Webseiten im lokalen Netzwerk bereit
+- andere Geräte öffnen das Dashboard über ihren Webbrowser
+- die Datenbank liegt lokal auf dem Raspberry Pi
+- Betrieb ohne Internetverbindung
 
-               Lokales WLAN
-              ohne Internet
-                    |
-          +---------+---------+
-          |                   |
-          v                   v
-    Raspberry Pi          Smartphone
-          |
-          +-- Spring Boot
-          |
-          +-- Thymeleaf
-          |
-          +-- H2-Datenbank
-
-
-
-# Jetziges Architekturdiagramm
-![alt text](image.png)
-=======
-# Architektur
-
-TODO
->>>>>>> 7d64882e87ad7ce1294a66dae05efb27a8514cb0
+# Architekturdiagramm
+![Architekturdiagramm](image.png)
