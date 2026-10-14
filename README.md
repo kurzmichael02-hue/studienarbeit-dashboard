@@ -23,15 +23,16 @@ Aufgabenteilung:
 
 ## Struktur
 - `/docs/recherche` - Marktanalyse, Literaturrecherche, Anforderungen
+- `/docs/konzept` - Use Cases, Architektur, Datenmodell, Wireframes
 - `/src` - Quellcode (kommt noch)
 
 ## Fortschritt
-- [ ] Daten sammeln (Umfrage) - aktuell
-- [ ] Anforderungen
-- [ ] Use Cases
-- [ ] Konzeption
+- [x] Daten sammeln (Umfrage, 12 Antworten)
+- [x] Anforderungen
+- [x] Use Cases
+- [ ] Konzeption - aktuell
 - [ ] Implementierung
 - [ ] Test
 
 ## Stand
-Umfrage läuft (Datenerhebung). Marktanalyse, Literaturrecherche und ein erster Anforderungs-Entwurf liegen vor. Erster Betreuer-Termin am 26.10.2026. Abgabe geplant April 2027.
+Umfrage abgeschlossen (12 Antworten). Marktanalyse, Literaturrecherche, Anforderungen und Use Cases stehen. Aktuell: Konzeption (Architektur, Datenmodell, Wireframes). Erster Betreuer-Termin am 26.10.2026. Abgabe geplant April 2027.

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Grundgerüst
 
 1. Client (Webbrowser)
@@ -110,3 +111,8 @@
 
 # Jetziges Architekturdiagramm
 ![alt text](image.png)
+=======
+# Architektur
+
+TODO
+>>>>>>> 7d64882e87ad7ce1294a66dae05efb27a8514cb0
