@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockups - Reise- und Sprachlern-Dashboard</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/[email protected]/dist/tabler-icons.min.css">
+<style>
+:root{
+--surface-2:#ffffff;--surface-1:#f6f7f9;--surface-0:#eceff3;
+--border:#e4e7ec;--border-strong:#cdd3da;
+--text-primary:#1a2733;--text-secondary:#56626e;--text-muted:#929ba6;
+--text-accent:#185FA5;--bg-accent:#E6F1FB;
+--text-success:#0F6E56;--bg-success:#E1F5EE;
+--text-warning:#854F0B;--bg-warning:#FAEEDA;--text-danger:#A32D2D;
+--font-sans:system-ui,"Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#dfe3e8;font-family:var(--font-sans);color:var(--text-primary);padding:28px 16px 60px}
+.head{max-width:1200px;margin:0 auto 26px}
+.head h1{font-size:22px;font-weight:600;margin:0 0 6px}
+.head p{font-size:14px;color:#5a6b7b;margin:0}
+.gallery{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:26px}
+figure{margin:0}
+figcaption{font-size:13px;font-weight:600;color:#44505c;margin:0 0 9px;padding-left:2px}
+.phone{background:var(--surface-1);border:1px solid #c4cbd3;border-radius:22px;padding:14px;overflow:hidden}
+.scr{font-family:var(--font-sans)}
+.hd{display:flex;align-items:center;gap:12px;padding:6px 2px 14px}
+.hd .ti{font-size:19px;color:var(--text-secondary)}
+.ttl{font-size:16px;font-weight:600;flex:1}
+.addbtn{background:#2C6BBF;border-radius:9px;width:32px;height:32px;display:flex;align-items:center;justify-content:center}
+.addbtn .ti{font-size:18px;color:#fff}
+.card{background:var(--surface-2);border:0.5px solid var(--border);border-radius:14px;padding:14px;display:flex;align-items:center;gap:13px;margin-bottom:11px}
+.cic{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.cic .ti{font-size:21px}
+.go{background:#2C6BBF;color:#fff;border-radius:9px;padding:8px 14px;font-size:12px;font-weight:500;white-space:nowrap}
+.tl{background:var(--surface-2);border:0.5px solid var(--border);border-radius:13px;padding:13px 6px;text-align:center;position:relative}
+.ic{width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 8px}
+.ic .ti{font-size:23px;color:#fff}
+.ll{font-size:11.5px;font-weight:500}
+.bdg{position:absolute;top:8px;right:8px;background:#E24B4A;color:#fff;font-size:10px;font-weight:600;min-width:17px;height:17px;border-radius:9px;display:flex;align-items:center;justify-content:center;padding:0 4px}
+.box{background:var(--surface-2);border:0.5px solid var(--border);border-radius:11px;padding:12px;display:flex;flex-direction:column;align-items:flex-start;gap:7px}
+.bic{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center}
+.bic .ti{font-size:18px}
+.row{display:flex;align-items:center;gap:11px;background:var(--surface-2);border:0.5px solid var(--border);border-radius:10px;padding:11px 13px}
+.fw{perspective:1000px;cursor:pointer}
+.fi{position:relative;width:100%;height:170px;transition:transform .5s;transform-style:preserve-3d}
+.fw.f .fi{transform:rotateY(180deg)}
+.ff{position:absolute;inset:0;backface-visibility:hidden;border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;border:0.5px solid var(--border)}
+.fb{transform:rotateY(180deg)}
+.pill{display:flex;background:var(--surface-0);border-radius:999px;padding:3px;margin-bottom:16px}
+.pill div{flex:1;text-align:center;font-size:12px;font-weight:500;padding:7px;border-radius:999px;color:var(--text-secondary)}
+.pill .on{background:#2C6BBF;color:#fff}
+.fld{border:0.5px solid var(--border-strong);border-radius:10px;padding:11px 13px;font-size:14px}
+.flab{font-size:12px;color:var(--text-secondary);margin-bottom:6px}
+.primary{background:#2C6BBF;color:#fff;border-radius:12px;padding:13px;text-align:center;font-size:14px;font-weight:500}
+.save{background:#1D9E75;color:#fff;border-radius:12px;padding:13px;text-align:center;font-size:14px;font-weight:500}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>Mockups - offlinefaehiges Reise- und Sprachlern-Dashboard</h1>
+<p>Design-Entwurf aller Screens. Konzept-phase, Studienarbeit Kurz / Goudarzi. Referenz fuer die Wireframes und die Umsetzung.</p>
+</div>
+<div class="gallery">
+
+<figure><figcaption>Login / Profil-Auswahl</figcaption><div class="phone"><div class="scr" style="text-align:center;padding:10px 0">
+<div style="width:40px;height:40px;border-radius:12px;background:#2C6BBF;display:inline-flex;align-items:center;justify-content:center;margin-bottom:12px"><i class="ti ti-world" style="font-size:23px;color:#fff"></i></div>
+<div style="font-size:18px;font-weight:600;margin-bottom:4px">Wer lernt heute?</div>
+<div style="font-size:13px;color:var(--text-muted);margin-bottom:22px">Profil antippen zum Anmelden</div>
+<div style="display:flex;justify-content:center;gap:18px;flex-wrap:wrap">
+<div style="display:flex;flex-direction:column;align-items:center;gap:9px"><div style="width:66px;height:66px;border-radius:50%;background:var(--bg-accent);display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:600;color:var(--text-accent);border:2px solid #2C6BBF">MK</div><span style="font-size:13px;font-weight:500">Michael</span></div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:9px"><div style="width:66px;height:66px;border-radius:50%;background:#FBEAF0;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:600;color:#993556">SG</div><span style="font-size:13px;color:var(--text-secondary)">Schayan</span></div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:9px"><div style="width:66px;height:66px;border-radius:50%;background:var(--surface-1);border:1px dashed var(--border-strong);display:flex;align-items:center;justify-content:center"><i class="ti ti-plus" style="font-size:24px;color:var(--text-muted)"></i></div><span style="font-size:13px;color:var(--text-muted)">Neu</span></div>
+</div>
+</div></div></figure>
+
+<figure><figcaption>Startseite - "Heute"</figcaption><div class="phone"><div class="scr">
+<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;padding:2px">
+<div><div style="font-size:17px;font-weight:600">Privet, Michael</div><div style="font-size:12px;color:var(--text-muted)">Mittwoch, 22. Oktober</div></div>
+<div style="display:flex;align-items:center;gap:6px;background:var(--bg-warning);color:#854F0B;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600"><i class="ti ti-flame" style="font-size:16px"></i> 7</div>
+</div>
+<div class="card" style="border-left:3px solid #2C6BBF"><div class="cic" style="background:var(--bg-accent)"><i class="ti ti-cards" style="color:var(--text-accent)"></i></div><div style="flex:1"><div style="font-size:14px;font-weight:500">12 Vokabeln faellig</div><div style="font-size:12px;color:var(--text-muted)">Russisch wiederholen</div></div><div class="go">Wiederholen</div></div>
+<div class="card"><div class="cic" style="background:#FCEBEB"><i class="ti ti-help-circle" style="color:#A32D2D"></i></div><div style="flex:1"><div style="font-size:14px;font-weight:500">Taegliches Quiz</div><div style="font-size:12px;color:var(--text-muted)">10 Fragen, ~5 min</div></div><div class="go">Starten</div></div>
+<div class="card" style="flex-direction:column;align-items:stretch;gap:11px">
+<div style="display:flex;align-items:center;gap:13px"><div class="cic" style="background:#2C6BBF"><i class="ti ti-plane" style="color:#fff"></i></div><div style="flex:1"><div style="font-size:14px;font-weight:500">Samara, Russland</div><div style="font-size:12px;color:var(--text-muted)">in 42 Tagen</div></div><div style="text-align:center"><div style="font-size:20px;font-weight:600;line-height:1;color:var(--text-accent)">42</div><div style="font-size:10px;color:var(--text-muted)">Tage</div></div></div>
+<div style="display:flex;gap:16px;border-top:0.5px solid var(--border);padding-top:10px;font-size:12px;color:var(--text-secondary)"><span><i class="ti ti-checklist" style="font-size:14px;color:var(--text-muted)"></i> Packliste 8/15</span><span><i class="ti ti-wallet" style="font-size:14px;color:var(--text-muted)"></i> Budget 320/500</span></div>
+</div>
+</div></div></figure>
+
+<figure><figcaption>Startseite - "Entdecken" (Kacheln)</figcaption><div class="phone"><div class="scr">
+<div class="pill"><div><i class="ti ti-flame"></i> Heute</div><div class="on"><i class="ti ti-layout-grid"></i> Entdecken</div></div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
+<div class="tl"><div class="ic" style="background:#D4537E"><i class="ti ti-cards"></i></div><div class="ll">Vokabeln</div></div>
+<div class="tl"><span class="bdg">3</span><div class="ic" style="background:#E24B4A"><i class="ti ti-help-circle"></i></div><div class="ll">Quiz</div></div>
+<div class="tl"><div class="ic" style="background:#185FA5"><span style="font-size:21px;color:#fff;font-weight:600">&#12354;</span></div><div class="ll">Schriftsystem</div></div>
+<div class="tl"><div class="ic" style="background:#0F6E56"><i class="ti ti-chart-bar"></i></div><div class="ll">Fortschritt</div></div>
+<div class="tl"><span class="bdg" style="background:#378ADD">2</span><div class="ic" style="background:#378ADD"><i class="ti ti-plane"></i></div><div class="ll">Reisen</div></div>
+<div class="tl"><div class="ic" style="background:#1D9E75"><i class="ti ti-map-pin-plus"></i></div><div class="ll">Neue Reise</div></div>
+<div class="tl"><div class="ic" style="background:#639922"><i class="ti ti-checklist"></i></div><div class="ll">Packliste</div></div>
+<div class="tl"><div class="ic" style="background:#BA7517"><i class="ti ti-wallet"></i></div><div class="ll">Budget</div></div>
+<div class="tl"><div class="ic" style="background:#888780"><i class="ti ti-note"></i></div><div class="ll">Notizen</div></div>
+</div>
+</div></div></figure>
+
+<figure><figcaption>Reisen (Liste)</figcaption><div class="phone"><div class="scr">
+<div class="hd"><i class="ti ti-arrow-left"></i><span class="ttl">Reisen</span><div class="addbtn"><i class="ti ti-plus"></i></div></div>
+<div class="card"><div style="width:46px;height:46px;border-radius:12px;background:#2C6BBF;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;flex-shrink:0"><span style="font-size:17px;font-weight:600;line-height:1">42</span><span style="font-size:9px">Tage</span></div><div style="flex:1"><div style="font-size:14px;font-weight:500">Samara, Russland</div><div style="font-size:12px;color:var(--text-muted)">14.-28. Maerz 2027</div></div><span style="font-size:11px;color:var(--text-accent);background:var(--bg-accent);border-radius:999px;padding:3px 9px">Russisch</span></div>
+<div class="card"><div style="width:46px;height:46px;border-radius:12px;background:var(--surface-0);display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0"><span style="font-size:17px;font-weight:600;line-height:1">98</span><span style="font-size:9px;color:var(--text-muted)">Tage</span></div><div style="flex:1"><div style="font-size:14px;font-weight:500">Kyoto, Japan</div><div style="font-size:12px;color:var(--text-muted)">10.-24. Juni 2027</div></div><span style="font-size:11px;color:#993556;background:#FBEAF0;border-radius:999px;padding:3px 9px">Japanisch</span></div>
+<div class="card" style="opacity:.7"><div style="width:46px;height:46px;border-radius:12px;background:var(--surface-0);display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="ti ti-check" style="font-size:20px;color:var(--text-muted)"></i></div><div style="flex:1"><div style="font-size:14px;font-weight:500">Seoul, Korea</div><div style="font-size:12px;color:var(--text-muted)">abgeschlossen</div></div><span style="font-size:11px;color:var(--text-secondary);background:var(--surface-0);border-radius:999px;padding:3px 9px">Koreanisch</span></div>
+</div></div></figure>
+
+<figure><figcaption>Reise-Detail (Tagesplan)</figcaption><div class="phone"><div class="scr">
+<div class="hd"><i class="ti ti-arrow-left"></i><div style="flex:1"><div style="font-size:16px;font-weight:600">Samara, Russland</div><div style="font-size:12px;color:var(--text-muted)">in 42 Tagen</div></div><i class="ti ti-dots"></i></div>
+<div class="pill"><div class="on">Tagesplan</div><div>Packliste</div><div>Budget</div></div>
+<div style="display:flex;gap:7px;overflow-x:auto;margin-bottom:14px">
+<div style="flex-shrink:0;width:46px;text-align:center;padding:7px 0;border-radius:10px;background:#2C6BBF;color:#fff"><div style="font-size:10px">Sa</div><div style="font-size:15px;font-weight:600">14</div></div>
+<div style="flex-shrink:0;width:46px;text-align:center;padding:7px 0;border-radius:10px;border:0.5px solid var(--border)"><div style="font-size:10px;color:var(--text-muted)">So</div><div style="font-size:15px;font-weight:600">15</div></div>
+<div style="flex-shrink:0;width:46px;text-align:center;padding:7px 0;border-radius:10px;border:0.5px solid var(--border)"><div style="font-size:10px;color:var(--text-muted)">Mo</div><div style="font-size:15px;font-weight:600">16</div></div>
+<div style="flex-shrink:0;width:46px;text-align:center;padding:7px 0;border-radius:10px;border:0.5px solid var(--border)"><div style="font-size:10px;color:var(--text-muted)">Di</div><div style="font-size:15px;font-weight:600">17</div></div>
+</div>
+<div style="position:relative;padding-left:24px">
+<div style="position:absolute;left:6px;top:6px;bottom:30px;width:2px;background:var(--border)"></div>
+<div style="position:relative;margin-bottom:11px"><div style="position:absolute;left:-24px;top:3px;width:14px;height:14px;border-radius:50%;background:#2C6BBF;border:3px solid var(--surface-1)"></div><div style="background:var(--surface-2);border:0.5px solid var(--border);border-radius:10px;padding:10px 12px;display:flex;justify-content:space-between"><div><div style="font-size:13px;font-weight:500">Ankunft Flug SU1234</div><div style="font-size:11px;color:var(--text-muted)">Flughafen Kurumoch</div></div><span style="font-size:11px;color:var(--text-muted)">11:30</span></div></div>
+<div style="position:relative;margin-bottom:11px"><div style="position:absolute;left:-24px;top:3px;width:14px;height:14px;border-radius:50%;background:#2C6BBF;border:3px solid var(--surface-1)"></div><div style="background:var(--surface-2);border:0.5px solid var(--border);border-radius:10px;padding:10px 12px;display:flex;justify-content:space-between"><div><div style="font-size:13px;font-weight:500">Hotel einchecken</div><div style="font-size:11px;color:var(--text-muted)">Hotel Volga</div></div><span style="font-size:11px;color:var(--text-muted)">14:00</span></div></div>
+<div style="font-size:12px;color:var(--text-accent);border:0.5px dashed var(--border-strong);border-radius:9px;padding:8px;text-align:center"><i class="ti ti-plus" style="font-size:14px"></i> Aktivitaet hinzufuegen</div>
+</div>
+</div></div></figure>
+
+<figure><figcaption>Vokabeltrainer (Karte tippen zum Umdrehen)</figcaption><div class="phone"><div class="scr">
+<div class="hd"><i class="ti ti-arrow-left"></i><span class="ttl" style="font-size:16px">Vokabeltrainer</span><span style="font-size:12px;color:var(--text-muted)">5 / 20</span></div>
+<div style="height:5px;background:var(--surface-0);border-radius:999px;overflow:hidden;margin-bottom:16px"><div style="width:25%;height:100%;background:#2C6BBF"></div></div>
+<div class="fw" onclick="this.classList.toggle('f')"><div class="fi">
+<div class="ff" style="background:var(--surface-2)"><div style="font-size:11px;color:var(--text-muted);margin-bottom:10px">Deutsch</div><div style="font-size:26px;font-weight:600">Danke</div><div style="font-size:11px;color:var(--text-muted);margin-top:16px">Tippen zum Umdrehen</div></div>
+<div class="ff fb" style="background:var(--bg-accent)"><div style="font-size:11px;color:var(--text-accent);margin-bottom:10px">Russisch</div><div style="font-size:26px;font-weight:600;color:var(--text-accent)">&#1089;&#1087;&#1072;&#1089;&#1080;&#1073;&#1086;</div><div style="font-size:13px;color:var(--text-accent);opacity:.8;margin-top:6px">spasiba</div></div>
+</div></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px"><div style="font-size:13px;border:0.5px solid var(--border-strong);border-radius:10px;padding:11px;text-align:center;color:#A32D2D">Nochmal</div><div style="font-size:13px;background:#1D9E75;color:#fff;border-radius:10px;padding:11px;text-align:center">Gewusst</div></div>
+</div></div></figure>
+
+<figure><figcaption>Quiz (Frage)</figcaption><div class="phone"><div class="scr">
+<div class="hd"><i class="ti ti-x"></i><div style="flex:1;height:6px;background:var(--surface-0);border-radius:999px;overflow:hidden"><div style="width:40%;height:100%;background:#2C6BBF"></div></div><span style="font-size:12px;color:var(--text-muted)">4/10</span></div>
+<div style="text-align:center;margin:18px 0 20px"><div style="font-size:12px;color:var(--text-muted);margin-bottom:10px">Was bedeutet</div><div style="font-size:28px;font-weight:600">&#1079;&#1076;&#1088;&#1072;&#1074;&#1089;&#1090;&#1074;&#1091;&#1081;&#1090;&#1077;</div></div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="border:0.5px solid var(--border-strong);border-radius:12px;padding:13px 15px;font-size:14px">Danke</div>
+<div style="border:1.5px solid #2C6BBF;background:var(--bg-accent);border-radius:12px;padding:13px 15px;font-size:14px;font-weight:500;display:flex;justify-content:space-between;align-items:center">Guten Tag <i class="ti ti-circle-check" style="font-size:18px;color:#2C6BBF"></i></div>
+<div style="border:0.5px solid var(--border-strong);border-radius:12px;padding:13px 15px;font-size:14px">Auf Wiedersehen</div>
+<div style="border:0.5px solid var(--border-strong);border-radius:12px;padding:13px 15px;font-size:14px">Entschuldigung</div>
+</div>
+<div class="primary" style="margin-top:18px">Weiter</div>
+</div></div></figure>
+
+<figure><figcaption>Quiz-Ergebnis</figcaption><div class="phone"><div class="scr" style="text-align:center;padding:8px 0">
+<div style="width:68px;height:68px;border-radius:50%;background:var(--bg-warning);display:inline-flex;align-items:center;justify-content:center;margin:8px 0 14px"><i class="ti ti-trophy" style="font-size:33px;color:#854F0B"></i></div>
+<div style="font-size:19px;font-weight:600;margin-bottom:4px">Gut gemacht!</div>
+<div style="font-size:13px;color:var(--text-muted);margin-bottom:20px">Russisch - Quiz</div>
+<div style="display:flex;gap:10px;margin-bottom:22px">
+<div style="flex:1;background:var(--surface-1);border-radius:12px;padding:14px"><div style="font-size:23px;font-weight:600;color:var(--text-accent)">8/10</div><div style="font-size:12px;color:var(--text-secondary)">Richtig</div></div>
+<div style="flex:1;background:var(--surface-1);border-radius:12px;padding:14px"><div style="font-size:23px;font-weight:600;color:#854F0B">+80</div><div style="font-size:12px;color:var(--text-secondary)">Punkte</div></div>
+<div style="flex:1;background:var(--surface-1);border-radius:12px;padding:14px"><div style="font-size:23px;font-weight:600">7</div><div style="font-size:12px;color:var(--text-secondary)">Streak</div></div>
+</div>
+<div class="primary">Weiter</div>
+</div></div></figure>
+
+<figure><figcaption>Sprache waehlen</figcaption><div class="phone"><div class="scr">
+<div class="hd"><i class="ti ti-arrow-left"></i><span class="ttl">Sprache waehlen</span></div>
+<div class="card" style="border:1.5px solid #2C6BBF;background:var(--bg-accent)"><div style="width:46px;height:46px;border-radius:12px;background:#2C6BBF;display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px;font-weight:600;flex-shrink:0">&#1056;</div><div style="flex:1"><div style="font-size:14px;font-weight:500">Russisch</div><div style="font-size:12px;color:var(--text-muted)">120 / 200 Vokabeln</div></div><i class="ti ti-circle-check" style="font-size:20px;color:#2C6BBF"></i></div>
+<div class="card"><div style="width:46px;height:46px;border-radius:12px;background:var(--surface-0);display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:600;flex-shrink:0">&#12354;</div><div style="flex:1"><div style="font-size:14px;font-weight:500">Japanisch</div><div style="font-size:12px;color:var(--text-muted)">48 / 200 Vokabeln</div></div></div>
+<div class="card"><div style="width:46px;height:46px;border-radius:12px;background:var(--surface-0);display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:600;flex-shrink:0">&#54620;</div><div style="flex:1"><div style="font-size:14px;font-weight:500">Koreanisch</div><div style="font-size:12px;color:var(--text-muted)">16 / 200 Vokabeln</div></div></div>
+</div></div></figure>
+
+<figure><figcaption>Neue Reise (Formular)</figcaption><div class="phone"><div class="scr">
+<div class="hd"><i class="ti ti-arrow-left"></i><span class="ttl">Neue Reise</span></div>
+<div style="display:flex;flex-direction:column;gap:14px">
+<div><div class="flab">Ziel</div><div class="fld">Samara</div></div>
+<div><div class="flab">Land</div><div class="fld">Russland</div></div>
+<div style="display:flex;gap:10px"><div style="flex:1"><div class="flab">Von</div><div class="fld" style="color:var(--text-muted)">14.03.2027</div></div><div style="flex:1"><div class="flab">Bis</div><div class="fld" style="color:var(--text-muted)">28.03.2027</div></div></div>
+<div><div class="flab">Zielsprache</div><div class="fld" style="display:flex;justify-content:space-between;align-items:center">Russisch <i class="ti ti-chevron-down" style="font-size:15px;color:var(--text-muted)"></i></div></div>
+<div><div class="flab">Budget (EUR)</div><div class="fld">500</div></div>
+</div>
+<div class="save" style="margin-top:20px">Reise speichern</div>
+</div></div></figure>
+
+<figure><figcaption>Aktivitaet hinzufuegen</figcaption><div class="phone"><div class="scr">
+<div class="hd"><i class="ti ti-arrow-left"></i><span class="ttl">Aktivitaet hinzufuegen</span></div>
+<div style="display:flex;gap:8px;margin-bottom:16px">
+<div style="flex:1;text-align:center;border:1.5px solid #2C6BBF;background:var(--bg-accent);color:var(--text-accent);border-radius:10px;padding:10px 4px;font-size:12px;font-weight:500"><i class="ti ti-plane" style="font-size:17px;display:block;margin:0 auto 3px"></i>Flug</div>
+<div style="flex:1;text-align:center;border:0.5px solid var(--border-strong);border-radius:10px;padding:10px 4px;font-size:12px;color:var(--text-secondary)"><i class="ti ti-bed" style="font-size:17px;display:block;margin:0 auto 3px"></i>Hotel</div>
+<div style="flex:1;text-align:center;border:0.5px solid var(--border-strong);border-radius:10px;padding:10px 4px;font-size:12px;color:var(--text-secondary)"><i class="ti ti-map-pin" style="font-size:17px;display:block;margin:0 auto 3px"></i>Programm</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px">
+<div><div class="flab">Titel</div><div class="fld">Ankunft Flug SU1234</div></div>
+<div style="display:flex;gap:10px"><div style="flex:1"><div class="flab">Datum</div><div class="fld" style="color:var(--text-muted)">14.03.2027</div></div><div style="flex:1"><div class="flab">Uhrzeit</div><div class="fld" style="color:var(--text-muted)">11:30</div></div></div>
+</div>
+<div class="primary" style="margin-top:20px">Hinzufuegen</div>
+</div></div></figure>
+
+<figure><figcaption>Fortschritt</figcaption><div class="phone"><div class="scr">
+<div class="hd"><i class="ti ti-arrow-left"></i><span class="ttl">Fortschritt</span></div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px">
+<div style="background:var(--surface-1);border-radius:11px;padding:12px;text-align:center"><div style="font-size:22px;font-weight:600;color:#854F0B">7</div><div style="font-size:11px;color:var(--text-secondary)">Streak</div></div>
+<div style="background:var(--surface-1);border-radius:11px;padding:12px;text-align:center"><div style="font-size:22px;font-weight:600">184</div><div style="font-size:11px;color:var(--text-secondary)">Vokabeln</div></div>
+<div style="background:var(--surface-1);border-radius:11px;padding:12px;text-align:center"><div style="font-size:22px;font-weight:600">3,5h</div><div style="font-size:11px;color:var(--text-secondary)">Woche</div></div>
+</div>
+<div style="background:var(--surface-2);border:0.5px solid var(--border);border-radius:13px;padding:14px;margin-bottom:12px">
+<div style="font-size:13px;font-weight:500;margin-bottom:14px">Letzte 7 Tage</div>
+<div style="display:flex;align-items:flex-end;justify-content:space-between;height:74px;gap:7px">
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:100%;height:45%;background:var(--bg-accent);border-radius:5px 5px 0 0"></div><span style="font-size:10px;color:var(--text-muted)">Do</span></div>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:100%;height:70%;background:var(--bg-accent);border-radius:5px 5px 0 0"></div><span style="font-size:10px;color:var(--text-muted)">Fr</span></div>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:100%;height:30%;background:var(--bg-accent);border-radius:5px 5px 0 0"></div><span style="font-size:10px;color:var(--text-muted)">Sa</span></div>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:100%;height:85%;background:#2C6BBF;border-radius:5px 5px 0 0"></div><span style="font-size:10px;color:var(--text-muted)">So</span></div>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:100%;height:60%;background:var(--bg-accent);border-radius:5px 5px 0 0"></div><span style="font-size:10px;color:var(--text-muted)">Mo</span></div>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:100%;height:90%;background:#2C6BBF;border-radius:5px 5px 0 0"></div><span style="font-size:10px;color:var(--text-muted)">Di</span></div>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:100%;height:50%;background:var(--bg-accent);border-radius:5px 5px 0 0"></div><span style="font-size:10px;color:var(--text-muted)">Mi</span></div>
+</div>
+</div>
+<div style="background:var(--surface-2);border:0.5px solid var(--border);border-radius:13px;padding:14px">
+<div style="font-size:13px;font-weight:500;margin-bottom:12px">Pro Sprache</div>
+<div style="margin-bottom:11px"><div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:5px"><span>Russisch</span><span style="color:var(--text-muted)">120/200</span></div><div style="height:7px;background:var(--surface-0);border-radius:999px;overflow:hidden"><div style="width:60%;height:100%;background:#2C6BBF"></div></div></div>
+<div style="margin-bottom:11px"><div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:5px"><span>Japanisch</span><span style="color:var(--text-muted)">48/200</span></div><div style="height:7px;background:var(--surface-0);border-radius:999px;overflow:hidden"><div style="width:24%;height:100%;background:#2C6BBF"></div></div></div>
+<div><div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:5px"><span>Koreanisch</span><span style="color:var(--text-muted)">16/200</span></div><div style="height:7px;background:var(--surface-0);border-radius:999px;overflow:hidden"><div style="width:8%;height:100%;background:#2C6BBF"></div></div></div>
+</div>
+</div></div></figure>
+
+<figure><figcaption>Schriftsystem (Hiragana)</figcaption><div class="phone"><div class="scr">
+<div class="hd"><i class="ti ti-arrow-left"></i><div style="flex:1"><div style="font-size:16px;font-weight:600">Schriftsystem</div><div style="font-size:12px;color:var(--text-muted)">Japanisch - Hiragana</div></div></div>
+<div style="display:flex;gap:8px;margin-bottom:16px"><div style="flex:1;text-align:center;border:1.5px solid #2C6BBF;background:var(--bg-accent);color:var(--text-accent);border-radius:9px;padding:8px;font-size:12px;font-weight:500">Hiragana</div><div style="flex:1;text-align:center;border:0.5px solid var(--border-strong);border-radius:9px;padding:8px;font-size:12px;color:var(--text-secondary)">Katakana</div></div>
+<div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px">
+<div style="aspect-ratio:1;background:#2C6BBF;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff"><span style="font-size:20px;font-weight:600">&#12354;</span><span style="font-size:9px;opacity:.85">a</span></div>
+<div style="aspect-ratio:1;background:var(--surface-2);border:0.5px solid var(--border);border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center"><span style="font-size:20px;font-weight:600">&#12356;</span><span style="font-size:9px;color:var(--text-muted)">i</span></div>
+<div style="aspect-ratio:1;background:var(--surface-2);border:0.5px solid var(--border);border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center"><span style="font-size:20px;font-weight:600">&#12358;</span><span style="font-size:9px;color:var(--text-muted)">u</span></div>
+<div style="aspect-ratio:1;background:var(--surface-2);border:0.5px solid var(--border);border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center"><span style="font-size:20px;font-weight:600">&#12360;</span><span style="font-size:9px;color:var(--text-muted)">e</span></div>
+<div style="aspect-ratio:1;background:var(--surface-2);border:0.5px solid var(--border);border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center"><span style="font-size:20px;font-weight:600">&#12362;</span><span style="font-size:9px;color:var(--text-muted)">o</span></div>
+<div style="aspect-ratio:1;background:var(--surface-2);border:0.5px solid var(--border);border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center"><span style="font-size:20px;font-weight:600">&#12363;</span><span style="font-size:9px;color:var(--text-muted)">ka</span></div>
+<div style="aspect-ratio:1;background:var(--surface-2);border:0.5px solid var(--border);border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center"><span style="font-size:20px;font-weight:600">&#12365;</span><span style="font-size:9px;color:var(--text-muted)">ki</span></div>
+<div style="aspect-ratio:1;background:var(--surface-2);border:0.5px solid var(--border);border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center"><span style="font-size:20px;font-weight:600">&#12367;</span><span style="font-size:9px;color:var(--text-muted)">ku</span></div>
+<div style="aspect-ratio:1;background:var(--surface-2);border:0.5px solid var(--border);border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center"><span style="font-size:20px;font-weight:600">&#12369;</span><span style="font-size:9px;color:var(--text-muted)">ke</span></div>
+<div style="aspect-ratio:1;background:var(--surface-2);border:0.5px solid var(--border);border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center"><span style="font-size:20px;font-weight:600">&#12371;</span><span style="font-size:9px;color:var(--text-muted)">ko</span></div>
+</div>
+<div class="primary" style="margin-top:16px">Ueben</div>
+</div></div></figure>
+
+<figure><figcaption>Notizen</figcaption><div class="phone"><div class="scr">
+<div class="hd"><i class="ti ti-arrow-left"></i><span class="ttl">Notizen</span><div class="addbtn"><i class="ti ti-plus"></i></div></div>
+<div style="display:flex;flex-direction:column;gap:11px">
+<div style="background:var(--surface-2);border:0.5px solid var(--border);border-left:3px solid #BA7517;border-radius:10px;padding:12px 14px"><div style="font-size:13px;font-weight:500;margin-bottom:4px">Steckdosen-Adapter</div><div style="font-size:12px;color:var(--text-secondary)">Russland nutzt Typ C/F. Powerbank mitnehmen.</div><div style="font-size:11px;color:var(--text-muted);margin-top:7px">20. Okt</div></div>
+<div style="background:var(--surface-2);border:0.5px solid var(--border);border-left:3px solid #2C6BBF;border-radius:10px;padding:12px 14px"><div style="font-size:13px;font-weight:500;margin-bottom:4px">Wichtige Saetze</div><div style="font-size:12px;color:var(--text-secondary)">Wo ist die Toilette. Was kostet das.</div><div style="font-size:11px;color:var(--text-muted);margin-top:7px">18. Okt</div></div>
+<div style="background:var(--surface-2);border:0.5px solid var(--border);border-left:3px solid #1D9E75;border-radius:10px;padding:12px 14px"><div style="font-size:13px;font-weight:500;margin-bottom:4px">Reiseapotheke</div><div style="font-size:12px;color:var(--text-secondary)">Schmerzmittel, Pflaster, Reisetabletten.</div><div style="font-size:11px;color:var(--text-muted);margin-top:7px">15. Okt</div></div>
+</div>
+</div></div></figure>
+
+<figure><figcaption>Einstellungen</figcaption><div class="phone"><div class="scr">
+<div class="hd"><i class="ti ti-arrow-left"></i><span class="ttl">Einstellungen</span></div>
+<div style="display:flex;align-items:center;gap:12px;background:var(--surface-2);border:0.5px solid var(--border);border-radius:12px;padding:12px;margin-bottom:14px"><div style="width:44px;height:44px;border-radius:50%;background:var(--bg-accent);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:600;color:var(--text-accent)">MK</div><div style="flex:1"><div style="font-size:14px;font-weight:500">Michael</div><div style="font-size:12px;color:var(--text-muted)">Foto aendern</div></div><i class="ti ti-chevron-right" style="font-size:16px;color:var(--text-muted)"></i></div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px">
+<div class="box"><div class="bic" style="background:var(--bg-accent)"><i class="ti ti-user" style="color:var(--text-accent)"></i></div><span style="font-size:13px;font-weight:500">Account</span></div>
+<div class="box"><div class="bic" style="background:#E1F5EE"><i class="ti ti-chart-dots" style="color:#0F6E56"></i></div><span style="font-size:13px;font-weight:500">Statistik</span></div>
+<div class="box"><div class="bic" style="background:#FBEAF0"><i class="ti ti-users" style="color:#993556"></i></div><span style="font-size:13px;font-weight:500">Benutzer</span></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px">
+<div class="row"><i class="ti ti-language" style="font-size:18px;color:var(--text-secondary)"></i><span style="flex:1;font-size:13px">Appsprache</span><span style="font-size:12px;color:var(--text-muted)">Deutsch</span><i class="ti ti-chevron-right" style="font-size:15px;color:var(--text-muted)"></i></div>
+<div class="row"><i class="ti ti-vibration" style="font-size:18px;color:var(--text-secondary)"></i><span style="flex:1;font-size:13px">Vibration</span><div style="width:36px;height:20px;border-radius:999px;background:#2C6BBF;position:relative"><div style="position:absolute;top:2px;right:2px;width:16px;height:16px;border-radius:50%;background:#fff"></div></div></div>
+<div class="row"><i class="ti ti-help-circle" style="font-size:18px;color:var(--text-secondary)"></i><span style="flex:1;font-size:13px">FAQ</span><i class="ti ti-chevron-right" style="font-size:15px;color:var(--text-muted)"></i></div>
+</div>
+</div></div></figure>
+
+<figure><figcaption>Rangliste (lokaler Highscore)</figcaption><div class="phone"><div class="scr">
+<div class="hd"><i class="ti ti-arrow-left"></i><div style="flex:1"><div style="font-size:16px;font-weight:600">Rangliste</div><div style="font-size:12px;color:var(--text-muted)">Diese Woche - lokal</div></div><i class="ti ti-trophy" style="font-size:20px;color:#BA7517"></i></div>
+<div style="display:flex;flex-direction:column;gap:9px">
+<div style="background:var(--bg-warning);border:0.5px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:12px"><div style="width:26px;font-size:16px;font-weight:600;color:#854F0B;text-align:center">1</div><div style="width:36px;height:36px;border-radius:50%;background:#FBEAF0;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:#993556">SG</div><div style="flex:1;font-size:14px;font-weight:500">Schayan</div><div style="font-size:14px;font-weight:600;color:#854F0B">980</div></div>
+<div style="background:var(--bg-accent);border:1.5px solid #2C6BBF;border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:12px"><div style="width:26px;font-size:16px;font-weight:600;color:var(--text-accent);text-align:center">2</div><div style="width:36px;height:36px;border-radius:50%;background:#2C6BBF;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:#fff">MK</div><div style="flex:1;font-size:14px;font-weight:500">Michael <span style="font-size:11px;color:var(--text-accent)">(du)</span></div><div style="font-size:14px;font-weight:600;color:var(--text-accent)">840</div></div>
+<div style="background:var(--surface-2);border:0.5px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:12px"><div style="width:26px;font-size:15px;font-weight:600;color:var(--text-muted);text-align:center">3</div><div style="width:36px;height:36px;border-radius:50%;background:var(--surface-0);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:var(--text-secondary)">AK</div><div style="flex:1;font-size:14px;font-weight:500">Akin</div><div style="font-size:14px;font-weight:600">610</div></div>
+</div>
+<div style="font-size:11px;color:var(--text-muted);text-align:center;margin-top:16px">Punkte aus Quiz-Durchlaeufen - nur Benutzer auf diesem Geraet</div>
+</div></div></figure>
+
+</div>
+</body>
+</html>
