@@ -11,9 +11,9 @@ Ein lokal auf einem Raspberry Pi betriebenes, offlinefähiges Dashboard, das Rei
 - Betreuer: Jürgen Schultheis (Kontakt über Discord)
 
 Aufgabenteilung:
-- Michael: Systemarchitektur, Backend + API, Datenmodell, Raspberry-Pi-Einrichtung, Deployment
-- Schayan: Frontend (Thymeleaf + Bootstrap), Lern- und Quizlogik, Usability-Tests
-- Gemeinsam: Konzept, Marktanalyse, Umfrage, Evaluation, Dokumentation
+- Michael: Systemarchitektur, Backend (Controller, Services, API), Geschäftslogik, Security
+- Schayan: Frontend (Thymeleaf + Bootstrap), Datenbankanbindung (Entities, Repositories, H2), Raspberry-Pi-Einrichtung, Deployment, Usability-Tests
+- Gemeinsam: Konzept, Marktanalyse, Umfrage, Wireframes, Evaluation, Dokumentation
 
 ## Tech-Stack
 - Backend: Java + Spring Boot
