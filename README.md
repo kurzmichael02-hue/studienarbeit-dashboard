@@ -24,7 +24,13 @@ Aufgabenteilung:
 ## Struktur
 - `/docs/recherche` - Marktanalyse, Literaturrecherche, Anforderungen
 - `/docs/konzept` - Use Cases, Architektur, Datenmodell, Wireframes
-- `/src` - Quellcode (kommt noch)
+- `/src` - Spring-Boot-Anwendung (Grundgerüst steht, Features kommen pro Branch dazu)
+
+## Arbeitsweise
+- Drei Ebenen: `feature/*` (ein Branch pro Funktion) → `dev` (Integration) → `main` (stabil, immer lauffähig).
+- Niemand pusht direkt auf `dev` oder `main`. Jede Änderung geht als Pull Request rein, der andere schaut drüber und merged.
+- Pro Funktion erst die Oberfläche (Schayan), dann die Logik dahinter (Michael).
+- Bootstrap und Icons kommen als WebJars aus dem Jar, kein CDN, weil die App offline auf dem Pi läuft.
 
 ## Fortschritt
 - [x] Umfrage (12 Antworten) + Anforderungen
