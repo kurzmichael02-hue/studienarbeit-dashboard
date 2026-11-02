@@ -5,6 +5,10 @@ Quellen für das Grundlagen-Kapitel, nach fünf Themen sortiert. Startliste, noc
 ## 1. Reiseplanung und digitale Features
 Wie Nutzer Reisen digital vorbereiten, welche Geräte, welche Funktionen (Buchung, Routen, Packlisten).
 - Bitkom (2019): Bürger nutzen im Schnitt 4 Reise-Apps. https://www.bitkom.org/Presse/Presseinformation/Buerger-nutzen-im-Schnitt-4-Reise-Apps-fuer-ihre-Urlaubsplanung
+- FUR (2026): Reiseanalyse 2026, erste Ergebnisse (Reiseintensität 80,5 %, Auslandsanteil 78 %). https://reiseanalyse.de/wp-content/uploads/2026/02/RA2026_Erste_Ergebnisse_Broschuere_DE.pdf
+- Bundesnetzagentur (2023): Sorgenfreies Roaming in den Sommerferien (außerhalb der EU keine Inlandspreise). https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2023/20230620_Roaming.html
+- Verbraucherzentrale NRW: Roaming in der EU, keine Aufschläge mit Ausnahmen. https://www.verbraucherzentrale.nrw/roaming
+- Falcón & Arias (2024): Instrumental and Integrative Motivation in University Students, Revista Scientific 9(34). Reisewunsch als stärkstes praktisches Lernmotiv. https://doi.org/10.29394/Scientific.issn.2542-2987.2024.9.34.1.22-40
 - Think with Google: Das Smartphone bei der Reiseplanung. https://www.thinkwithgoogle.com/_qs/documents/4031/859d3_Das_Smartphone_spielt_bei_der_Reiseplanung_eine_immer_wichtigere_Rolle.pdf
 - Welt: Reise-Apps, diese Tools machen den Trip stressfrei. https://www.welt.de/reise/article6aa4ef8254c3cd4441e24bf0/reise-apps-diese-tools-machen-den-trip-stressfrei-und-digital.html
 - NZZ Bellevue: 8 Reise-Apps für die Ferienplanung. https://bellevue.nzz.ch/reisen-entdecken/ausfluege/8-reise-apps-welche-die-ferien-planung-vereinfachen-ld.1884277

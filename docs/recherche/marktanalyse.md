@@ -9,12 +9,21 @@ Reise-Funktionen, Sprach-Funktionen, Kombination aus beidem, Offline-Fähigkeit,
 
 Die Kriterien lehnen sich an zwei Normen an: ISO/IEC 25010 (Software-Qualität) und ISO 9241-11 (Usability). Beide stehen in `literatur.md`.
 
-## Vergleich
+## Vergleich (Stand 02.11.2026, nur Herstellerangaben, kein eigener Test)
 | System | Reise | Sprache | Kombi | Offline | Daten lokal | Kosten |
 |---|---|---|---|---|---|---|
-| Wanderlog | ja | nein | nein | Ansicht ja, Bearbeiten meist Pro | nein | Basis gratis, Pro-Abo |
-| TripIt | teilw. | nein | nein | ja (Abruf) | nein | gratis, Pro 49 USD/Jahr |
-| Anki | nein | ja | nein | ja, voll | teilw. | gratis (iOS ca. 30 EUR) |
-| LingoDeer | nein | ja | nein | ja, vorab laden | nein | gratis (nur erste Lektionen), ab 14,99 USD/Monat |
-| AdventureLog | ja | nein | nein | teilw. | ja (self-hosted) | self-hosted gratis, gehostet 25 EUR/Jahr |
+| Wanderlog | ja | nein | nein | nur Pro | nein | gratis, Pro 39,99 USD/Jahr |
+| TripIt | teilw. (Plan aus Buchungen) | nein | nein | ja (Abruf) | nein | gratis, Pro 48,99 EUR/Jahr |
+| Anki | nein | ja | nein | ja, voll | ja, Sync optional | Desktop gratis, iOS 29,99 EUR einmalig |
+| LingoDeer | nein | ja | nein | ja, vorab laden | nein | erste Lektionen gratis, 14,99 USD/Monat oder 95,99 USD/Jahr |
+| AdventureLog | ja | nein | nein | nur im eigenen Netz | ja (self-hosted) | gratis (GPL-3.0), eigene Hardware |
 | Unser Dashboard | ja | ja | ja | voll | ja (Pi) | eigen |
+
+Quellen für die Zahlen (alle am 02.11.2026 abgerufen, stehen so auch in der Bib des Berichts):
+- Wanderlog Pro: https://wanderlog.com/pro
+- TripIt (App Store DE): https://apps.apple.com/de/app/tripit-travel-planner/id311035142
+- Anki Desktop: https://apps.ankiweb.net/ , AnkiMobile (App Store DE): https://apps.apple.com/de/app/ankimobile-flashcards/id373493387
+- LingoDeer Preise: https://www.lingodeer.com/de/pricing , Offline-Modus (App Store DE): https://apps.apple.com/de/app/lingodeer-sprachen-lernen/id1261193709
+- AdventureLog: https://adventurelog.app/
+
+Das ausformulierte Kapitel steht im Bericht (Kapitel 3).
