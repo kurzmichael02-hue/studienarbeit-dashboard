@@ -19,6 +19,10 @@
 
     <properties>
         <java.version>21</java.version>
+        <!-- Patch-Versionen über dem Spring-Boot-Stand, wegen offener Dependabot-Alerts -->
+        <tomcat.version>10.1.61</tomcat.version>
+        <jackson-bom.version>2.21.8</jackson-bom.version>
+        <log4j2.version>2.25.5</log4j2.version>
     </properties>
 
     <dependencies>
