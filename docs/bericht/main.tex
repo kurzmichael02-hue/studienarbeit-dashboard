@@ -1,0 +1,529 @@
+\documentclass[12pt,a4paper]{scrreprt}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{csquotes}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage[backend=biber,style=ieee]{biblatex}
+% lange URLs im Literaturverzeichnis umbrechen lassen
+\setcounter{biburlnumpenalty}{9000}
+\setcounter{biburlucpenalty}{9000}
+\setcounter{biburllcpenalty}{9000}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+
+\onehalfspacing
+
+% Tabellen nicht auf eine eigene, sonst leere Seite auslagern
+\renewcommand{\floatpagefraction}{0.9}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\topfraction}{0.9}
+
+% --- Literaturquellen ---
+% urldate = Tag des letzten Abrufs. Beim Zitieren immer pruefen, dass die Seite noch das sagt, was wir behaupten.
+% overwrite: sonst bleibt nach dem ersten Compile die alte literatur.bib liegen und neue Eintraege fehlen
+\begin{filecontents*}[overwrite]{literatur.bib}
+@online{nielsen1994,
+  author  = {Jakob Nielsen},
+  title   = {10 Usability Heuristics for User Interface Design},
+  year    = {1994},
+  url     = {https://www.nngroup.com/articles/ten-usability-heuristics/},
+  urldate = {2026-10-01}
+}
+@online{bitkom2019,
+  author  = {{Bitkom e.\,V.}},
+  title   = {Bürger nutzen im Schnitt 4 Reise-Apps für ihre Urlaubsplanung},
+  year    = {2019},
+  url     = {https://www.bitkom.org/Presse/Presseinformation/Buerger-nutzen-im-Schnitt-4-Reise-Apps-fuer-ihre-Urlaubsplanung},
+  urldate = {2026-11-02}
+}
+@online{wanderlog,
+  author  = {{Wanderlog}},
+  title   = {Wanderlog: Reiseplaner},
+  url     = {https://wanderlog.com/},
+  urldate = {2026-11-02}
+}
+@online{tripit,
+  author  = {{TripIt}},
+  title   = {TripIt: Travel Planner},
+  url     = {https://www.tripit.com/},
+  urldate = {2026-11-02}
+}
+@online{duolingo,
+  author  = {{Duolingo}},
+  title   = {Duolingo},
+  url     = {https://www.duolingo.com/},
+  urldate = {2026-11-02}
+}
+@online{babbel,
+  author  = {{Babbel}},
+  title   = {Babbel},
+  url     = {https://www.babbel.com/},
+  urldate = {2026-11-02}
+}
+@online{anki,
+  author  = {{Anki}},
+  title   = {Anki: Powerful, intelligent flash cards},
+  url     = {https://apps.ankiweb.net/},
+  urldate = {2026-11-02}
+}
+% --- Einleitung: Zahlen und Motivation ---
+@report{fur2026,
+  author      = {{Forschungsgemeinschaft Urlaub und Reisen e.\,V. (FUR)}},
+  institution = {Forschungsgemeinschaft Urlaub und Reisen e.\,V.},
+  title       = {Reiseanalyse 2026: Erste ausgewählte Ergebnisse der 56. Reiseanalyse},
+  year        = {2026},
+  address     = {Kiel},
+  url         = {https://reiseanalyse.de/wp-content/uploads/2026/02/RA2026_Erste_Ergebnisse_Broschuere_DE.pdf},
+  urldate     = {2026-11-02}
+}
+@article{falcon2024,
+  author  = {Falcón Falcón, Myrian Dayana and Arias Arroyo, Paulina Alexandra},
+  title   = {Instrumental and Integrative Motivation in University Students},
+  journal = {Revista Scientific},
+  volume  = {9},
+  number  = {34},
+  pages   = {22--40},
+  year    = {2024},
+  doi     = {10.29394/Scientific.issn.2542-2987.2024.9.34.1.22-40}
+}
+@online{bnetza2023,
+  author  = {{Bundesnetzagentur}},
+  title   = {Sorgenfreies Roaming in den Sommerferien},
+  year    = {2023},
+  url     = {https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2023/20230620_Roaming.html},
+  urldate = {2026-11-02}
+}
+@online{vznrw,
+  author  = {{Verbraucherzentrale NRW}},
+  title   = {Roaming in der EU: Keine Aufschläge -- mit Ausnahmen},
+  url     = {https://www.verbraucherzentrale.nrw/roaming},
+  urldate = {2026-11-02}
+}
+% --- Marktanalyse: Preis- und Funktionsseiten (Stand 02.11.2026) ---
+@online{wanderlogpro,
+  author  = {{Wanderlog}},
+  title   = {Wanderlog Pro: Preisvergleich und Funktionen},
+  url     = {https://wanderlog.com/pro},
+  urldate = {2026-11-02}
+}
+@online{tripitappstore,
+  author  = {{TripIt}},
+  title   = {TripIt: Travel Planner. App Store Deutschland},
+  url     = {https://apps.apple.com/de/app/tripit-travel-planner/id311035142},
+  urldate = {2026-11-02}
+}
+@online{ankimobile,
+  author  = {{Anki}},
+  title   = {AnkiMobile Flashcards. App Store Deutschland},
+  url     = {https://apps.apple.com/de/app/ankimobile-flashcards/id373493387},
+  urldate = {2026-11-02}
+}
+@online{lingodeerpricing,
+  author  = {{LingoDeer}},
+  title   = {LingoDeer Premium: Preise},
+  url     = {https://www.lingodeer.com/de/pricing},
+  urldate = {2026-11-02}
+}
+@online{lingodeerappstore,
+  author  = {{LingoDeer}},
+  title   = {LingoDeer: Sprachen lernen. App Store Deutschland},
+  url     = {https://apps.apple.com/de/app/lingodeer-sprachen-lernen/id1261193709},
+  urldate = {2026-11-02}
+}
+@online{adventurelog,
+  author  = {Morley, Sean},
+  title   = {AdventureLog: Self-hosted travel companion},
+  url     = {https://adventurelog.app/},
+  urldate = {2026-11-02}
+}
+% --- Normen (Katalogseiten; Volltext ueber die DHBW-Bibliothek) ---
+@manual{iso25010,
+  organization = {International Organization for Standardization},
+  title        = {ISO/IEC 25010:2023 Systems and software engineering -- Systems and software Quality Requirements and Evaluation (SQuaRE) -- Product quality model},
+  year         = {2023},
+  address      = {Genf},
+  url          = {https://www.iso.org/standard/78176.html},
+  urldate      = {2026-11-02}
+}
+@manual{iso9241,
+  organization = {DIN Deutsches Institut für Normung e.\,V.},
+  title        = {DIN EN ISO 9241-11:2018-11 Ergonomie der Mensch-System-Interaktion -- Teil 11: Gebrauchstauglichkeit: Begriffe und Konzepte (ISO 9241-11:2018)},
+  year         = {2018},
+  address      = {Berlin},
+  publisher    = {Beuth}
+}
+% --- Grundlagen: Buecher ---
+@book{few2006,
+  author    = {Few, Stephen},
+  title     = {Information Dashboard Design: The Effective Visual Communication of Data},
+  publisher = {O'Reilly},
+  address   = {Sebastopol},
+  year      = {2006},
+  isbn      = {978-0-596-10016-2}
+}
+@book{ebbinghaus1885,
+  author    = {Ebbinghaus, Hermann},
+  title     = {Über das Gedächtnis: Untersuchungen zur experimentellen Psychologie},
+  publisher = {Duncker \& Humblot},
+  address   = {Leipzig},
+  year      = {1885},
+  url       = {https://archive.org/details/b28111710},
+  urldate   = {2026-11-03}
+}
+@book{leitner1972,
+  author    = {Leitner, Sebastian},
+  title     = {So lernt man lernen: Der Weg zum Erfolg},
+  publisher = {Herder},
+  address   = {Freiburg},
+  year      = {1972}
+}
+@book{herrmann2022,
+  author    = {Herrmann, Andrea},
+  title     = {Grundlagen der Anforderungsanalyse: Standardkonformes Requirements Engineering},
+  publisher = {Springer Vieweg},
+  address   = {Wiesbaden},
+  year      = {2022},
+  doi       = {10.1007/978-3-658-35460-2}
+}
+@book{clegg1994,
+  author    = {Clegg, Dai and Barker, Richard},
+  title     = {Case Method Fast-Track: A RAD Approach},
+  publisher = {Addison-Wesley},
+  address   = {Wokingham},
+  year      = {1994}
+}
+@book{doering2016,
+  author    = {Döring, Nicola and Bortz, Jürgen},
+  title     = {Forschungsmethoden und Evaluation in den Sozial- und Humanwissenschaften},
+  edition   = {5},
+  publisher = {Springer},
+  address   = {Berlin, Heidelberg},
+  year      = {2016},
+  doi       = {10.1007/978-3-642-41089-5}
+}
+@book{liebel2019,
+  author    = {Liebel, Christian},
+  title     = {Progressive Web Apps: Das Praxisbuch},
+  publisher = {Rheinwerk},
+  address   = {Bonn},
+  year      = {2019},
+  isbn      = {978-3-8362-6494-5}
+}
+% --- Grundlagen: Dokumentation (Stand 03.11.2026) ---
+@online{mdnpwa,
+  author  = {{Mozilla Developer Network}},
+  title   = {Progressive web apps},
+  url     = {https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps},
+  urldate = {2026-11-03}
+}
+@online{springboot,
+  author  = {{Broadcom}},
+  title   = {Spring Boot Reference Documentation},
+  url     = {https://docs.spring.io/spring-boot/index.html},
+  urldate = {2026-11-03}
+}
+@online{thymeleaf,
+  author  = {{The Thymeleaf Team}},
+  title   = {Thymeleaf Documentation},
+  url     = {https://www.thymeleaf.org/documentation.html},
+  urldate = {2026-11-03}
+}
+@online{h2db,
+  author  = {{H2 Group}},
+  title   = {H2 Database Engine},
+  url     = {https://www.h2database.com/html/main.html},
+  urldate = {2026-11-03}
+}
+@online{raspberrypi5,
+  author  = {{Raspberry Pi Ltd}},
+  title   = {Raspberry Pi 5: Specification},
+  url     = {https://www.raspberrypi.com/products/raspberry-pi-5/},
+  urldate = {2026-11-03}
+}
+\end{filecontents*}
+\addbibresource{literatur.bib}
+
+\begin{document}
+
+% ============================ DECKBLATT ============================
+\begin{titlepage}
+    \centering
+    {\large Duale Hochschule Baden-Württemberg Mannheim \par}
+    {\large Studiengang Informatik \par}
+    \vspace{2cm}
+
+    {\large Studienarbeit \par}
+    \vspace{1.5cm}
+
+    {\Huge \bfseries Konzeption, Implementierung und Evaluation eines offlinefähigen Reise- und Sprachlern-Dashboards auf Basis eines Raspberry Pi \par}
+    \vspace{2.5cm}
+
+    \begin{tabular}{rl}
+        Verfasser:      & Michael Kurz (Matrikelnr. 6722742) \\
+                        & Schayan Goudarzi (Matrikelnr. 3174980) \\[0.5em]
+        Kurs:           & TINF24\_IT1 \\
+        Betreuer:       & Jürgen Schultheis \\
+        Bearbeitungszeitraum: & Oktober 2026 -- April 2027 \\
+    \end{tabular}
+
+    \vfill
+    {\large \today \par}
+\end{titlepage}
+
+% ============================ VERANTWORTLICHKEITEN ============================
+% Gemeinschaftsarbeit mit Gemeinschaftsnote. In den Kapiteln wird der jeweils
+% verantwortliche Verfasser zusaetzlich in Klammern gekennzeichnet (Wunsch Schultheis).
+\chapter*{Verantwortlichkeiten}
+\addcontentsline{toc}{chapter}{Verantwortlichkeiten}
+Diese Arbeit ist eine Gemeinschaftsarbeit. Die folgende Übersicht zeigt die Hauptverantwortung je Bereich; innerhalb der Kapitel ist der jeweils verantwortliche Verfasser zusätzlich in Klammern gekennzeichnet.
+
+\vspace{0.5cm}
+\begin{tabular}{ll}
+    \toprule
+    Bereich & Verantwortlich \\
+    \midrule
+    Systemarchitektur, Backend, Geschäftslogik, Security & Michael Kurz \\
+    Frontend, Datenbankanbindung, Raspberry Pi, Deployment & Schayan Goudarzi \\
+    Konzept, Marktanalyse, Umfrage, Evaluation, Dokumentation & gemeinsam \\
+    \bottomrule
+\end{tabular}
+
+% ============================ EIGENSTÄNDIGKEITSERKLÄRUNG ============================
+\chapter*{Eigenständigkeitserklärung}
+\addcontentsline{toc}{chapter}{Eigenständigkeitserklärung}
+
+\vspace{0.5cm}
+
+\noindent
+\textbf{Gemäß § 5 (3) der \glqq Studien- und Prüfungsordnung DHBW-Technik\grqq}
+
+\par\vspace{1cm}
+
+\noindent
+Hiermit versichern wir, Schayan Goudarzi und Michael Kurz, durch unsere Unterschriften, die vorliegende
+Studienarbeit ohne Hilfe Dritter und nur mit den angegebenen Quellen und Hilfsmitteln
+angefertigt zu haben. Keine weiteren Personen waren an der geistigen Herstellung beteiligt. Alle Stellen, die wörtlich oder sinngemäß aus
+veröffentlichten oder unveröffentlichten Schriften oder dem Internet entnommen
+worden sind, sind als solche kenntlich gemacht. Wir versichern zudem, dass
+die eingereichte elektronische Fassung mit der gedruckten Fassung übereinstimmt.
+
+\vspace{0.5cm}
+\noindent Zur sprachlichen Überarbeitung und als Formulierungshilfe wurden KI-basierte Werkzeuge eingesetzt. Die inhaltliche Erarbeitung sowie die Verantwortung für den Inhalt der Arbeit liegen vollständig bei den Verfassern.
+
+\vspace{2cm}
+\noindent Mannheim, \today \par
+\vspace{1.5cm}
+\noindent\rule{6cm}{0.4pt} \hspace{1cm} \rule{6cm}{0.4pt} \\
+Michael Kurz \hspace{4.5cm} Schayan Goudarzi
+
+% ============================ KURZFASSUNG ============================
+\chapter*{Kurzfassung}
+\addcontentsline{toc}{chapter}{Kurzfassung}
+Hier kommt die Kurzfassung (Abstract): Problem, Ziel, Vorgehen und wichtigstes Ergebnis in wenigen Sätzen.
+
+% ============================ INHALTSVERZEICHNIS ============================
+\tableofcontents
+
+% ============================ 1 EINLEITUNG ============================
+\chapter{Einleitung}
+\section{Einordnung und Motivation}
+Im Jahr 2025 unternahmen 80,5~\% der deutschsprachigen Bevölkerung ab 14 Jahren mindestens eine Urlaubsreise von fünf oder mehr Tagen, und 78~\% dieser Reisen führten ins Ausland \cite{fur2026}. Vor Reiseantritt ist einiges vorzubereiten. Dazu gehören organisatorische Aufgaben wie das Planen der einzelnen Reisetage, das Erstellen einer Packliste und die Übersicht über das Budget, aber auch das Erlernen grundlegender Wörter und Redewendungen in der Sprache des Ziellandes.
+
+Beide Bereiche hängen zusammen: Der Wunsch, ins Ausland zu reisen, zählt zu den stärksten praktischen Motiven für das Erlernen einer Fremdsprache, wie eine Befragung von 229 Studierenden zeigt \cite{falcon2024}, und umgekehrt erleichtern Sprachkenntnisse die Orientierung vor Ort. In der Praxis werden Reiseorganisation und Sprachenlernen dennoch mit getrennten Werkzeugen bearbeitet.
+
+Für beide Bereiche existieren zahlreiche digitale Anwendungen; allein für die Urlaubsplanung nutzen Reisende im Schnitt vier verschiedene Apps \cite{bitkom2019}. Die Reiseplanung decken Dienste wie Wanderlog \cite{wanderlog} oder TripIt \cite{tripit} ab, für das Sprachenlernen stehen Applikationen wie Duolingo \cite{duolingo}, Babbel \cite{babbel} oder Anki \cite{anki} zur Verfügung. Diese Produkte konzentrieren sich jeweils nur auf einen Teilbereich, setzen in der Regel eine kontinuierliche Internetverbindung voraus und speichern Inhalte sowie persönliche Nutzerdaten in der Cloud, wie die Marktanalyse in Kapitel~3 zeigt. Wer eine Reise vorbereitet, muss seine Daten daher über mehrere Anbieter verteilen und gibt die Kontrolle darüber teilweise ab.
+
+Gerade im Ausland ist eine stabile Internetverbindung aber nicht immer gegeben. Die Inlandspreise des EU-Roamings gelten nur innerhalb der EU; außerhalb dürfen die Anbieter weiterhin Aufschläge erheben, sodass insbesondere die mobile Datennutzung dort meist wesentlich teurer ist \cite{bnetza2023, vznrw}. Das betrifft alle drei in dieser Arbeit betrachteten Regionen. Unterwegs, wo die Apps am ehesten gebraucht werden, sind cloudgebundene Anwendungen damit nur eingeschränkt nutzbar.
+
+Beide Bereiche werden somit bislang getrennt und überwiegend cloudgebunden abgedeckt. Daraus ergibt sich die im folgenden Abschnitt dargestellte Problemstellung.
+
+\section{Problemstellung}
+Die Vorbereitung einer Auslandsreise umfasst zwei Aufgabenbereiche, die bislang getrennt voneinander bearbeitet werden: a) die organisatorische Planung der Reise und b) die sprachliche Vorbereitung auf das jeweilige Zielland. Für beide Bereiche existieren zwar etablierte Anwendungen, eine integrierte Lösung, die beide Bereiche verbindet und dabei ohne ständige Internetverbindung sowie ohne Auslagerung der persönlichen Daten an externe Anbieter auskommt, fehlt bislang jedoch.
+
+Diese Studienarbeit untersucht daher, inwiefern sich ein offlinefähiges, lokal auf einem Raspberry Pi betriebenes Dashboard umsetzen lässt, das Reiseplanung und Sprachenlernen in einer einzigen Anwendung vereint. Diese Leitfrage wird in drei Teilfragen untergliedert. Zunächst ist zu klären, welche funktionalen und nichtfunktionalen Anforderungen potenzielle Nutzer an ein solches System stellen. Darauf aufbauend stellt sich die Frage, wie sich ein solches System technisch auf einem Raspberry Pi umsetzen lässt. Abschließend ist zu untersuchen, inwieweit der entwickelte Prototyp die ermittelten Anforderungen hinsichtlich Funktionalität und Benutzbarkeit erfüllt.
+
+\section{Zielsetzung}
+Die Arbeit zielt nicht darauf, bestehende Reiseplaner oder Sprachlern-Apps zu ersetzen, sondern beide Funktionen in einer lokal betriebenen, offlinefähigen Anwendung zusammenzuführen. Entwickelt wird ein Prototyp eines Reise- und Sprachlern-Dashboards auf Basis eines Raspberry Pi, der ohne Internetverbindung im lokalen Netzwerk läuft. Im Einzelnen soll die Anwendung die Planung einer Reise an einem Ort bündeln, also Reiseziele, Tagesplanung, Packlisten und Budget, und zugleich das Lernen der Zielsprache durch Vokabeln, Lektionen und Quiz unterstützen. Der Lernfortschritt wird dabei je Benutzer nachvollziehbar festgehalten. Die gesamte Anwendung soll vollständig offline und datensparsam auf lokaler Hardware funktionieren. Betrachtet werden exemplarisch die Regionen Russland, Japan und Korea. Als erfolgreich gilt die Umsetzung, wenn die aus der Problemstellung abgeleiteten Aufgaben nachvollziehbar bearbeitet und die zuvor erhobenen Anforderungen durch den Prototyp erfüllt werden.
+
+\section{Aufgabenstellung}
+Aus der zuvor beschriebenen Problemstellung ergeben sich die folgenden Aufgaben, die im weiteren Verlauf der Arbeit bearbeitet werden:
+\begin{enumerate}[label=\arabic*.]
+    \item Grundlagen und Marktanalyse
+    \begin{enumerate}[label*=\arabic*.]
+        \item Vergleichbare Systeme analysieren (Reiseplaner, Sprachlern-Apps, lokale Lösungen)
+        \item Bewertungskriterien aus der Literatur ableiten
+        \item Die Marktlücke bestimmen
+    \end{enumerate}
+    \item Anforderungsanalyse
+    \begin{enumerate}[label*=\arabic*.]
+        \item Nutzeranforderungen erheben (Umfrage)
+        \item Funktionale und nichtfunktionale Anforderungen ableiten
+        \item Anforderungen priorisieren (MoSCoW)
+    \end{enumerate}
+    \item Konzeption
+    \begin{enumerate}[label*=\arabic*.]
+        \item Systemarchitektur entwerfen
+        \item Datenmodell entwerfen
+        \item Oberfläche konzipieren (Wireframes)
+    \end{enumerate}
+    \item Implementierung
+    \begin{enumerate}[label*=\arabic*.]
+        \item Prototyp auf Basis von Spring Boot umsetzen
+        \item Offline-Betrieb auf dem Raspberry Pi einrichten
+    \end{enumerate}
+    \item Evaluation
+    \begin{enumerate}[label*=\arabic*.]
+        \item Verifikation durch Funktions- und Datenbanktests
+        \item Validierung durch einen Usability-Test mit Testnutzern
+    \end{enumerate}
+\end{enumerate}
+
+\section{Aufbau der Arbeit}
+Die Arbeit gliedert sich in zehn Kapitel. Kapitel~2 stellt die Grundlagen bereit. Kapitel~3 analysiert vergleichbare Systeme und leitet die Marktlücke ab, Kapitel~4 erhebt und priorisiert die Anforderungen. Kapitel~5 entwickelt das Konzept aus Architektur, Datenmodell und Oberfläche, Kapitel~6 schildert die Implementierung und den Betrieb auf dem Raspberry Pi. Kapitel~7 evaluiert das Ergebnis, Kapitel~8 reflektiert es kritisch und Kapitel~9 gibt einen Ausblick. Kapitel~10 fasst die eingesetzten Methoden und Werkzeuge zusammen.
+
+% ============================ 2 GRUNDLAGEN ============================
+\chapter{Grundlagen}
+Dieses Kapitel stellt die Begriffe und Konzepte bereit, auf denen die folgenden Kapitel aufbauen. Die Auswahl beschränkt sich auf jene Konzepte, die für das Verständnis der Marktanalyse, der Anforderungsanalyse und der Evaluation notwendig sind: die zentralen Begriffe der Arbeit und der eingesetzte Technologiestapel (Abschnitt~2.1), die Normen und Methoden zu Softwarequalität, Gebrauchstauglichkeit und Anforderungsermittlung (Abschnitt~2.2) sowie die technischen Ansätze für offlinefähige Webanwendungen (Abschnitt~2.3).
+
+\section{Begriffliche Grundlagen}
+Few beschreibt ein \emph{Dashboard} als visuelle Darstellung der wichtigsten Informationen, die zum Erreichen eines oder mehrerer Ziele benötigt werden, so verdichtet und auf einem Bildschirm angeordnet, dass sie auf einen Blick erfasst werden können \cite{few2006}. Diese Definition stammt aus der Überwachung von Kennzahlen. In dieser Arbeit wird der Begriff etwas weiter gefasst: Das Reise- und Sprachlern-Dashboard bündelt auf einer gemeinsamen Startseite nicht nur Informationen, etwa die nächste Reise und die heute fälligen Vokabeln, sondern auch den Einstieg in die Funktionen beider Bereiche.
+
+Eine Anwendung gilt in dieser Arbeit als \emph{offlinefähig}, wenn sämtliche Funktionen ohne Verbindung zum Internet nutzbar sind. Das schließt nicht aus, dass die Anwendung über ein lokales Netzwerk erreicht wird; entscheidend ist, dass keine Komponente auf Dienste außerhalb dieses Netzwerks angewiesen ist. ISO/IEC~25010 nennt den Betrieb ohne Netzverbindung ausdrücklich als Nutzungskontext, auf den ein Produkt ausgelegt sein kann \cite[Abschn.~3.8]{iso25010}. Davon zu unterscheiden ist die \emph{lokale Datenhaltung}: Die Daten liegen auf einem Gerät unter Kontrolle der Nutzer und nicht auf den Servern eines Anbieters. Beide Eigenschaften treten getrennt voneinander auf, wie die Marktanalyse in Kapitel~3 zeigt; der Prototyp dieser Arbeit soll beide erfüllen.
+
+Der Sprachlernbereich stützt sich auf das Prinzip der \emph{verteilten Wiederholung} (Spaced Repetition). Ebbinghaus zeigte 1885 in Selbstversuchen mit sinnlosen Silben, dass das Vergessen unmittelbar nach dem Lernen am stärksten ist und sich danach verlangsamt, und dass über mehrere Tage verteilte Wiederholungen wirksamer sind als dieselbe Zahl von Wiederholungen an einem Tag \cite{ebbinghaus1885}. Leitner übertrug dieses Ergebnis in ein praktisches Verfahren: Karteikarten wandern durch mehrere Fächer, eine richtig beantwortete Karte rückt ein Fach weiter und wird seltener abgefragt, eine falsch beantwortete fällt in das erste Fach zurück \cite{leitner1972}. Anwendungen wie Anki setzen dieses Prinzip um (Kapitel~3); der Prototyp verwendet eine Variante mit fünf Fächern, die in Kapitel~6 beschrieben wird.
+
+Als Hardware dient ein \emph{Raspberry Pi~5}, ein Einplatinencomputer mit einem 64-Bit-Vierkernprozessor (Arm Cortex-A76, 2,4~GHz), wahlweise 1 bis 16~GB Arbeitsspeicher, Gigabit-Ethernet und WLAN nach 802.11ac, auf dem das Debian-basierte Raspberry Pi OS läuft \cite{raspberrypi5}. Für diese Arbeit wird die Variante mit 4~GB eingesetzt. Die Anwendung selbst wird mit \emph{Spring Boot} entwickelt, einem Java-Framework, das eine Webanwendung samt eingebettetem Webserver als einzelne ausführbare Datei verpackt und durch Voreinstellungen den Konfigurationsaufwand gering hält \cite{springboot}. Die Oberfläche wird mit \emph{Thymeleaf} erzeugt, einer Template-Engine, die HTML-Seiten auf dem Server mit Daten füllt, sodass der Browser fertige Seiten erhält und keine clientseitige Anwendungslogik benötigt \cite{thymeleaf}. Die Daten hält die relationale Datenbank \emph{H2}, die in Java geschrieben ist und im eingebetteten Modus innerhalb der Anwendung läuft und ihre Daten in einer lokalen Datei ablegt \cite{h2db}. Dieser Stapel wird in Kapitel~5 begründet und in Kapitel~10 mit Versionsnummern dokumentiert.
+
+Die Normen und Methoden, mit denen Qualität und Anforderungen in dieser Arbeit bewertet und erhoben werden, folgen im nächsten Abschnitt.
+
+\section{Usability und Anforderungsermittlung}
+Die Norm ISO/IEC~25010 definiert ein Qualitätsmodell für Softwareprodukte, das die Produktqualität in neun Merkmale gliedert: funktionale Eignung, Leistungseffizienz, Kompatibilität, Interaktionsfähigkeit, Zuverlässigkeit, Sicherheit, Wartbarkeit, Flexibilität und Betriebssicherheit; jedes Merkmal ist in Teilmerkmale unterteilt \cite[Abschn.~4.1]{iso25010}. Für diese Arbeit sind vier Merkmale relevant. Die \emph{funktionale Eignung} beschreibt, ob ein Produkt Funktionen bereitstellt, die den Bedürfnissen der vorgesehenen Nutzer entsprechen, mit den Teilmerkmalen Vollständigkeit, Korrektheit und Angemessenheit. Die \emph{Zuverlässigkeit} umfasst unter anderem die Verfügbarkeit, also die Fähigkeit, betriebsbereit und erreichbar zu sein, wenn das Produkt benötigt wird. Zur \emph{Sicherheit} gehört die Vertraulichkeit, also dass Daten nur den dazu Berechtigten zugänglich sind; die \emph{Interaktionsfähigkeit}, in der Vorgängerfassung von 2011 noch als Usability bezeichnet, fasst Teilmerkmale wie Erlernbarkeit, Bedienbarkeit und Schutz vor Benutzerfehlern zusammen \cite[Abschn.~3]{iso25010}. Die Norm betont, dass die Gewichtung der Merkmale vom Nutzungskontext abhängt, also von Nutzern, Zielen, Umgebung und technischem Kontext \cite[Abschn.~4.2]{iso25010}. Das Modell dient in Kapitel~3 als Grundlage der Vergleichskriterien und in Kapitel~4 zur Einordnung der nichtfunktionalen Anforderungen.
+
+Die \emph{Gebrauchstauglichkeit} (Usability) wird in DIN~EN~ISO~9241-11 definiert als das Ausmaß, in dem ein System durch bestimmte Benutzer in einem bestimmten Nutzungskontext genutzt werden kann, um bestimmte Ziele effektiv, effizient und zufriedenstellend zu erreichen \cite[Abschn.~3.1.1]{iso9241}. Die drei Komponenten sind dort einzeln definiert: \emph{Effektivität} als Genauigkeit und Vollständigkeit, mit denen Benutzer ihre Ziele erreichen, \emph{Effizienz} als Verhältnis der eingesetzten Ressourcen, etwa Zeit und Aufwand, zu den erreichten Ergebnissen, und \emph{Zufriedenstellung} als Ausmaß, in dem die Reaktionen der Benutzer ihren Erfordernissen und Erwartungen entsprechen \cite[Abschn.~3.1.12 bis 3.1.14]{iso9241}. Der \emph{Nutzungskontext} ist die Kombination aus Benutzern, Zielen, Aufgaben, Ressourcen und Umgebung \cite[Abschn.~3.1.15]{iso9241}. Während ISO/IEC~25010 damit Eigenschaften des Produkts beschreibt, bezieht sich die Gebrauchstauglichkeit auf die tatsächliche Nutzung und lässt sich nur mit Nutzern messen. Die Validierung in Kapitel~7 folgt dieser Definition: Testnutzer bearbeiten Aufgaben, wobei Effektivität über den Aufgabenerfolg, Effizienz über die benötigte Zeit und Zufriedenstellung über einen Fragebogen erfasst werden.
+
+Ergänzend zu den Normen werden die zehn Usability-Heuristiken von Nielsen herangezogen, ein Satz von Faustregeln für die Gestaltung von Benutzeroberflächen, darunter die Sichtbarkeit des Systemstatus, die Übereinstimmung zwischen System und Lebenswelt der Nutzer, Konsistenz, Fehlervermeidung und die Bevorzugung von Wiedererkennen gegenüber Erinnern \cite{nielsen1994}. Sie sind keine Norm, aber in der Praxis weit verbreitet und dienen in Kapitel~5 als Prüfliste für den Entwurf der Oberfläche.
+
+Das \emph{Requirements Engineering} umfasst nach Herrmann das Ermitteln, das Dokumentieren, das Prüfen und Abstimmen sowie das Verwalten von Anforderungen \cite[Abschn.~1.3]{herrmann2022}. Bei den Anforderungen an das Produkt werden \emph{funktionale Anforderungen}, die festlegen, was das System tun soll, von \emph{nichtfunktionalen Anforderungen} unterschieden, die das Wie beschreiben, etwa wie schnell oder wie sicher; die nichtfunktionalen Anforderungen gliedern sich weiter in Qualitätsanforderungen und Randbedingungen \cite[Abschn.~5.4]{herrmann2022}. Für die Qualitätsanforderungen empfiehlt Herrmann, die Qualitätsmerkmale der ISO/IEC~25010 als Ausgangspunkt zu nehmen und sich auf die kritischen zu beschränken \cite[Abschn.~5.7.4]{herrmann2022}; so wird in Kapitel~4 verfahren. Als Erhebungstechnik kommt in dieser Arbeit eine quantitative Online-Befragung mit geschlossenen Fragen und Likert-Skalen zum Einsatz. Die Teilnehmenden wurden nicht zufällig, sondern über persönliche Kontakte und Umfrage-Tauschplattformen gewonnen. Es handelt sich damit um eine Gelegenheitsstichprobe, also eine willkürliche Auswahl von Personen, die gerade zur Verfügung stehen oder leicht zugänglich sind, ergänzt um das Schneeballverfahren, bei dem Teilnehmende über ihre persönlichen Netzwerke weitere Personen anwerben. Beide Verfahren sind nach Döring und Bortz nicht-probabilistisch und können keine Repräsentativität beanspruchen; Rückschlüsse sind nur auf die Gesamtheit möglich, aus der die Stichprobe tatsächlich stammt \cite[Abschn.~9.3.1]{doering2016}. Diese Einschränkung wird in Kapitel~4 bei der Auswertung berücksichtigt. Zur Priorisierung der ermittelten Anforderungen dient die MoSCoW-Methode, die jede Anforderung einer von vier Klassen zuordnet: Must (zwingend), Should (wichtig, aber nicht zwingend), Could (wünschenswert) und Won't (bewusst ausgeschlossen) \cite{clegg1994}. Sie wurde für die schnelle Anwendungsentwicklung entworfen und eignet sich für einen Prototyp mit begrenzter Entwicklungszeit, weil sie den verbindlichen Kern von den Erweiterungen trennt.
+
+Offen ist noch, auf welchem technischen Weg eine Webanwendung ohne Internetverbindung betrieben werden kann.
+
+\section{Offlinefähige Webanwendungen}
+Eine klassische Webanwendung besteht aus einem Server, der die Anwendungslogik ausführt und Daten speichert, und einem Browser, der Seiten vom Server anfordert und darstellt. Fällt die Verbindung zwischen beiden aus, ist die Anwendung nicht mehr nutzbar. Um eine Webanwendung offlinefähig zu machen, gibt es zwei grundsätzliche Ansätze, die sich darin unterscheiden, wo Logik und Daten liegen.
+
+Der erste Ansatz verlagert Logik und Daten in den Browser. Progressive Web Apps (PWA) nutzen dafür einen Service Worker, ein Skript, das im Hintergrund des Browsers läuft, Anfragen abfängt und zuvor zwischengespeicherte Seiten, Skripte und Daten auch ohne Netzverbindung ausliefert; Änderungen werden lokal gespeichert und bei der nächsten Verbindung mit dem Server abgeglichen \cite{mdnpwa, liebel2019}. Dieser Ansatz macht die Anwendung auf dem jeweiligen Endgerät unabhängig vom Netz, hat aber Folgen: Die Anwendungslogik muss in JavaScript im Browser laufen, der Offline-Stand gilt nur für das Gerät, auf dem er zwischengespeichert wurde, und die eigentliche Datenhaltung bleibt in der Regel beim Server des Anbieters. Die in Kapitel~3 betrachteten kommerziellen Apps arbeiten, auch wenn sie als native Apps und nicht als PWA umgesetzt sind, nach demselben Muster: Inhalte werden auf das Gerät geladen, die Daten liegen beim Anbieter.
+
+Der zweite Ansatz lässt die klassische Architektur unverändert und verlagert stattdessen den Server in das lokale Netzwerk der Nutzer. Die Anwendung läuft auf einem eigenen Gerät, hier dem Raspberry Pi, und alle Endgeräte im selben WLAN erreichen sie über den Browser. Eine Internetverbindung wird an keiner Stelle benötigt, die Daten verbleiben auf dem Pi, und mehrere Benutzer teilen sich dieselbe Anwendung und denselben Datenbestand. Für die Umsetzung genügt serverseitiges Rendering mit Thymeleaf; der Browser bleibt ein reiner Anzeigeclient. Der Preis dafür ist, dass die Anwendung nur dort erreichbar ist, wo der Pi erreichbar ist: zu Hause bei der Reisevorbereitung ohne Einschränkung, unterwegs nur, wenn der Pi mitgeführt und mit einem lokalen Netz, etwa dem Hotspot eines Smartphones, verbunden wird.
+
+Diese Arbeit wählt den zweiten Ansatz. Ausschlaggebend sind die Datenhoheit der Nutzer und die gemeinsame Nutzung durch mehrere Profile auf einem Gerät. Dazu kommt, dass der Client einfach bleibt und der Prototyp mit dem in Abschnitt~2.1 beschriebenen Stapel umsetzbar ist. Die Einschränkung der Erreichbarkeit wird in Kapitel~8 kritisch reflektiert. Kapitel~3 untersucht als Nächstes, welche vergleichbaren Systeme am Markt existieren und welche Lücke sie offenlassen.
+
+% ============ 3-6: DURCHFÜHRUNG (Bearbeitung der Aufgaben) ============
+\chapter{Marktanalyse}
+Dieses Kapitel bearbeitet die Aufgaben 1.1 bis 1.3: Es stellt vergleichbare Systeme vor, bewertet sie anhand von Kriterien, die aus der Literatur abgeleitet sind, und bestimmt daraus die Marktlücke, die der Prototyp schließen soll. Die Analyse stützt sich auf die öffentlich zugängliche Produktdokumentation, die Preisseiten der Anbieter und die Beschreibungen in den App-Stores (Stand: 2.~November 2026). Ein eigener Praxistest der Anwendungen wurde nicht durchgeführt; die Aussagen beziehen sich daher auf die von den Herstellern dokumentierten Funktionen.
+
+\section{Vergleichbare Systeme}
+Betrachtet werden kommerzielle Reiseplaner, kommerzielle Sprachlern-Apps und quelloffene Anwendungen, die auf eigener Hardware betrieben werden (self-hosted). Aus jeder Gruppe wurden verbreitete Vertreter ausgewählt, deren Funktionsumfang sich mit dem geplanten Dashboard überschneidet.
+
+Wanderlog ist ein Reiseplaner für Web und Mobilgeräte, der Reiseziele, Tagespläne und Buchungen in einer gemeinsamen Karten- und Listenansicht zusammenführt und zusätzlich eine Budgetverfolgung anbietet. Die Grundversion ist kostenlos; der Offline-Zugriff auf die Reisepläne, die Routenoptimierung und der Export nach Google Maps sind der Pro-Version vorbehalten, die für 39,99~USD pro Jahr angeboten wird \cite{wanderlogpro}.
+
+TripIt ist kein Planungswerkzeug im engeren Sinn, Packlisten oder ein Budget gibt es dort nicht. Die Anwendung erzeugt aus weitergeleiteten Buchungsbestätigungen automatisch einen Reiseplan und dient damit der Organisation bereits gebuchter Reisen. Der Reiseplan ist laut Hersteller auch ohne Internetverbindung abrufbar; Zusatzfunktionen wie Flugstatusmeldungen sind Teil des Abonnements TripIt Pro, das im deutschen App Store 48,99~EUR pro Jahr kostet \cite{tripitappstore}.
+
+Für das Sprachenlernen wurden Anki und LingoDeer betrachtet. Anki ist ein quelloffenes Karteikartenprogramm, das Vokabeln nach dem Prinzip der verteilten Wiederholung (Spaced Repetition) abfragt. Die Desktop-Version ist kostenlos, die Karten werden lokal gespeichert, und der Abgleich zwischen Geräten über den Dienst AnkiWeb ist ein optionaler Zusatz \cite{anki}. Die iOS-Version AnkiMobile wird einmalig mit 29,99~EUR berechnet \cite{ankimobile}. Vorgefertigte Lektionen enthält Anki nicht; Inhalte müssen selbst erstellt oder aus geteilten Kartensätzen importiert werden.
+
+LingoDeer ist eine kommerzielle Sprachlern-App mit Schwerpunkt auf ostasiatischen Sprachen wie Japanisch und Koreanisch, die strukturierte Lektionen, Vokabeln und Übungen bereitstellt und über einen Offline-Modus verfügt, für den die Lektionen vorab heruntergeladen werden \cite{lingodeerappstore}. Kostenlos sind lediglich die ersten Lektionen; der vollständige Zugang kostet 14,99~USD pro Monat beziehungsweise 95,99~USD pro Jahr \cite{lingodeerpricing}. Duolingo und Babbel, die in der Einleitung genannt wurden, werden nicht gesondert betrachtet, da LingoDeer als Vertreter der abonnementbasierten Sprachlern-Apps mit seinem Sprachangebot näher am Zielsprachenumfang dieser Arbeit liegt.
+
+Als Vertreter der self-hosted-Lösungen wurde AdventureLog aufgenommen, ein quelloffenes Reisetagebuch mit Reiseplanung und Weltkarte, das unter der GPL-3.0 steht und per Docker auf eigener Hardware betrieben wird \cite{adventurelog}. Die Daten verbleiben damit auf dem eigenen Server. Als Webanwendung ist AdventureLog allerdings nur nutzbar, solange der Client den Server erreicht; einen Sprachlernbereich gibt es nicht.
+
+Für den Vergleich fehlen noch die Kriterien.
+
+\section{Bewertung nach Kriterien}
+Die Kriterien orientieren sich am Qualitätsmodell der Norm ISO/IEC~25010, die die Qualität eines Softwareprodukts in Merkmale wie funktionale Eignung, Zuverlässigkeit und Sicherheit gliedert \cite{iso25010}. Daraus wurden sechs Kriterien abgeleitet, die sich anhand der Herstellerangaben prüfen lassen. Die funktionale Eignung wird über drei Kriterien erfasst: den Umfang der Reisefunktionen (Reiseziele, Tagesplanung, Packliste, Budget), den Umfang der Sprachfunktionen (Vokabeln, Lektionen, Quiz, Fortschritt) und die Frage, ob beide Bereiche in einer Anwendung kombiniert sind. Die Offlinefähigkeit beschreibt, ob die Anwendung ohne Internetverbindung nutzbar ist, und betrifft damit die Zuverlässigkeit im Sinne der Verfügbarkeit. Die Datenhaltung erfasst, ob die Nutzerdaten lokal oder beim Anbieter gespeichert werden, und bildet die Vertraulichkeit aus dem Merkmal Sicherheit ab. Die Kosten sind kein Qualitätsmerkmal der Norm, für die Zielgruppe aber relevant und werden deshalb ergänzend aufgenommen.
+
+Die Gebrauchstauglichkeit nach ISO~9241-11, verstanden als Effektivität, Effizienz und Zufriedenheit in einem bestimmten Nutzungskontext \cite{iso9241}, lässt sich nur empirisch mit Nutzern beurteilen und ist deshalb nicht Teil dieses Vergleichs. Sie wird in Kapitel~7 für die Validierung des Prototyps herangezogen. Tabelle~\ref{tab:marktvergleich} fasst die Bewertung zusammen.
+
+Keines der betrachteten Systeme deckt beide Bereiche ab. Die Offlinefähigkeit ist bei den kommerziellen Produkten entweder an das kostenpflichtige Abonnement gebunden (Wanderlog, LingoDeer) oder auf den Abruf bereits angelegter Pläne beschränkt (TripIt). Eine lokale Datenhaltung bieten nur Anki und AdventureLog, also die beiden quelloffenen Anwendungen; die übrigen Produkte sind kontobasierte Cloud-Dienste, bei denen die Daten beim Anbieter liegen.
+
+\begin{table}[!htb]
+    \centering
+    \small
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{>{\raggedright\arraybackslash}p{2.4cm}>{\raggedright\arraybackslash}p{2.1cm}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{2.1cm}>{\raggedright\arraybackslash}p{2.6cm}}
+        \toprule
+        System & Reise & Sprache & Offline & Daten & Kosten \\
+        \midrule
+        Wanderlog \cite{wanderlogpro} & Ziele, Tagesplan, Budget & nein & nur Pro-Version & Anbieter-Cloud & gratis, Pro 39,99 USD/Jahr \\
+        TripIt \cite{tripitappstore} & Reiseplan aus Buchungen & nein & Abruf des Plans & Anbieter-Cloud & gratis, Pro 48,99 EUR/Jahr \\
+        Anki \cite{anki, ankimobile} & nein & Vokabeln (Spaced Repetition) & vollständig & lokal, Sync optional & Desktop gratis, iOS 29,99 EUR \\
+        LingoDeer \cite{lingodeerappstore, lingodeerpricing} & nein & Lektionen, Vokabeln, Übungen & Offline-Modus, Lektionen vorab laden & Anbieter-Cloud & erste Lektionen gratis, 14,99 USD/Monat \\
+        AdventureLog \cite{adventurelog} & Ziele, Tagesplan, Tagebuch & nein & nur im eigenen Netz & eigener Server & gratis (GPL-3.0), eigene Hardware \\
+        \midrule
+        Prototyp dieser Arbeit & Ziele, Tagesplan, Packliste, Budget & Vokabeln, Lektionen, Quiz, Fortschritt & vollständig & Raspberry Pi & keine laufenden Kosten \\
+        \bottomrule
+    \end{tabular}
+    \caption{Kriteriengestützter Vergleich der betrachteten Systeme (Stand 2. November 2026)}
+    \label{tab:marktvergleich}
+\end{table}
+
+\section{Abgeleitete Lücke}
+Der Vergleich zeigt, dass Reiseplanung und Sprachenlernen am Markt getrennt bedient werden. Für die Reiseplanung gibt es Produkte, die aber entweder cloudgebunden sind oder, wie AdventureLog, zwar lokal betrieben werden, jedoch keinen Sprachlernbereich bieten. Für das Sprachenlernen gilt das Umgekehrte: LingoDeer liefert fertige Lerninhalte, bindet sie aber an ein Abonnement und an die Infrastruktur des Anbieters; Anki arbeitet lokal und offline, bringt aber weder Lerninhalte noch einen Reisebezug mit.
+
+Die Lücke liegt in der Kombination: beide Bereiche in einer Anwendung, vollständige Offlinefähigkeit, Datenhaltung auf eigener Hardware und keine laufenden Kosten gibt es jeweils einzeln, aber in keinem der Systeme zusammen. Lokale Datenhaltung findet sich bei Anki und AdventureLog, der Funktionsumfang orientiert sich an Wanderlog und LingoDeer. Der Prototyp soll diese vier Eigenschaften zusammen erfüllen. Damit ist Aufgabe~1 bearbeitet. Ob potenzielle Nutzer diese Lücke ebenso sehen und welche Funktionen ihnen wichtig sind, klärt Kapitel~4.
+
+\chapter{Anforderungsanalyse}
+\section{Umfrage und Datenerhebung}
+\section{Funktionale Anforderungen}
+\section{Nichtfunktionale Anforderungen}
+\section{Priorisierung (MoSCoW)}
+
+\chapter{Konzeption}
+\section{Systemarchitektur}
+\section{Datenmodell}
+\section{Oberfläche und Wireframes}
+
+\chapter{Implementierung}
+\section{Backend}
+\section{Frontend}
+\section{Datenhaltung}
+\section{Betrieb auf dem Raspberry Pi}
+
+% ============================ 7 ERGEBNIS (Evaluation) ============================
+\chapter{Evaluation}
+\section{Verifikation (Funktions- und Datenbanktests)}
+\section{Validierung (Usability-Test)}
+
+% ============================ 8 KRITISCHE REFLEXION ============================
+\chapter{Kritische Reflexion}
+
+% ============================ 9 AUSBLICK ============================
+\chapter{Ausblick}
+
+% ============================ 10 METHODEN UND VERFAHREN ============================
+% HINWEIS (Schultheis): dieses Kapitel ZULETZT schreiben (Versionen am Ende fixieren).
+% Stand der Versionen: pom.xml im Repo (02.11.2026).
+\chapter{Methoden und Verfahren}
+\section{Vorgehen}
+\section{Eingesetzte Werkzeuge und Versionen}
+\begin{tabular}{lll}
+    \toprule
+    Werkzeug / Bibliothek & Version & Zweck \\
+    \midrule
+    Java (OpenJDK) & 21 & Programmiersprache \\
+    Spring Boot & 3.5.16 & Backend-Framework \\
+    Thymeleaf & (Spring Boot) & Server-seitiges Rendering \\
+    Bootstrap & 5.3.8 & Oberfläche \\
+    Bootstrap Icons & 1.13.2 & Icons \\
+    H2 Database & 2.3.232 & lokale Datenbank \\
+    Maven & 3.x & Build \\
+    \bottomrule
+\end{tabular}
+
+% ============================ LITERATUR ============================
+\printbibliography[heading=bibintoc]
+
+\end{document}

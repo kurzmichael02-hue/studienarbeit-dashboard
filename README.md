@@ -24,11 +24,13 @@ Aufgabenteilung:
 ## Struktur
 - `/docs/recherche` - Marktanalyse, Literaturrecherche, Anforderungen
 - `/docs/konzept` - Use Cases, Architektur, Datenmodell, Wireframes
-- `/src` - Spring-Boot-Anwendung (Grundgerüst steht, Features kommen pro Branch dazu)
+- `/docs/bericht` - der Bericht (`main.tex` als Quelle, `Studienarbeit.pdf` als aktueller Stand)
+- `/src` - Spring-Boot-Anwendung
 
 ## Arbeitsweise
-- Drei Ebenen: `feature/*` (ein Branch pro Funktion) → `dev` (Integration) → `main` (stabil, immer lauffähig).
-- Niemand pusht direkt auf `dev` oder `main`. Jede Änderung geht als Pull Request rein, der andere schaut drüber und merged.
+- Zwei Branches: `dev` (da wird gearbeitet) und `main` (stabil, immer lauffähig, da liest der Betreuer).
+- Code geht direkt auf `dev`. Vor dem Push `git pull`, dann `mvn test`, dann pushen. Ist ein Stand fertig und getestet, geht er als Pull Request von `dev` nach `main`, der andere schaut kurz drüber.
+- Der Bericht liegt direkt auf `main`. Overleaf hat für unsere Größe nicht mehr gereicht (Compile-Timeout im Free-Plan), deshalb wird lokal mit `latexmk -pdf main.tex` gebaut (MiKTeX oder TeX Live, biber muss dabei sein).
 - Pro Funktion erst die Oberfläche (Schayan), dann die Logik dahinter (Michael).
 - Bootstrap und Icons kommen als WebJars aus dem Jar, kein CDN, weil die App offline auf dem Pi läuft.
 
