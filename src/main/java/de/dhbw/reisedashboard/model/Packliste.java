@@ -37,10 +37,9 @@ public class Packliste {
     public Integer getPackeintragID() {
         return packeintragID;
     }
-    public void setPackeintragID(Integer packeintragID){
-        this.packeintragID = packeintragID;
-    }
-
+    
+    //Setter beim Primary Key nicht notwendig
+    
     public Reise getReise() {
         return reise;
     }

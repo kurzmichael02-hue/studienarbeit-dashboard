@@ -3,6 +3,7 @@ package de.dhbw.reisedashboard.model;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
+import java.math.BigDecimal;
 
 @Entity
 @Table(name = "reise")
@@ -13,31 +14,51 @@ public class Reise {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer reiseID;
 
-    // Fremdschlüssel laut ER-Modell. Solange Benutzer und Sprache noch keine
-    // Entities sind, bleiben es einfache Spalten, danach @ManyToOne wie in Packliste.
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "BenutzerID", nullable = false)
+    private Benutzer benutzer;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "SpracheID", nullable = false)
+    private Sprache sprache;
+
+
+    //Man könnte noch die umgekehrte Beziehung mit reinnehmen (OneToMany)
+
     @Column(nullable = false)
-    private Integer benutzerID;
-
-    private Integer spracheID;
-
     private LocalDate startdatum;
 
+    @Column(nullable = false)
     private LocalDate enddatum;
 
     @Column(nullable = false)
     private String ziel;
 
-    private double budget;
+    @Column(nullable = false, precision = 12, scale = 2)
+    private BigDecimal budget;
 
+    @Column(nullable = false)
     private String land;
 
     public Reise() {
 
     }
 
-    public Reise(Integer benutzerID, String ziel, LocalDate startdatum, LocalDate enddatum) {
-        this.benutzerID = benutzerID;
+    public Reise(
+        Benutzer benutzer, 
+        Sprache sprache, 
+        String ziel, 
+        BigDecimal budget, 
+        String land, 
+        LocalDate startdatum, 
+        LocalDate enddatum) 
+        {
+        this.benutzer = benutzer;
+        this.sprache = sprache;
         this.ziel = ziel;
+        this.budget = budget;
+        this.land = land;
         this.startdatum = startdatum;
         this.enddatum = enddatum;
     }
@@ -45,22 +66,20 @@ public class Reise {
     public Integer getReiseID() {
         return reiseID;
     }
-    public void setReiseID(Integer reiseID) {
-        this.reiseID = reiseID;
+    // Setter brauchen wir nicht, wird automatisch generiert beim Primary Key
+
+    public Benutzer getBenutzer() {
+        return benutzer;
+    }
+    public void setBenutzer(Benutzer benutzer) {
+        this.benutzer = benutzer;
     }
 
-    public Integer getBenutzerID() {
-        return benutzerID;
+    public Sprache getSprache() {
+        return sprache;
     }
-    public void setBenutzerID(Integer benutzerID) {
-        this.benutzerID = benutzerID;
-    }
-
-    public Integer getSpracheID() {
-        return spracheID;
-    }
-    public void setSpracheID(Integer spracheID) {
-        this.spracheID = spracheID;
+    public void setSprache(Sprache sprache) {
+        this.sprache = sprache;
     }
 
     public LocalDate getStartdatum() {
@@ -84,10 +103,10 @@ public class Reise {
         this.ziel = ziel;
     }
 
-    public double getBudget() {
+    public BigDecimal getBudget() {
         return budget;
     }
-    public void setBudget(double budget) {
+    public void setBudget(BigDecimal budget) {
         this.budget = budget;
     }
 
