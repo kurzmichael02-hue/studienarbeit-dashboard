@@ -20,6 +20,7 @@
 \setcounter{biburllcpenalty}{9000}
 \usepackage{hyperref}
 \hypersetup{hidelinks}
+\usepackage{xurl} % lange URLs im Literaturverzeichnis an jeder Stelle umbrechen
 
 \onehalfspacing
 
@@ -169,6 +170,14 @@
   publisher    = {Beuth}
 }
 % --- Grundlagen: Buecher ---
+@book{wexler2017,
+  author    = {Wexler, Steve and Shaffer, Jeffrey and Cotgreave, Andy},
+  title     = {The Big Book of Dashboards: Visualizing Your Data Using Real-World Business Scenarios},
+  publisher = {Wiley},
+  address   = {Hoboken},
+  year      = {2017},
+  isbn      = {978-1-119-28271-6}
+}
 @book{few2006,
   author    = {Few, Stephen},
   title     = {Information Dashboard Design: The Effective Visual Communication of Data},
@@ -188,10 +197,12 @@
 }
 @book{leitner1972,
   author    = {Leitner, Sebastian},
-  title     = {So lernt man lernen: Der Weg zum Erfolg},
-  publisher = {Herder},
-  address   = {Freiburg},
-  year      = {1972}
+  title     = {So lernt man lernen: Angewandte Lernpsychologie -- ein Weg zum Erfolg},
+  publisher = {Weltbild},
+  address   = {Augsburg},
+  year      = {1999},
+  note      = {Lizenzausgabe der Herder-Ausgabe, Erstauflage 1972},
+  isbn      = {3-89350-179-7}
 }
 @book{herrmann2022,
   author    = {Herrmann, Andrea},
@@ -217,13 +228,13 @@
   year      = {2016},
   doi       = {10.1007/978-3-642-41089-5}
 }
-@book{liebel2019,
-  author    = {Liebel, Christian},
-  title     = {Progressive Web Apps: Das Praxisbuch},
-  publisher = {Rheinwerk},
-  address   = {Bonn},
-  year      = {2019},
-  isbn      = {978-3-8362-6494-5}
+@book{ater2017,
+  author    = {Ater, Tal},
+  title     = {Building Progressive Web Apps: Bringing the Power of Native to the Browser},
+  publisher = {O'Reilly},
+  address   = {Sebastopol},
+  year      = {2017},
+  isbn      = {978-1-4919-6165-0}
 }
 % --- Grundlagen: Fachartikel (DOIs am 04.11.2026 ueber Crossref geprueft) ---
 @article{cepeda2006,
@@ -286,6 +297,188 @@
   title   = {Raspberry Pi 5: Specification},
   url     = {https://www.raspberrypi.com/products/raspberry-pi-5/},
   urldate = {2026-11-03}
+}
+% --- Grundlagen, Ausbau 05.11.2026 (alle URLs/DOIs am 04./05.11. geprueft) ---
+@online{dsgvo,
+  author  = {{Europäisches Parlament und Rat}},
+  title   = {Datenschutz-Grundverordnung: Verordnung (EU) 2016/679},
+  year    = {2016},
+  url     = {https://eur-lex.europa.eu/eli/reg/2016/679/oj},
+  urldate = {2026-11-05}
+}
+@online{cefr2020,
+  author  = {{Council of Europe}},
+  title   = {Common European Framework of Reference for Languages: Learning, teaching, assessment. Companion volume},
+  year    = {2020},
+  url     = {https://rm.coe.int/common-european-framework-of-reference-for-languages-learning-teaching/16809ea0d4},
+  urldate = {2026-11-05}
+}
+@manual{iso9,
+  organization = {International Organization for Standardization},
+  title        = {ISO 9:1995 Information and documentation -- Transliteration of Cyrillic characters into Latin characters -- Slavic and non-Slavic languages},
+  year         = {1995},
+  address      = {Genf},
+  url          = {https://www.iso.org/standard/3589.html},
+  urldate      = {2026-11-05}
+}
+@online{locjapanese,
+  author  = {{Library of Congress}},
+  title   = {ALA-LC Romanization Tables: Japanese},
+  url     = {https://www.loc.gov/catdir/cpso/romanization/japanese.pdf},
+  urldate = {2026-11-05}
+}
+@online{nikl,
+  author  = {{National Institute of Korean Language}},
+  title   = {Romanization of Korean},
+  url     = {https://www.korean.go.kr/front_eng/roman/roman_01.do},
+  urldate = {2026-11-05}
+}
+@inproceedings{nielsenlandauer1993,
+  author    = {Nielsen, Jakob and Landauer, Thomas K.},
+  title     = {A mathematical model of the finding of usability problems},
+  booktitle = {Proceedings of the INTERACT '93 and CHI '93 Conference on Human Factors in Computing Systems},
+  publisher = {ACM},
+  address   = {New York},
+  pages     = {206--213},
+  year      = {1993},
+  doi       = {10.1145/169059.169166}
+}
+@online{nielsen2000,
+  author  = {Nielsen, Jakob},
+  title   = {Why You Only Need to Test with 5 Users},
+  year    = {2000},
+  url     = {https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/},
+  urldate = {2026-11-05}
+}
+@incollection{brooke1996,
+  author    = {Brooke, John},
+  title     = {SUS: A `Quick and Dirty' Usability Scale},
+  booktitle = {Usability Evaluation in Industry},
+  editor    = {Jordan, Patrick W. and Thomas, Bruce and Weerdmeester, Bernard A. and McClelland, Ian L.},
+  publisher = {Taylor \& Francis},
+  address   = {London},
+  pages     = {189--194},
+  year      = {1996},
+  doi       = {10.1201/9781498710411-35}
+}
+@article{bangor2008,
+  author  = {Bangor, Aaron and Kortum, Philip T. and Miller, James T.},
+  title   = {An Empirical Evaluation of the System Usability Scale},
+  journal = {International Journal of Human-Computer Interaction},
+  volume  = {24},
+  number  = {6},
+  pages   = {574--594},
+  year    = {2008},
+  doi     = {10.1080/10447310802205776}
+}
+@article{likert1932,
+  author  = {Likert, Rensis},
+  title   = {A Technique for the Measurement of Attitudes},
+  journal = {Archives of Psychology},
+  volume  = {22},
+  number  = {140},
+  pages   = {5--55},
+  year    = {1932}
+}
+@online{omguml,
+  author  = {{Object Management Group}},
+  title   = {OMG Unified Modeling Language (OMG UML), Version 2.5.1},
+  year    = {2017},
+  url     = {https://www.omg.org/spec/UML/2.5.1},
+  urldate = {2026-11-05}
+}
+@article{chen1976,
+  author  = {Chen, Peter Pin-Shan},
+  title   = {The entity-relationship model -- toward a unified view of data},
+  journal = {ACM Transactions on Database Systems},
+  volume  = {1},
+  number  = {1},
+  pages   = {9--36},
+  year    = {1976},
+  doi     = {10.1145/320434.320440}
+}
+@online{rfc9110,
+  author  = {Fielding, Roy T. and Nottingham, Mark and Reschke, Julian},
+  title   = {RFC 9110: HTTP Semantics},
+  year    = {2022},
+  url     = {https://www.rfc-editor.org/rfc/rfc9110},
+  urldate = {2026-11-05}
+}
+@online{rfc6265,
+  author  = {Barth, Adam},
+  title   = {RFC 6265: HTTP State Management Mechanism},
+  year    = {2011},
+  url     = {https://www.rfc-editor.org/rfc/rfc6265},
+  urldate = {2026-11-05}
+}
+@online{rfc6762,
+  author  = {Cheshire, Stuart and Krochmal, Marc},
+  title   = {RFC 6762: Multicast DNS},
+  year    = {2013},
+  url     = {https://www.rfc-editor.org/rfc/rfc6762},
+  urldate = {2026-11-05}
+}
+@online{springmvc,
+  author  = {{Broadcom}},
+  title   = {Spring Framework Reference: Spring Web MVC},
+  url     = {https://docs.spring.io/spring-framework/reference/web/webmvc.html},
+  urldate = {2026-11-05}
+}
+@online{springstereotypes,
+  author  = {{Broadcom}},
+  title   = {Spring Framework Reference: Classpath Scanning and Managed Components},
+  url     = {https://docs.spring.io/spring-framework/reference/core/beans/classpath-scanning.html},
+  urldate = {2026-11-05}
+}
+@online{jakartapersistence,
+  author  = {{Eclipse Foundation}},
+  title   = {Jakarta Persistence 3.1 Specification},
+  year    = {2022},
+  url     = {https://jakarta.ee/specifications/persistence/3.1/},
+  urldate = {2026-11-05}
+}
+@online{hibernate,
+  author  = {{Red Hat}},
+  title   = {Hibernate ORM Documentation},
+  url     = {https://hibernate.org/orm/documentation/},
+  urldate = {2026-11-05}
+}
+@online{openjdk21,
+  author  = {{Oracle}},
+  title   = {JDK 21 (OpenJDK)},
+  year    = {2023},
+  url     = {https://openjdk.org/projects/jdk/21/},
+  urldate = {2026-11-05}
+}
+@online{bootstrapdocs,
+  author  = {{Bootstrap}},
+  title   = {Bootstrap 5.3 Documentation: Introduction},
+  url     = {https://getbootstrap.com/docs/5.3/getting-started/introduction/},
+  urldate = {2026-11-05}
+}
+@online{webjars,
+  author  = {{WebJars}},
+  title   = {WebJars: Web Libraries in Jars},
+  url     = {https://www.webjars.org/},
+  urldate = {2026-11-05}
+}
+@online{piremote,
+  author  = {{Raspberry Pi Ltd}},
+  title   = {Raspberry Pi Documentation: Remote access},
+  url     = {https://www.raspberrypi.com/documentation/computers/remote-access.html},
+  urldate = {2026-11-05}
+}
+@online{maven,
+  author  = {{Apache Software Foundation}},
+  title   = {Apache Maven Project},
+  url     = {https://maven.apache.org/},
+  urldate = {2026-11-05}
+}
+@online{git,
+  author  = {{Software Freedom Conservancy}},
+  title   = {Git},
+  url     = {https://git-scm.com/},
+  urldate = {2026-11-05}
 }
 \end{filecontents*}
 \addbibresource{literatur.bib}
@@ -448,14 +641,31 @@ Die Arbeit gliedert sich in zehn Kapitel. Kapitel~2 stellt die Grundlagen bereit
 
 % ============================ 2 GRUNDLAGEN ============================
 \chapter{Grundlagen}
-Dieses Kapitel stellt die Begriffe und Konzepte bereit, auf denen die folgenden Kapitel aufbauen. Die Auswahl beschränkt sich auf jene Konzepte, die für das Verständnis der Marktanalyse, der Anforderungsanalyse und der Evaluation notwendig sind: die zentralen Begriffe der Arbeit und der eingesetzte Technologiestapel (Abschnitt~2.1), die Normen und Methoden zu Softwarequalität, Gebrauchstauglichkeit und Anforderungsermittlung (Abschnitt~2.2) sowie die technischen Ansätze für offlinefähige Webanwendungen (Abschnitt~2.3).
+Dieses Kapitel stellt die Grundlagen bereit, auf denen die folgenden Kapitel aufbauen. Die Begriffe und Methoden stehen in den Abschnitten~2.1 bis 2.4, die technischen Grundlagen und die eingesetzten Werkzeuge in den Abschnitten~2.5 und 2.6. Hier geht es nur darum, was die Konzepte sind und woher sie stammen; wie sie in dieser Arbeit angewendet werden, zeigen die Kapitel~3 bis 7 jeweils mit Verweis hierher. Die Auswahl beschränkt sich auf das, was für das Verständnis der Marktanalyse, der Anforderungsanalyse, der Konzeption und der Evaluation notwendig ist.
 
 \section{Begriffliche Grundlagen}
-Few beschreibt ein \emph{Dashboard} als visuelle Darstellung der wichtigsten Informationen, die zum Erreichen eines oder mehrerer Ziele benötigt werden, so verdichtet und auf einem Bildschirm angeordnet, dass sie auf einen Blick erfasst werden können \cite{few2006}. Diese Definition stammt aus der Überwachung von Kennzahlen. In dieser Arbeit wird der Begriff etwas weiter gefasst: Das Reise- und Sprachlern-Dashboard bündelt auf einer gemeinsamen Startseite nicht nur Informationen, etwa die nächste Reise und die heute fälligen Vokabeln, sondern auch den Einstieg in die Funktionen beider Bereiche.
 
-Eine Anwendung gilt in dieser Arbeit als \emph{offlinefähig}, wenn sämtliche Funktionen ohne Verbindung zum Internet nutzbar sind. Das schließt nicht aus, dass die Anwendung über ein lokales Netzwerk erreicht wird; entscheidend ist, dass keine Komponente auf Dienste außerhalb dieses Netzwerks angewiesen ist. ISO/IEC~25010 nennt den Betrieb ohne Netzverbindung ausdrücklich als Nutzungskontext, auf den ein Produkt ausgelegt sein kann \cite[Abschn.~3.8]{iso25010}. Davon zu unterscheiden ist die \emph{lokale Datenhaltung}: Die Daten liegen auf einem Gerät unter Kontrolle der Nutzer und nicht auf den Servern eines Anbieters. Beide Eigenschaften treten getrennt voneinander auf, wie die Marktanalyse in Kapitel~3 zeigt; der Prototyp dieser Arbeit soll beide erfüllen.
+\subsection{Dashboard}
+Wexler, Shaffer und Cotgreave definieren ein Dashboard als visuelle Darstellung von Daten, die dazu dient, Zustände zu überwachen oder Verständnis zu erleichtern, und merken an, dass es daneben zahlreiche engere Definitionen gibt \cite[Einleitung]{wexler2017}. Eine solche engere Fassung stammt von Few: Ein Dashboard ist für ihn die visuelle Darstellung der wichtigsten Informationen, die zum Erreichen eines oder mehrerer Ziele benötigt werden, so verdichtet und auf einem einzigen Bildschirm angeordnet, dass sie auf einen Blick überwacht werden können \cite[S.~34]{few2006}. Beide Definitionen kommen aus der Überwachung von Kennzahlen in Unternehmen. In dieser Arbeit wird der Begriff etwas weiter gefasst: Das Reise- und Sprachlern-Dashboard bündelt auf einer gemeinsamen Startseite nicht nur Informationen, etwa die nächste Reise und die heute fälligen Vokabeln, sondern auch den Einstieg in die Funktionen beider Bereiche. Der Kern der Definition bleibt erhalten: eine Seite, die ohne Suchen zeigt, was gerade ansteht.
 
-Der Sprachlernbereich stützt sich auf das Prinzip der \emph{verteilten Wiederholung} (Spaced Repetition). Ebbinghaus zeigte 1885 in Selbstversuchen mit sinnlosen Silben, dass das Vergessen unmittelbar nach dem Lernen am stärksten ist und sich danach verlangsamt, und dass über mehrere Tage verteilte Wiederholungen wirksamer sind als dieselbe Zahl von Wiederholungen an einem Tag \cite{ebbinghaus1885}. Leitner übertrug dieses Ergebnis in ein praktisches Verfahren: Karteikarten wandern durch mehrere Fächer, eine richtig beantwortete Karte rückt ein Fach weiter und wird seltener abgefragt, eine falsch beantwortete fällt in das erste Fach zurück \cite{leitner1972}. Dass über die Zeit verteiltes Lernen dem geballten Lernen überlegen ist, bestätigt eine Meta-Analyse von Cepeda et al. über Studien zum verbalen Erinnern \cite{cepeda2006}. Karpicke und Roediger zeigen darüber hinaus, dass das aktive Abrufen aus dem Gedächtnis, wie es eine Karteikartenabfrage verlangt, mehr zum langfristigen Behalten beiträgt als wiederholtes Lesen \cite{karpicke2008}; beides spricht dafür, Vokabeln abzufragen statt nur anzuzeigen. Anwendungen wie Anki setzen dieses Prinzip um (Kapitel~3); der Prototyp verwendet eine Variante mit fünf Fächern und festen Abständen, die Abbildung~\ref{fig:leitner} zeigt und die in Kapitel~6 beschrieben wird.
+\subsection{Offlinefähigkeit}
+Eine Anwendung gilt in dieser Arbeit als offlinefähig, wenn sämtliche Funktionen ohne Verbindung zum Internet nutzbar sind. Das schließt nicht aus, dass die Anwendung über ein lokales Netzwerk erreicht wird; entscheidend ist, dass keine Komponente auf Dienste außerhalb dieses Netzwerks angewiesen ist. ISO/IEC~25010 nennt den Betrieb ohne Netzverbindung als einen Nutzungskontext, auf den ein Produkt ausgelegt sein kann \cite[Abschn.~3.8]{iso25010} (zur technischen Umsetzung vgl. Abschnitt~2.5.5).
+
+\subsection{Lokale Datenhaltung und Datensparsamkeit}
+Von der Offlinefähigkeit zu unterscheiden ist die lokale Datenhaltung: Die Daten liegen auf einem Gerät unter Kontrolle der Nutzer und nicht auf den Servern eines Anbieters. Beide Eigenschaften treten getrennt voneinander auf, wie die Marktanalyse in Kapitel~3 zeigt. Lokale Datenhaltung ist zugleich die einfachste Form von Datensparsamkeit. Die Datenschutz-Grundverordnung verlangt in Artikel~5 Absatz~1, dass personenbezogene Daten dem Zweck angemessen und auf das notwendige Maß beschränkt sein müssen \cite{dsgvo}. Für eine privat genutzte Anwendung im eigenen Haushalt gilt die Verordnung nach Artikel~2 Absatz~2 zwar nicht unmittelbar; der Grundsatz dient hier dennoch als Maßstab, weil Reisedaten und Lernstände persönliche Daten sind, die bei den in Kapitel~3 betrachteten Produkten beim Anbieter liegen.
+
+\subsection{Mehrbenutzerbetrieb auf einem Gerät}
+Läuft eine Anwendung auf einem Gerät, das mehrere Personen im selben Haushalt nutzen, müssen deren Daten voneinander getrennt werden: Die Reisen und Lernstände einer Person dürfen nicht in denen einer anderen auftauchen. Üblich ist dafür ein Benutzerkonto mit Passwort. In einem privaten WLAN hat das Passwort jedoch keinen Mehrwert, weil nur Personen im Haushalt das Gerät erreichen und der Schutz des Geräts selbst über den Zugang zum WLAN erfolgt. Diese Arbeit verwendet deshalb Profile ohne Passwort: Beim Start wählt die Person ihr Profil aus, und die Anwendung merkt sich die Wahl für die Dauer der Nutzung. Streaming-Dienste wie Netflix machen es mit ihrer Profilauswahl genauso. Technisch beruht das Verfahren auf Sitzungen (Abschnitt~2.5.3); die Einordnung als Sicherheitsmerkmal folgt in Abschnitt~2.3.1.
+
+\section{Lernen von Vokabeln}
+
+\subsection{Vergessenskurve}
+Ebbinghaus untersuchte 1885 in Selbstversuchen mit sinnlosen Silben, wie viel von Gelerntem nach bestimmten Zeitabständen noch verfügbar ist. Er maß dazu, wie viel Aufwand das erneute Lernen bis zur fehlerfreien Wiedergabe im Vergleich zum ersten Lernen ersparte. Das Ergebnis ist die nach ihm benannte Vergessenskurve: Der Verlust ist unmittelbar nach dem Lernen am größten und verlangsamt sich danach deutlich \cite{ebbinghaus1885}. Für das Vokabellernen folgt daraus, dass eine einmal gelernte Vokabel früh wiederholt werden muss, später aber immer seltener.
+
+\subsection{Verteilte Wiederholung und das Leitner-System}
+Ebbinghaus beobachtete außerdem, dass über mehrere Tage verteilte Wiederholungen wirksamer sind als dieselbe Zahl von Wiederholungen an einem Tag \cite{ebbinghaus1885}. Dieser Abstandseffekt hält auch moderner Prüfung stand: Cepeda et al. fassen in einer Meta-Analyse Studien zum verbalen Erinnern zusammen und zeigen, dass verteiltes Lernen dem geballten Lernen über verschiedene Abstände und Behaltensintervalle hinweg überlegen ist \cite{cepeda2006}.
+
+Leitner übertrug das Prinzip 1972 in ein praktisches Verfahren mit Karteikarten, das er selbst als \glqq Lernkartei\grqq{} bezeichnet \cite[S.~64]{leitner1972}: Die Karten wandern durch fünf Fächer, eine richtig beantwortete Karte rückt ein Fach weiter und wird seltener abgefragt, eine falsch beantwortete fällt in das erste Fach zurück. Karten, die das fünfte Fach fehlerfrei durchlaufen haben, gelten als gelernt und werden aussortiert \cite[S.~71]{leitner1972}. Anwendungen wie Anki setzen dieses Prinzip um (Kapitel~3). Der Prototyp verwendet eine Variante mit fünf Fächern und festen Abständen, die Abbildung~\ref{fig:leitner} zeigt und die in Kapitel~6 beschrieben wird.
 
 \begin{figure}[!htb]
     \centering
@@ -478,11 +688,18 @@ Der Sprachlernbereich stützt sich auf das Prinzip der \emph{verteilten Wiederho
     \label{fig:leitner}
 \end{figure}
 
-Als Hardware dient ein \emph{Raspberry Pi~5}, ein Einplatinencomputer mit einem 64-Bit-Vierkernprozessor (Arm Cortex-A76, 2,4~GHz), wahlweise 1 bis 16~GB Arbeitsspeicher, Gigabit-Ethernet und WLAN nach 802.11ac, auf dem das Debian-basierte Raspberry Pi OS läuft \cite{raspberrypi5}. Für diese Arbeit wird die Variante mit 4~GB eingesetzt. Die Anwendung selbst wird mit \emph{Spring Boot} entwickelt, einem Java-Framework, das eine Webanwendung samt eingebettetem Webserver als einzelne ausführbare Datei verpackt und durch Voreinstellungen den Konfigurationsaufwand gering hält \cite{springboot}. Die Oberfläche wird mit \emph{Thymeleaf} erzeugt, einer Template-Engine, die HTML-Seiten auf dem Server mit Daten füllt, sodass der Browser fertige Seiten erhält und keine clientseitige Anwendungslogik benötigt \cite{thymeleaf}. Die Daten hält die relationale Datenbank \emph{H2}, die in Java geschrieben ist und im eingebetteten Modus innerhalb der Anwendung läuft und ihre Daten in einer lokalen Datei ablegt \cite{h2db}. Dieser Stapel wird in Kapitel~5 begründet und in Kapitel~10 mit Versionsnummern dokumentiert.
+\subsection{Abrufeffekt}
+Neben dem Abstand spielt die Art der Wiederholung eine Rolle. Karpicke und Roediger zeigen, dass das aktive Abrufen aus dem Gedächtnis, wie es eine Karteikartenabfrage verlangt, mehr zum langfristigen Behalten beiträgt als wiederholtes Lesen desselben Stoffs \cite{karpicke2008}. Beides zusammen spricht dafür, Vokabeln abzufragen statt nur anzuzeigen, und die Abfragen über die Zeit zu verteilen.
 
-Die Normen und Methoden, mit denen Qualität und Anforderungen in dieser Arbeit bewertet und erhoben werden, folgen im nächsten Abschnitt.
+\subsection{Sprachniveau für Reisende}
+Wie viel Sprache eine Reisende oder ein Reisender überhaupt braucht, lässt sich mit dem Gemeinsamen Europäischen Referenzrahmen für Sprachen einordnen. Er beschreibt sechs Niveaustufen von A1 bis C2. Auf der Stufe A1 kann eine Person vertraute, alltägliche Ausdrücke und einfache Sätze verstehen und verwenden, sich und andere vorstellen und auf einfache Fragen zur Person antworten; auf A2 kommen Sätze und häufig gebrauchte Ausdrücke zu unmittelbar relevanten Bereichen wie Einkaufen und Wegbeschreibungen hinzu \cite{cefr2020}. Für die Vorbereitung einer Reise ist damit der Bereich A1 bis A2 relevant: Begrüßung, Zahlen, Bestellen, Fragen nach dem Weg.
 
-\section{Usability und Anforderungsermittlung}
+\subsection{Schriftsysteme der Zielsprachen und Umschrift}
+Die drei Zielsprachen der Arbeit verwenden keine lateinische Schrift. Russisch wird in kyrillischer Schrift geschrieben, einem Alphabet mit 33 Buchstaben. Japanisch kombiniert die beiden Silbenschriften Hiragana und Katakana mit den aus dem Chinesischen übernommenen Kanji. Koreanisch verwendet Hangul, ein Alphabet, dessen Buchstaben zu Silbenblöcken zusammengesetzt werden. Für Lernende, die diese Schriften noch nicht lesen können, braucht jede Vokabel eine Umschrift in lateinische Buchstaben. Dafür gibt es je Sprache etablierte Systeme: für das Kyrillische die Transliteration nach ISO~9 \cite{iso9}, für das Japanische die modifizierte Hepburn-Umschrift, wie sie etwa die Library of Congress verwendet \cite{locjapanese}, und für das Koreanische die Revidierte Romanisierung, die das südkoreanische Nationale Institut für die koreanische Sprache festgelegt hat \cite{nikl}. Welches System der Prototyp je Sprache verwendet, legt das Datenmodell in Kapitel~5 fest.
+
+\section{Softwarequalität und Gebrauchstauglichkeit}
+
+\subsection{Qualitätsmodell nach ISO/IEC 25010}
 Die Norm ISO/IEC~25010 definiert ein Qualitätsmodell für Softwareprodukte, das die Produktqualität in neun Merkmale gliedert: funktionale Eignung, Leistungseffizienz, Kompatibilität, Interaktionsfähigkeit, Zuverlässigkeit, Sicherheit, Wartbarkeit, Flexibilität und Betriebssicherheit; jedes Merkmal ist in Teilmerkmale unterteilt \cite[Abschn.~4.1]{iso25010}. Abbildung~\ref{fig:iso25010} zeigt die neun Merkmale; die vier für diese Arbeit relevanten sind hervorgehoben.
 
 \begin{figure}[!htb]
@@ -509,18 +726,81 @@ Die Norm ISO/IEC~25010 definiert ein Qualitätsmodell für Softwareprodukte, das
     \label{fig:iso25010}
 \end{figure}
 
-Für diese Arbeit sind vier Merkmale relevant. Die \emph{funktionale Eignung} beschreibt, ob ein Produkt Funktionen bereitstellt, die den Bedürfnissen der vorgesehenen Nutzer entsprechen, mit den Teilmerkmalen Vollständigkeit, Korrektheit und Angemessenheit. Die \emph{Zuverlässigkeit} umfasst unter anderem die Verfügbarkeit, also die Fähigkeit, betriebsbereit und erreichbar zu sein, wenn das Produkt benötigt wird. Zur \emph{Sicherheit} gehört die Vertraulichkeit, also dass Daten nur den dazu Berechtigten zugänglich sind; die \emph{Interaktionsfähigkeit}, in der Vorgängerfassung von 2011 noch als Usability bezeichnet, fasst Teilmerkmale wie Erlernbarkeit, Bedienbarkeit und Schutz vor Benutzerfehlern zusammen \cite[Abschn.~3]{iso25010}. Die Norm betont, dass die Gewichtung der Merkmale vom Nutzungskontext abhängt, also von Nutzern, Zielen, Umgebung und technischem Kontext \cite[Abschn.~4.2]{iso25010}. Das Modell dient in Kapitel~3 als Grundlage der Vergleichskriterien und in Kapitel~4 zur Einordnung der nichtfunktionalen Anforderungen.
+Die funktionale Eignung beschreibt, ob ein Produkt Funktionen bereitstellt, die den Bedürfnissen der vorgesehenen Nutzer entsprechen, mit den Teilmerkmalen Vollständigkeit, Korrektheit und Angemessenheit. Die Zuverlässigkeit umfasst unter anderem die Verfügbarkeit, also die Fähigkeit, betriebsbereit und erreichbar zu sein, wenn das Produkt benötigt wird. Zur Sicherheit gehört die Vertraulichkeit, also dass Daten nur den dazu Berechtigten zugänglich sind; für den Mehrbenutzerbetrieb aus Abschnitt~2.1.4 heißt das, dass die Trennung der Profile ein Sicherheitsmerkmal ist, auch wenn sie ohne Passwort auskommt. Die Interaktionsfähigkeit, in der Vorgängerfassung von 2011 noch als Usability bezeichnet, fasst Teilmerkmale wie Erlernbarkeit, Bedienbarkeit und Schutz vor Benutzerfehlern zusammen \cite[Abschn.~3]{iso25010}.
 
-Die \emph{Gebrauchstauglichkeit} (Usability) wird in DIN~EN~ISO~9241-11 definiert als das Ausmaß, in dem ein System durch bestimmte Benutzer in einem bestimmten Nutzungskontext genutzt werden kann, um bestimmte Ziele effektiv, effizient und zufriedenstellend zu erreichen \cite[Abschn.~3.1.1]{iso9241}. Die drei Komponenten sind dort einzeln definiert: \emph{Effektivität} als Genauigkeit und Vollständigkeit, mit denen Benutzer ihre Ziele erreichen, \emph{Effizienz} als Verhältnis der eingesetzten Ressourcen, etwa Zeit und Aufwand, zu den erreichten Ergebnissen, und \emph{Zufriedenstellung} als Ausmaß, in dem die Reaktionen der Benutzer ihren Erfordernissen und Erwartungen entsprechen \cite[Abschn.~3.1.12 bis 3.1.14]{iso9241}. Der \emph{Nutzungskontext} ist die Kombination aus Benutzern, Zielen, Aufgaben, Ressourcen und Umgebung \cite[Abschn.~3.1.15]{iso9241}. Während ISO/IEC~25010 damit Eigenschaften des Produkts beschreibt, bezieht sich die Gebrauchstauglichkeit auf die tatsächliche Nutzung und lässt sich nur mit Nutzern messen. Die Validierung in Kapitel~7 folgt dieser Definition: Testnutzer bearbeiten Aufgaben, wobei Effektivität über den Aufgabenerfolg, Effizienz über die benötigte Zeit und Zufriedenstellung über einen Fragebogen erfasst werden.
+Die Norm betont, dass die Gewichtung der Merkmale vom Nutzungskontext abhängt, also von Nutzern, Zielen, Umgebung und technischem Kontext \cite[Abschn.~4.2]{iso25010}. Das Modell dient in Kapitel~3 als Grundlage der Vergleichskriterien und in Kapitel~4 zur Gliederung der nichtfunktionalen Anforderungen.
 
-Ergänzend zu den Normen werden die zehn Usability-Heuristiken von Nielsen herangezogen, ein Satz von Faustregeln für die Gestaltung von Benutzeroberflächen, darunter die Sichtbarkeit des Systemstatus, die Übereinstimmung zwischen System und Lebenswelt der Nutzer, Konsistenz, Fehlervermeidung und die Bevorzugung von Wiedererkennen gegenüber Erinnern. Nielsen und Molich haben die heuristische Evaluation 1990 als Verfahren vorgestellt, bei dem wenige Prüfende eine Oberfläche anhand solcher Regeln durchgehen \cite{nielsenmolich1990}; die heute verbreitete Fassung der zehn Heuristiken stammt von Nielsen \cite{nielsen1994}. Sie sind keine Norm, aber in der Praxis weit verbreitet und dienen in Kapitel~5 als Prüfliste für den Entwurf der Oberfläche.
+\subsection{Gebrauchstauglichkeit nach ISO 9241-11}
+Die Gebrauchstauglichkeit (Usability) wird in DIN~EN~ISO~9241-11 definiert als das Ausmaß, in dem ein System durch bestimmte Benutzer in einem bestimmten Nutzungskontext genutzt werden kann, um bestimmte Ziele effektiv, effizient und zufriedenstellend zu erreichen \cite[Abschn.~3.1.1]{iso9241}. Die drei Komponenten sind dort einzeln definiert: Effektivität als Genauigkeit und Vollständigkeit, mit denen Benutzer ihre Ziele erreichen, Effizienz als Verhältnis der eingesetzten Ressourcen, etwa Zeit und Aufwand, zu den erreichten Ergebnissen, und Zufriedenstellung als Ausmaß, in dem die Reaktionen der Benutzer ihren Erfordernissen und Erwartungen entsprechen \cite[Abschn.~3.1.12 bis 3.1.14]{iso9241}. Der Nutzungskontext ist die Kombination aus Benutzern, Zielen, Aufgaben, Ressourcen und Umgebung \cite[Abschn.~3.1.15]{iso9241}. Während ISO/IEC~25010 damit Eigenschaften des Produkts beschreibt, bezieht sich die Gebrauchstauglichkeit auf die tatsächliche Nutzung und lässt sich nur mit Nutzern messen (Abschnitte~2.3.4 und 2.3.5).
 
-Das \emph{Requirements Engineering} umfasst nach Herrmann das Ermitteln, das Dokumentieren, das Prüfen und Abstimmen sowie das Verwalten von Anforderungen \cite[Abschn.~1.3]{herrmann2022}. Bei den Anforderungen an das Produkt werden \emph{funktionale Anforderungen}, die festlegen, was das System tun soll, von \emph{nichtfunktionalen Anforderungen} unterschieden, die das Wie beschreiben, etwa wie schnell oder wie sicher; die nichtfunktionalen Anforderungen gliedern sich weiter in Qualitätsanforderungen und Randbedingungen \cite[Abschn.~5.4]{herrmann2022}. Für die Qualitätsanforderungen empfiehlt Herrmann, die Qualitätsmerkmale der ISO/IEC~25010 als Ausgangspunkt zu nehmen und sich auf die kritischen zu beschränken \cite[Abschn.~5.7.4]{herrmann2022}; so wird in Kapitel~4 verfahren. Als Erhebungstechnik kommt in dieser Arbeit eine quantitative Online-Befragung mit geschlossenen Fragen und Likert-Skalen zum Einsatz. Die Teilnehmenden wurden nicht zufällig, sondern über persönliche Kontakte und Umfrage-Tauschplattformen gewonnen. Es handelt sich damit um eine Gelegenheitsstichprobe, also eine willkürliche Auswahl von Personen, die gerade zur Verfügung stehen oder leicht zugänglich sind, ergänzt um das Schneeballverfahren, bei dem Teilnehmende über ihre persönlichen Netzwerke weitere Personen anwerben. Beide Verfahren sind nach Döring und Bortz nicht-probabilistisch und können keine Repräsentativität beanspruchen; Rückschlüsse sind nur auf die Gesamtheit möglich, aus der die Stichprobe tatsächlich stammt \cite[Abschn.~9.3.1]{doering2016}. Diese Einschränkung wird in Kapitel~4 bei der Auswertung berücksichtigt. Zur Priorisierung der ermittelten Anforderungen dient die MoSCoW-Methode, die jede Anforderung einer von vier Klassen zuordnet: Must (zwingend), Should (wichtig, aber nicht zwingend), Could (wünschenswert) und Won't (bewusst ausgeschlossen) \cite{clegg1994}. Sie wurde für die schnelle Anwendungsentwicklung entworfen und eignet sich für einen Prototyp mit begrenzter Entwicklungszeit, weil sie den verbindlichen Kern von den Erweiterungen trennt.
+\subsection{Heuristiken nach Nielsen}
+Ergänzend zu den Normen werden die zehn Usability-Heuristiken von Nielsen herangezogen, ein Satz von Faustregeln für die Gestaltung von Benutzeroberflächen, darunter die Sichtbarkeit des Systemstatus, die Übereinstimmung zwischen System und Lebenswelt der Nutzer, Konsistenz, Fehlervermeidung und die Bevorzugung von Wiedererkennen gegenüber Erinnern. Nielsen und Molich haben die heuristische Evaluation 1990 als Verfahren vorgestellt, bei dem wenige Prüfende eine Oberfläche anhand solcher Regeln durchgehen \cite{nielsenmolich1990}; die heute verbreitete Fassung der zehn Heuristiken stammt von Nielsen \cite{nielsen1994}. Sie sind keine Norm, werden in Kapitel~5 aber als Prüfliste für den Entwurf der Oberfläche genutzt.
 
-Offen ist noch, auf welchem technischen Weg eine Webanwendung ohne Internetverbindung betrieben werden kann.
+\subsection{Usability-Test mit Testnutzern}
+Ein Usability-Test lässt Personen aus der Zielgruppe typische Aufgaben mit dem System bearbeiten, während beobachtet wird, wo sie stocken oder Fehler machen. Die Beobachtungen liefern die Effektivität (wurde die Aufgabe gelöst) und die Effizienz (wie lange hat es gedauert) im Sinne von Abschnitt~2.3.2. Nielsen und Landauer haben modelliert, wie viele Usability-Probleme mit einer gegebenen Zahl von Testpersonen gefunden werden, und daraus abgeleitet, dass bereits wenige Personen den Großteil der Probleme aufdecken, weil weitere Personen überwiegend bereits bekannte Probleme wiederholen \cite{nielsenlandauer1993}. Nielsen empfiehlt auf dieser Grundlage Tests mit etwa fünf Personen und, wenn Mittel vorhanden sind, mehrere kleine Testrunden statt einer großen \cite{nielsen2000}. Für einen studentischen Prototyp ist das ein realistischer Rahmen. Die Validierung in Kapitel~7 folgt diesem Vorgehen: Testnutzer bearbeiten vorgegebene Aufgaben, Aufgabenerfolg und benötigte Zeit werden festgehalten.
 
-\section{Offlinefähige Webanwendungen}
-Eine klassische Webanwendung besteht aus einem Server, der die Anwendungslogik ausführt und Daten speichert, und einem Browser, der Seiten vom Server anfordert und darstellt. Fällt die Verbindung zwischen beiden aus, ist die Anwendung nicht mehr nutzbar. Um eine Webanwendung offlinefähig zu machen, gibt es zwei grundsätzliche Ansätze, die sich darin unterscheiden, wo Logik und Daten liegen. Abbildung~\ref{fig:offline} stellt beide gegenüber.
+\subsection{System Usability Scale}
+Die dritte Komponente der Gebrauchstauglichkeit, die Zufriedenstellung, wird üblicherweise mit einem Fragebogen erhoben. Der System Usability Scale (SUS) von Brooke besteht aus zehn Aussagen, die abwechselnd positiv und negativ formuliert sind und auf einer fünfstufigen Skala von \glqq stimme überhaupt nicht zu\grqq{} bis \glqq stimme voll zu\grqq{} bewertet werden; die Antworten werden zu einem Wert zwischen 0 und 100 verrechnet \cite{brooke1996}. Der Fragebogen ist kurz und unabhängig von der Art des Systems, weshalb er sich für einen Vergleich mit anderen Studien eignet. Bangor, Kortum und Miller haben den SUS an einer großen Zahl von Studien ausgewertet und einen Mittelwert von rund 70 ermittelt; sie schlagen außerdem vor, die Punktwerte mit Adjektiven von \glqq schlecht\grqq{} bis \glqq exzellent\grqq{} zu beschreiben, damit ein einzelner Wert eingeordnet werden kann \cite{bangor2008}. Für den Prototyp liefert das in Kapitel~7 einen Wert, der sich mit diesen Daten vergleichen lässt.
+
+\section{Anforderungsermittlung}
+
+\subsection{Requirements Engineering und Anforderungsarten}
+Das Requirements Engineering umfasst nach Herrmann das Ermitteln, das Dokumentieren, das Prüfen und Abstimmen sowie das Verwalten von Anforderungen \cite[Abschn.~1.3]{herrmann2022}. Bei den Anforderungen an das Produkt werden funktionale Anforderungen, die festlegen, was das System tun soll, von nichtfunktionalen Anforderungen unterschieden, die das Wie beschreiben, etwa wie schnell oder wie sicher; die nichtfunktionalen Anforderungen gliedern sich weiter in Qualitätsanforderungen und Randbedingungen \cite[Abschn.~5.4]{herrmann2022}. Für die Qualitätsanforderungen empfiehlt Herrmann, die Qualitätsmerkmale der ISO/IEC~25010 aus Abschnitt~2.3.1 als Ausgangspunkt zu nehmen und sich auf die kritischen zu beschränken \cite[Abschn.~5.7.4]{herrmann2022}; so wird in Kapitel~4 verfahren.
+
+\subsection{Online-Fragebogen und Likert-Skala}
+Als Erhebungstechnik kommt in dieser Arbeit eine quantitative Online-Befragung mit geschlossenen Fragen zum Einsatz. Geschlossene Fragen geben die Antwortmöglichkeiten vor und lassen sich dadurch direkt auszählen und vergleichen; offene Fragen liefern dagegen Begründungen und Wünsche in den Worten der Befragten und ergänzen die Zahlen. Für die Bewertung einzelner Funktionen wird eine fünfstufige Skala verwendet, die auf Likert zurückgeht: Befragte stufen ihre Zustimmung zu einer Aussage oder, wie hier, die Wichtigkeit eines Merkmals auf einer symmetrischen Skala mit neutraler Mitte ein \cite{likert1932}. Die Stufen sind geordnet, aber nicht notwendig gleich weit voneinander entfernt; Mittelwerte über solche Skalen sind deshalb eine Vereinfachung, die für eine Rangfolge ausreicht. Der SUS aus Abschnitt~2.3.5 verwendet dieselbe Skalenform.
+
+\subsection{Stichprobe}
+Die Teilnehmenden einer Befragung können selten zufällig aus der Zielgruppe gezogen werden. Werden stattdessen Personen einbezogen, die gerade zur Verfügung stehen oder leicht zugänglich sind, etwa über persönliche Kontakte oder eine öffentliche Online-Umfrage, spricht man von einer Gelegenheitsstichprobe. Das Schneeballverfahren geht einen Schritt weiter: Teilnehmende werden gebeten, die Befragung in ihren eigenen Netzwerken weiterzugeben. Beide Verfahren sind nach Döring und Bortz nicht-probabilistisch und können keine Repräsentativität beanspruchen; Rückschlüsse sind nur auf die Gesamtheit möglich, aus der die Stichprobe tatsächlich stammt \cite[Abschn.~9.3.1]{doering2016}. Die Umfrage in Kapitel~4 beschreibt deshalb nur den befragten Personenkreis.
+
+\subsection{Priorisierung mit MoSCoW}
+Zur Priorisierung der ermittelten Anforderungen dient die MoSCoW-Methode, die jede Anforderung einer von vier Klassen zuordnet: Must (zwingend), Should (wichtig, aber nicht zwingend), Could (wünschenswert) und Won't (bewusst ausgeschlossen) \cite{clegg1994}. Sie wurde für die schnelle Anwendungsentwicklung entworfen und eignet sich für einen Prototyp mit begrenzter Entwicklungszeit, weil sie den verbindlichen Kern von den Erweiterungen trennt und mit der Won't-Klasse auch festhält, was nicht gebaut wird.
+
+\subsection{Use Cases und das Anwendungsfalldiagramm}
+Ein Use Case (Anwendungsfall) beschreibt nach der UML-Spezifikation der Object Management Group eine Menge von Aktionen, die ein System für einen Akteur ausführt und die zu einem für diesen Akteur beobachtbaren Ergebnis führen; ein Akteur ist eine Rolle, die eine Person oder ein anderes System gegenüber dem betrachteten System einnimmt \cite{omguml}. Das Anwendungsfalldiagramm stellt Akteure als Strichmännchen, Anwendungsfälle als Ellipsen und die Beteiligung als Verbindungslinien dar. Es zeigt, welche Funktionen ein System nach außen anbietet; den internen Ablauf lässt es offen. Für die Details eines Anwendungsfalls wird deshalb zusätzlich eine textuelle Beschreibung mit Vorbedingung, Ablauf und Nachbedingung verwendet.
+
+\subsection{Entity-Relationship-Modell}
+Das Entity-Relationship-Modell geht auf Chen zurück und beschreibt einen Ausschnitt der Realität durch Entitätstypen, ihre Attribute und die Beziehungen zwischen ihnen \cite{chen1976}. Eine Entität ist ein unterscheidbares Ding wie eine Reise; ihre Attribute sind Eigenschaften wie Ziel und Zeitraum. Beziehungen verbinden Entitäten, zum Beispiel eine Reise mit dem Benutzer, der sie angelegt hat, und tragen Kardinalitäten, die angeben, wie viele Entitäten auf jeder Seite beteiligt sein können (ein Benutzer, beliebig viele Reisen). Für die grafische Darstellung haben sich mehrere Notationen etabliert; in dieser Arbeit wird die Krähenfußnotation verwendet, bei der die Kardinalität am Linienende durch eine Gabel für \glqq viele\grqq{} und einen Querstrich für \glqq eins\grqq{} dargestellt wird. Das ER-Modell ist die Vorstufe des relationalen Datenbankschemas: Jeder Entitätstyp wird eine Tabelle mit den Attributen als Spalten, Beziehungen landen als Fremdschlüssel. Das Datenmodell des Prototyps wird in Kapitel~5 in dieser Form entworfen und in Kapitel~6 in Tabellen überführt.
+
+\section{Webanwendungen}
+
+\subsection{Client-Server-Architektur und HTTP}
+Eine Webanwendung besteht aus einem Server, der die Anwendungslogik ausführt und Daten speichert, und einem Client, in der Regel ein Browser, der Seiten vom Server anfordert und darstellt. Die Kommunikation läuft über das Hypertext Transfer Protocol (HTTP): Der Client sendet eine Anfrage mit einer Methode und einem Ziel, der Server antwortet mit einem Statuscode und einem Inhalt. Die Methode GET fordert eine Ressource an, POST übermittelt Daten, etwa ein ausgefülltes Formular \cite{rfc9110}. HTTP ist zustandslos: Jede Anfrage wird für sich behandelt, der Server weiß von sich aus nicht, ob zwei Anfragen von derselben Person stammen. Für eine Anwendung mit Benutzerprofilen ist das eine Lücke, die Abschnitt~2.5.3 schließt.
+
+\subsection{Model-View-Controller und serverseitiges Rendering}
+Das Model-View-Controller-Muster (MVC) trennt eine Anwendung in drei Teile: das Modell hält die Daten und die Logik, die View stellt sie dar, der Controller nimmt Eingaben entgegen und vermittelt zwischen beiden. Spring Web MVC setzt dieses Muster für Webanwendungen um: Ein zentraler Dispatcher nimmt jede HTTP-Anfrage entgegen, leitet sie an den zuständigen Controller weiter, dieser füllt ein Modell mit Daten und benennt eine View, und eine Template-Engine erzeugt daraus die HTML-Antwort \cite{springmvc}. Weil die fertige Seite auf dem Server entsteht, spricht man von serverseitigem Rendering. Der Browser erhält vollständiges HTML und benötigt keine eigene Anwendungslogik. Die Alternative, bei der der Browser nur Rohdaten erhält und die Seite selbst mit JavaScript aufbaut, verlagert Logik auf das Endgerät (dazu Abschnitt~2.5.5).
+
+\subsection{Sitzungen und Cookies}
+Um über mehrere zustandslose HTTP-Anfragen hinweg zu erkennen, dass sie von derselben Person stammen, verwendet der Server Sitzungen. Beim ersten Kontakt legt er eine Sitzung mit einer zufälligen Kennung an und schickt diese Kennung als Cookie an den Browser; der Browser sendet das Cookie bei jeder weiteren Anfrage an denselben Server mit, und der Server ordnet die Anfrage der Sitzung zu. Das Cookie-Verfahren ist in RFC~6265 beschrieben, einschließlich der Regeln, wann ein Browser ein Cookie speichert und mitsendet \cite{rfc6265}. In der Sitzung kann der Server beliebige Daten ablegen, etwa das gewählte Benutzerprofil. Damit wird der passwortlose Mehrbenutzerbetrieb aus Abschnitt~2.1.4 technisch möglich: Die Profilwahl wird in der Sitzung gespeichert, und jede folgende Anfrage wird diesem Profil zugeordnet. Die Sitzungskennung ist dabei das einzige Geheimnis; sie sollte ausschließlich im Cookie und nicht in der Adresszeile übertragen werden, weil Adressen in Verläufen und Protokollen landen.
+
+\subsection{Schichtenarchitektur}
+Innerhalb des Servers hat sich eine Trennung in Schichten bewährt, die über das MVC-Muster hinausgeht: Controller nehmen Anfragen entgegen und geben Antworten zurück, Services enthalten die Geschäftslogik, Repositories kapseln den Zugriff auf die Datenbank. Spring unterstützt diese Trennung mit den Stereotyp-Annotationen \texttt{@Controller}, \texttt{@Service} und \texttt{@Repository}, die eine Klasse als Bestandteil der jeweiligen Schicht kennzeichnen und von Spring verwaltet werden \cite{springstereotypes}. Abbildung~\ref{fig:schichten} zeigt den Weg einer Anfrage durch diese Schichten. Der Nutzen liegt in der Austauschbarkeit und Testbarkeit: Die Geschäftslogik in einem Service lässt sich ohne Browser und ohne Datenbank prüfen, und die Oberfläche kann geändert werden, ohne die Logik anzufassen. Für diese Arbeit ist die Trennung auch organisatorisch wichtig, weil die beiden Verfasser unterschiedliche Schichten verantworten (siehe die Übersicht der Verantwortlichkeiten am Anfang der Arbeit).
+
+\begin{figure}[!htb]
+    \centering
+    \begin{tikzpicture}[
+        box/.style={draw, rounded corners=2pt, minimum width=2.2cm, minimum height=1cm, align=center, font=\small},
+        pfeil/.style={-{Stealth[length=2mm]}, thick},
+        node distance=1.1cm]
+        \node[box] (browser) {Browser};
+        \node[box, right=of browser] (controller) {Controller\\\texttt{@Controller}};
+        \node[box, right=of controller] (service) {Service\\\texttt{@Service}};
+        \node[box, right=of service] (repo) {Repository\\\texttt{@Repository}};
+        \node[box, right=of repo] (db) {Datenbank\\H2};
+        \node[box, below=0.7cm of controller] (view) {View\\Thymeleaf};
+        \draw[pfeil] (browser) -- node[above, font=\footnotesize] {HTTP} (controller);
+        \draw[pfeil] (controller) -- (service);
+        \draw[pfeil] (service) -- (repo);
+        \draw[pfeil] (repo) -- node[above, font=\footnotesize] {SQL} (db);
+        \draw[pfeil] (controller) -- node[right, font=\footnotesize] {Modell} (view);
+        \draw[pfeil] (view.west) -| node[pos=0.25, below, font=\footnotesize] {HTML} (browser.south);
+    \end{tikzpicture}
+    \caption{Weg einer Anfrage durch die Schichten einer Spring-MVC-Anwendung (eigene Darstellung)}
+    \label{fig:schichten}
+\end{figure}
+
+\subsection{Wege zur Offlinefähigkeit}
+Fällt die Verbindung zwischen Browser und Server aus, ist eine klassische Webanwendung nicht mehr nutzbar. Um sie im Sinne von Abschnitt~2.1.2 offlinefähig zu machen, gibt es zwei grundsätzliche Ansätze, die sich darin unterscheiden, wo Logik und Daten liegen. Abbildung~\ref{fig:offline} stellt beide gegenüber.
 
 \begin{figure}[!htb]
     \centering
@@ -529,12 +809,10 @@ Eine klassische Webanwendung besteht aus einem Server, der die Anwendungslogik a
         geraet/.style={box, minimum width=3.4cm},
         pfeil/.style={{Stealth[length=2mm]}-{Stealth[length=2mm]}, thick},
         titel/.style={font=\small\bfseries}]
-        % links: PWA
         \node[titel] at (-3.6,2.3) {Progressive Web App};
         \node[geraet] (pwa-client) at (-3.6,1) {Browser auf dem Endgerät\\Service Worker, Cache,\\Anwendungslogik};
         \node[geraet] (pwa-server) at (-3.6,-1.6) {Server des Anbieters\\Daten, Konten};
         \draw[pfeil, dashed] (pwa-client) -- node[right, font=\footnotesize, align=left] {Internet,\\Abgleich bei\\Verbindung} (pwa-server);
-        % rechts: lokaler Server
         \node[titel] at (3.6,2.3) {Lokaler Server (diese Arbeit)};
         \node[geraet] (pi) at (3.6,-1.6) {Raspberry Pi im WLAN\\Spring Boot, H2,\\alle Daten};
         \node[box] (c1) at (2.3,1) {Smartphone\\Browser};
@@ -548,56 +826,75 @@ Eine klassische Webanwendung besteht aus einem Server, der die Anwendungslogik a
     \label{fig:offline}
 \end{figure}
 
-Der erste Ansatz verlagert Logik und Daten in den Browser. Progressive Web Apps (PWA) nutzen dafür einen Service Worker, ein Skript, das im Hintergrund des Browsers läuft, Anfragen abfängt und zuvor zwischengespeicherte Seiten, Skripte und Daten auch ohne Netzverbindung ausliefert; Änderungen werden lokal gespeichert und bei der nächsten Verbindung mit dem Server abgeglichen \cite{mdnpwa, liebel2019}. Dieser Ansatz macht die Anwendung auf dem jeweiligen Endgerät unabhängig vom Netz, hat aber Folgen: Die Anwendungslogik muss in JavaScript im Browser laufen, der Offline-Stand gilt nur für das Gerät, auf dem er zwischengespeichert wurde, und die eigentliche Datenhaltung bleibt in der Regel beim Server des Anbieters. Die in Kapitel~3 betrachteten kommerziellen Apps arbeiten, auch wenn sie als native Apps und nicht als PWA umgesetzt sind, nach demselben Muster: Inhalte werden auf das Gerät geladen, die Daten liegen beim Anbieter.
+Progressive Web Apps (PWA) verlagern Logik und Daten in den Browser: Ein Service Worker, ein Skript im Hintergrund des Browsers, fängt Anfragen ab, liefert zuvor zwischengespeicherte Seiten und Daten auch ohne Netzverbindung aus und gleicht Änderungen bei der nächsten Verbindung mit dem Server ab; Ater beschreibt ihn als Stellvertreter zwischen Seite und Netz, der jede Anfrage abfangen, verändern oder selbst beantworten kann \cite[Kap.~2]{ater2017, mdnpwa}. Die Anwendungslogik muss dafür in JavaScript im Browser laufen, der Offline-Stand gilt nur für das jeweilige Gerät, und die Daten liegen weiterhin beim Anbieter. Hinzu kommt eine Einschränkung, die für ein Heimnetz ins Gewicht fällt: Ein Service Worker darf nur auf Seiten registriert werden, die über HTTPS ausgeliefert werden, mit Ausnahme von localhost \cite[Kap.~2]{ater2017}. Ein Server im WLAN ohne gültiges Zertifikat kann diesen Weg also nicht nutzen. Nach demselben Muster wie PWAs arbeiten auch die nativen Apps aus Kapitel~3.
 
-Der zweite Ansatz lässt die klassische Architektur unverändert und verlagert stattdessen den Server in das lokale Netzwerk der Nutzer. Die Anwendung läuft auf einem eigenen Gerät, hier dem Raspberry Pi, und alle Endgeräte im selben WLAN erreichen sie über den Browser. Eine Internetverbindung wird an keiner Stelle benötigt, die Daten verbleiben auf dem Pi, und mehrere Benutzer teilen sich dieselbe Anwendung und denselben Datenbestand. Für die Umsetzung genügt serverseitiges Rendering mit Thymeleaf; der Browser bleibt ein reiner Anzeigeclient. Der Preis dafür ist, dass die Anwendung nur dort erreichbar ist, wo der Pi erreichbar ist: zu Hause bei der Reisevorbereitung ohne Einschränkung, unterwegs nur, wenn der Pi mitgeführt und mit einem lokalen Netz, etwa dem Hotspot eines Smartphones, verbunden wird.
+Der Weg dieser Arbeit lässt die Architektur aus Abschnitt~2.5.1 unverändert und stellt stattdessen den Server in das lokale Netz der Nutzer. Die Anwendung läuft auf dem Raspberry Pi, alle Geräte im selben WLAN erreichen sie im Browser, und die Daten bleiben auf dem Pi. Mehrere Benutzer teilen sich dieselbe Anwendung und denselben Datenbestand; serverseitiges Rendering reicht aus, weil der Browser nichts selbst berechnen muss. Erreichbar ist die Anwendung allerdings nur, wo der Pi erreichbar ist: zu Hause bei der Reisevorbereitung ohne Einschränkung, unterwegs nur mit mitgeführtem Pi und einem lokalen Netz wie dem Hotspot eines Smartphones. Ausschlaggebend für diese Wahl waren die Datenhoheit der Nutzer, die gemeinsame Nutzung durch mehrere Profile und der einfache Client, der sich mit dem Stapel aus Abschnitt~2.6 umsetzen lässt. Die Einschränkung der Erreichbarkeit wird in Kapitel~8 kritisch reflektiert.
 
-Diese Arbeit wählt den zweiten Ansatz. Ausschlaggebend sind die Datenhoheit der Nutzer und die gemeinsame Nutzung durch mehrere Profile auf einem Gerät. Dazu kommt, dass der Client einfach bleibt und der Prototyp mit dem in Abschnitt~2.1 beschriebenen Stapel umsetzbar ist. Die Einschränkung der Erreichbarkeit wird in Kapitel~8 kritisch reflektiert. Kapitel~3 untersucht als Nächstes, welche vergleichbaren Systeme am Markt existieren und welche Lücke sie offenlassen.
+\subsection{Erreichbarkeit im lokalen Netz}
+Ein Server im Heimnetz hat eine IP-Adresse, die der Router vergibt und die sich ändern kann. Nutzer sollen diese Adresse nicht kennen müssen. Multicast DNS (mDNS) löst das Problem ohne zentralen Nameserver: Geräte im selben Netz beantworten Namensanfragen für die Endung \texttt{.local} selbst, indem sie auf eine Multicast-Anfrage mit ihrer aktuellen Adresse antworten \cite{rfc6762}. Raspberry Pi OS unterstützt das ab Werk; der Pi ist im Netz unter seinem Hostnamen mit der Endung \texttt{.local} erreichbar, etwa \texttt{raspberrypi.local} \cite{piremote}. Im Browser genügt dann dieser Name; die Einrichtung gehört zu Kapitel~6.
+
+\section{Verwendete Technologien}
+
+\subsection{Java}
+Java ist eine objektorientierte, plattformunabhängige Programmiersprache: Der Compiler erzeugt Bytecode, der von der Java Virtual Machine auf jedem unterstützten System ausgeführt wird, auch auf der ARM-Architektur des Raspberry Pi. Verwendet wird Java~21, eine Version mit Langzeitunterstützung, die im September 2023 im OpenJDK-Projekt veröffentlicht wurde \cite{openjdk21}.
+
+\subsection{Spring Boot}
+Spring Boot ist ein Framework auf Basis des Spring Frameworks, das eine Webanwendung samt eingebettetem Webserver als einzelne ausführbare Datei verpackt und durch Voreinstellungen den Konfigurationsaufwand gering hält \cite{springboot}. Es bringt Spring Web MVC für das Muster aus Abschnitt~2.5.2, die Stereotypen aus Abschnitt~2.5.4 und die Sitzungsverwaltung aus Abschnitt~2.5.3 mit. Auf dem Raspberry Pi genügt damit eine Java-Installation und eine Datei, um die Anwendung zu starten; ein separater Webserver ist nicht nötig.
+
+\subsection{Thymeleaf}
+Thymeleaf ist eine Template-Engine für serverseitiges Rendering: HTML-Vorlagen enthalten Platzhalter und Anweisungen in eigenen Attributen, die auf dem Server mit den Daten aus dem Modell gefüllt werden, sodass der Browser fertige Seiten erhält \cite{thymeleaf}. Die Vorlagen bleiben gültiges HTML und lassen sich auch ohne Server im Browser öffnen, was die Abstimmung zwischen Oberfläche und Logik erleichtert. Spring Boot bindet Thymeleaf als Standard-View-Technologie ein.
+
+\subsection{Bootstrap und WebJars}
+Bootstrap ist eine Sammlung von CSS-Klassen und JavaScript-Komponenten für responsive Oberflächen, die sich an die Bildschirmbreite anpassen \cite{bootstrapdocs}. Üblicherweise werden Bootstrap und seine Icons von einem Content Delivery Network im Internet geladen. Für einen Offline-Betrieb scheidet das aus. WebJars verpacken Web-Bibliotheken als Java-Archive, die über Maven wie jede andere Abhängigkeit in die Anwendung eingebunden und von dort ausgeliefert werden \cite{webjars}. Bootstrap und die Bootstrap Icons liegen so in der ausführbaren Datei und stehen ohne Internetverbindung zur Verfügung.
+
+\subsection{H2 und Jakarta Persistence}
+H2 ist eine relationale Datenbank, die in Java geschrieben ist und im eingebetteten Modus innerhalb der Anwendung läuft; ihre Daten legt sie in einer lokalen Datei ab \cite{h2db}. Ein eigener Datenbankserver entfällt, was auf dem Raspberry Pi Ressourcen spart und die Installation vereinfacht. Der Zugriff aus Java erfolgt über Jakarta Persistence, eine Spezifikation für die objekt-relationale Abbildung: Java-Klassen werden mit Annotationen als Entitäten gekennzeichnet, ihre Felder werden auf Tabellenspalten und ihre Verweise auf Fremdschlüssel abgebildet \cite{jakartapersistence}. Hibernate ist die Implementierung dieser Spezifikation, die Spring Boot standardmäßig verwendet; sie erzeugt aus den Entitätsklassen das Tabellenschema und übersetzt Objektzugriffe in SQL \cite{hibernate}. Die Entitäten entsprechen damit direkt dem ER-Modell aus Abschnitt~2.4.6.
+
+\subsection{Raspberry Pi 5 und Raspberry Pi OS}
+Der Raspberry Pi~5 ist ein Einplatinencomputer mit einem 64-Bit-Vierkernprozessor (Arm Cortex-A76, 2,4~GHz), wahlweise 1 bis 16~GB Arbeitsspeicher, Gigabit-Ethernet und WLAN nach 802.11ac \cite{raspberrypi5}. Für diese Arbeit wird die Variante mit 4~GB eingesetzt. Als Betriebssystem dient Raspberry Pi OS, eine Debian-basierte Linux-Distribution, die ohne grafische Oberfläche betrieben und über das Netzwerk verwaltet werden kann \cite{piremote}. Der Pi übernimmt im Prototyp die Rolle des lokalen Servers aus Abschnitt~2.5.5.
+
+\subsection{Maven und Git}
+Maven löst die Abhängigkeiten des Projekts auf, kompiliert, testet und erzeugt die ausführbare Datei; die Versionen aller Abhängigkeiten stehen in einer zentralen Projektdatei, sodass der Build überall dasselbe Ergebnis liefert \cite{maven}. Git verwaltet die Versionen von Code und Dokumentation in einem gemeinsamen Repository der beiden Verfasser \cite{git}.
+
+Kapitel~3 untersucht auf dieser Grundlage, welche vergleichbaren Systeme es am Markt gibt und welche Lücke sie offenlassen.
 
 % ============ 3-6: DURCHFÜHRUNG (Bearbeitung der Aufgaben) ============
 \chapter{Marktanalyse}
-Dieses Kapitel bearbeitet die Aufgaben 1.1 bis 1.3: Es stellt vergleichbare Systeme vor, bewertet sie anhand von Kriterien, die aus der Literatur abgeleitet sind, und bestimmt daraus die Marktlücke, die der Prototyp schließen soll. Die Analyse stützt sich auf die öffentlich zugängliche Produktdokumentation, die Preisseiten der Anbieter und die Beschreibungen in den App-Stores (Stand: 2.~November 2026). Ein eigener Praxistest der Anwendungen wurde nicht durchgeführt; die Aussagen beziehen sich daher auf die von den Herstellern dokumentierten Funktionen.
+Dieses Kapitel bearbeitet die Aufgaben 1.1 bis 1.3: Es stellt vergleichbare Systeme vor, bewertet sie anhand von Kriterien, die aus dem Qualitätsmodell in Abschnitt~2.3.1 abgeleitet sind, und bestimmt daraus die Marktlücke, die der Prototyp schließen soll. Abschnitt~3.1 beschreibt das Vorgehen, die Abschnitte~3.2 bis 3.4 die betrachteten Systeme nach Gruppen, Abschnitt~3.5 die Kriterien, Abschnitt~3.6 den Vergleich und Abschnitt~3.7 die Lücke. Die Marktanalyse wurde gemeinsam bearbeitet.
 
-\section{Vergleichbare Systeme}
-Betrachtet werden kommerzielle Reiseplaner, kommerzielle Sprachlern-Apps und quelloffene Anwendungen, die auf eigener Hardware betrieben werden (self-hosted). Aus jeder Gruppe wurden verbreitete Vertreter ausgewählt, deren Funktionsumfang sich mit dem geplanten Dashboard überschneidet.
+\section{Vorgehen und Quellen}
+Die Analyse stützt sich auf die öffentlich zugängliche Produktdokumentation, die Preisseiten der Anbieter und die Beschreibungen in den App-Stores (Stand: 2.~November 2026). Ein eigener Praxistest der Anwendungen wurde nicht durchgeführt; die Aussagen beziehen sich daher auf die von den Herstellern dokumentierten Funktionen. Betrachtet werden kommerzielle Reiseplaner, kommerzielle Sprachlern-Apps und quelloffene Anwendungen, die auf eigener Hardware betrieben werden (self-hosted). Aus jeder Gruppe wurden verbreitete Vertreter ausgewählt, deren Funktionsumfang sich mit dem geplanten Dashboard überschneidet. Die Umfrage in Kapitel~4 bestätigt die Auswahl im Nachhinein: Von den dort genannten Apps sind Wanderlog, Anki und Duolingo vertreten, letzteres wird in Abschnitt~3.3 eingeordnet.
 
-Wanderlog ist ein Reiseplaner für Web und Mobilgeräte, der Reiseziele, Tagespläne und Buchungen in einer gemeinsamen Karten- und Listenansicht zusammenführt und zusätzlich eine Budgetverfolgung anbietet. Die Grundversion ist kostenlos; der Offline-Zugriff auf die Reisepläne, die Routenoptimierung und der Export nach Google Maps sind der Pro-Version vorbehalten, die für 39,99~USD pro Jahr angeboten wird \cite{wanderlogpro}.
+\section{Reiseplaner}
 
-TripIt ist kein Planungswerkzeug im engeren Sinn, Packlisten oder ein Budget gibt es dort nicht. Die Anwendung erzeugt aus weitergeleiteten Buchungsbestätigungen automatisch einen Reiseplan und dient damit der Organisation bereits gebuchter Reisen. Der Reiseplan ist laut Hersteller auch ohne Internetverbindung abrufbar; Zusatzfunktionen wie Flugstatusmeldungen sind Teil des Abonnements TripIt Pro, das im deutschen App Store 48,99~EUR pro Jahr kostet \cite{tripitappstore}.
+\subsection{Wanderlog}
+Wanderlog ist ein Reiseplaner für Web und Mobilgeräte, der Reiseziele, Tagespläne und Buchungen in einer gemeinsamen Karten- und Listenansicht zusammenführt und zusätzlich eine Budgetverfolgung anbietet. Die Grundversion ist kostenlos; der Offline-Zugriff auf die Reisepläne, die Routenoptimierung und der Export nach Google Maps sind der Pro-Version vorbehalten, die für 39,99~USD pro Jahr angeboten wird \cite{wanderlogpro}. Vom Funktionsumfang her ist Wanderlog das Produkt, das dem Reisebereich des Prototyps am nächsten kommt.
 
-Für das Sprachenlernen wurden Anki und LingoDeer betrachtet. Anki ist ein quelloffenes Karteikartenprogramm, das Vokabeln nach dem Prinzip der verteilten Wiederholung (Spaced Repetition) abfragt. Die Desktop-Version ist kostenlos, die Karten werden lokal gespeichert, und der Abgleich zwischen Geräten über den Dienst AnkiWeb ist ein optionaler Zusatz \cite{anki}. Die iOS-Version AnkiMobile wird einmalig mit 29,99~EUR berechnet \cite{ankimobile}. Vorgefertigte Lektionen enthält Anki nicht; Inhalte müssen selbst erstellt oder aus geteilten Kartensätzen importiert werden.
+\subsection{TripIt}
+TripIt ist kein Planungswerkzeug im engeren Sinn, Packlisten oder ein Budget gibt es dort nicht. Die Anwendung erzeugt aus weitergeleiteten Buchungsbestätigungen automatisch einen Reiseplan und dient damit der Organisation bereits gebuchter Reisen. Der Reiseplan ist laut Hersteller auch ohne Internetverbindung abrufbar; Zusatzfunktionen wie Flugstatusmeldungen sind Teil des Abonnements TripIt Pro, das im deutschen App Store 48,99~EUR pro Jahr kostet \cite{tripitappstore}. TripIt steht hier für den Typ Reiseorganisator, bei dem die Daten aus Buchungs-E-Mails stammen und damit zwangsläufig über den Server des Anbieters laufen.
 
-LingoDeer ist eine kommerzielle Sprachlern-App mit Schwerpunkt auf ostasiatischen Sprachen wie Japanisch und Koreanisch, die strukturierte Lektionen, Vokabeln und Übungen bereitstellt und über einen Offline-Modus verfügt, für den die Lektionen vorab heruntergeladen werden \cite{lingodeerappstore}. Kostenlos sind lediglich die ersten Lektionen; der vollständige Zugang kostet 14,99~USD pro Monat beziehungsweise 95,99~USD pro Jahr \cite{lingodeerpricing}. Duolingo und Babbel, die in der Einleitung genannt wurden, werden nicht gesondert betrachtet, da LingoDeer als Vertreter der abonnementbasierten Sprachlern-Apps mit seinem Sprachangebot näher am Zielsprachenumfang dieser Arbeit liegt.
+\section{Sprachlern-Apps}
 
-Als Vertreter der self-hosted-Lösungen wurde AdventureLog aufgenommen, ein quelloffenes Reisetagebuch mit Reiseplanung und Weltkarte, das unter der GPL-3.0 steht und per Docker auf eigener Hardware betrieben wird \cite{adventurelog}. Die Daten verbleiben damit auf dem eigenen Server. Als Webanwendung ist AdventureLog allerdings nur nutzbar, solange der Client den Server erreicht; einen Sprachlernbereich gibt es nicht.
+\subsection{LingoDeer}
+LingoDeer ist eine kommerzielle Sprachlern-App mit Schwerpunkt auf ostasiatischen Sprachen wie Japanisch und Koreanisch, die strukturierte Lektionen, Vokabeln und Übungen bereitstellt und über einen Offline-Modus verfügt, für den die Lektionen vorab heruntergeladen werden \cite{lingodeerappstore}. Kostenlos sind lediglich die ersten Lektionen; der vollständige Zugang kostet 14,99~USD pro Monat beziehungsweise 95,99~USD pro Jahr \cite{lingodeerpricing}. Duolingo und Babbel, die in der Einleitung genannt wurden und die laut Umfrage am häufigsten genutzt werden, werden nicht gesondert betrachtet, da LingoDeer als Vertreter der abonnementbasierten Sprachlern-Apps mit seinem Sprachangebot näher am Zielsprachenumfang dieser Arbeit liegt.
+
+\subsection{Anki}
+Anki ist ein quelloffenes Karteikartenprogramm, das Vokabeln nach dem Prinzip der verteilten Wiederholung aus Abschnitt~2.2.2 abfragt. Die Desktop-Version ist kostenlos, die Karten werden lokal gespeichert, und der Abgleich zwischen Geräten über den Dienst AnkiWeb ist ein optionaler Zusatz \cite{anki}. Die iOS-Version AnkiMobile wird einmalig mit 29,99~EUR berechnet \cite{ankimobile}. Vorgefertigte Lektionen enthält Anki nicht; Inhalte müssen selbst erstellt oder aus geteilten Kartensätzen importiert werden. Anki ist damit das Gegenstück zu LingoDeer: lokal und offen, aber ohne Inhalte.
+
+\section{Self-hosted-Lösungen}
+
+\subsection{AdventureLog}
+Als Vertreter der self-hosted-Lösungen wurde AdventureLog aufgenommen, ein quelloffenes Reisetagebuch mit Reiseplanung und Weltkarte, das unter der GPL-3.0 steht und per Docker auf eigener Hardware betrieben wird \cite{adventurelog}. Die Daten verbleiben damit auf dem eigenen Server. Als Webanwendung ist AdventureLog allerdings nur nutzbar, solange der Client den Server erreicht; einen Sprachlernbereich gibt es nicht. Architektonisch entspricht AdventureLog dem zweiten Ansatz aus Abschnitt~2.5.5 und ist damit das Produkt, das dem Betriebsmodell des Prototyps am nächsten kommt.
 
 Für den Vergleich fehlen noch die Kriterien.
 
-\section{Bewertung nach Kriterien}
-Die Kriterien orientieren sich am Qualitätsmodell der Norm ISO/IEC~25010, die die Qualität eines Softwareprodukts in Merkmale wie funktionale Eignung, Zuverlässigkeit und Sicherheit gliedert \cite{iso25010}. Daraus wurden sechs Kriterien abgeleitet, die sich anhand der Herstellerangaben prüfen lassen. Die funktionale Eignung wird über drei Kriterien erfasst: den Umfang der Reisefunktionen (Reiseziele, Tagesplanung, Packliste, Budget), den Umfang der Sprachfunktionen (Vokabeln, Lektionen, Quiz, Fortschritt) und die Frage, ob beide Bereiche in einer Anwendung kombiniert sind. Die Offlinefähigkeit beschreibt, ob die Anwendung ohne Internetverbindung nutzbar ist, und betrifft damit die Zuverlässigkeit im Sinne der Verfügbarkeit. Die Datenhaltung erfasst, ob die Nutzerdaten lokal oder beim Anbieter gespeichert werden, und bildet die Vertraulichkeit aus dem Merkmal Sicherheit ab. Die Kosten sind kein Qualitätsmerkmal der Norm, für die Zielgruppe aber relevant und werden deshalb ergänzend aufgenommen.
+\section{Bewertungskriterien}
+Die Kriterien orientieren sich am Qualitätsmodell der ISO/IEC~25010 aus Abschnitt~2.3.1, beschränkt auf die Merkmale funktionale Eignung, Zuverlässigkeit und Sicherheit. Daraus wurden sechs Kriterien abgeleitet, die sich anhand der Herstellerangaben prüfen lassen. Die funktionale Eignung wird über drei Kriterien erfasst: den Umfang der Reisefunktionen (Reiseziele, Tagesplanung, Packliste, Budget), den Umfang der Sprachfunktionen (Vokabeln, Lektionen, Quiz, Fortschritt) und die Frage, ob beide Bereiche in einer Anwendung kombiniert sind. Die Offlinefähigkeit beschreibt, ob die Anwendung ohne Internetverbindung nutzbar ist, und betrifft damit die Zuverlässigkeit im Sinne der Verfügbarkeit. Die Datenhaltung erfasst, ob die Nutzerdaten lokal oder beim Anbieter gespeichert werden, und bildet die Vertraulichkeit aus dem Merkmal Sicherheit ab. Die Kosten sind kein Qualitätsmerkmal der Norm, für die Zielgruppe aber relevant und werden deshalb ergänzend aufgenommen.
 
-Die Gebrauchstauglichkeit nach ISO~9241-11, verstanden als Effektivität, Effizienz und Zufriedenheit in einem bestimmten Nutzungskontext \cite{iso9241}, lässt sich nur empirisch mit Nutzern beurteilen und ist deshalb nicht Teil dieses Vergleichs. Sie wird in Kapitel~7 für die Validierung des Prototyps herangezogen. Tabelle~\ref{tab:marktvergleich} fasst die Bewertung zusammen.
+Die Gebrauchstauglichkeit nach ISO~9241-11 (Abschnitt~2.3.2) lässt sich nur empirisch mit Nutzern beurteilen und ist deshalb nicht Teil dieses Vergleichs. Sie wird in Kapitel~7 für die Validierung des Prototyps herangezogen.
 
-Keines der betrachteten Systeme deckt beide Bereiche ab. Die Offlinefähigkeit ist bei den kommerziellen Produkten entweder an das kostenpflichtige Abonnement gebunden (Wanderlog, LingoDeer) oder auf den Abruf bereits angelegter Pläne beschränkt (TripIt). Eine lokale Datenhaltung bieten nur Anki und AdventureLog, also die beiden quelloffenen Anwendungen; die übrigen Produkte sind kontobasierte Cloud-Dienste, bei denen die Daten beim Anbieter liegen.
-
-\begin{figure}[!htb]
-    \centering
-    \begin{tikzpicture}[font=\small]
-        \draw (0,0) rectangle (10,4.4);
-        \draw (5,0) -- (5,4.4);
-        \draw (0,2.2) -- (10,2.2);
-        \node[above, font=\small\bfseries] at (2.5,4.4) {nur ein Bereich};
-        \node[above, font=\small\bfseries] at (7.5,4.4) {Reise und Sprache kombiniert};
-        \node[rotate=90, font=\small\bfseries, anchor=south, align=center] at (-0.15,3.3) {offline,\\lokal};
-        \node[rotate=90, font=\small\bfseries, anchor=south, align=center] at (-0.15,1.1) {cloud-\\gebunden};
-        \node[align=center] at (2.5,3.3) {Anki (Sprache)\\AdventureLog (Reise)};
-        \node[align=center] at (2.5,1.1) {Wanderlog, TripIt (Reise)\\LingoDeer (Sprache)};
-        \node[align=center, draw, rounded corners=2pt, fill=black!12, thick, inner sep=6pt] at (7.5,3.3) {Prototyp dieser Arbeit};
-        \node[align=center, text=black!60] at (7.5,1.1) {kein betrachtetes System};
-    \end{tikzpicture}
-    \caption{Einordnung der betrachteten Systeme nach Funktionsumfang und Betriebsmodell (eigene Darstellung)}
-    \label{fig:luecke}
-\end{figure}
+\section{Vergleich}
+Tabelle~\ref{tab:marktvergleich} fasst die Bewertung der fünf Systeme nach den sechs Kriterien zusammen; die letzte Zeile zeigt zum Vergleich den angestrebten Prototyp.
 
 \begin{table}[!htb]
     \centering
@@ -620,66 +917,152 @@ Keines der betrachteten Systeme deckt beide Bereiche ab. Die Offlinefähigkeit i
     \label{tab:marktvergleich}
 \end{table}
 
+Keines der betrachteten Systeme deckt beide Bereiche ab. Die Offlinefähigkeit ist bei den kommerziellen Produkten entweder an das kostenpflichtige Abonnement gebunden (Wanderlog, LingoDeer) oder auf den Abruf bereits angelegter Pläne beschränkt (TripIt). Eine lokale Datenhaltung bieten nur Anki und AdventureLog, also die beiden quelloffenen Anwendungen; die übrigen Produkte sind kontobasierte Cloud-Dienste, bei denen die Daten beim Anbieter liegen. Abbildung~\ref{fig:luecke} ordnet die Systeme nach den beiden Dimensionen ein, die den Prototyp ausmachen.
+
+\begin{figure}[!htb]
+    \centering
+    \begin{tikzpicture}[font=\small]
+        \draw (0,0) rectangle (10,4.4);
+        \draw (5,0) -- (5,4.4);
+        \draw (0,2.2) -- (10,2.2);
+        \node[above, font=\small\bfseries] at (2.5,4.4) {nur ein Bereich};
+        \node[above, font=\small\bfseries] at (7.5,4.4) {Reise und Sprache kombiniert};
+        \node[rotate=90, font=\small\bfseries, anchor=south, align=center] at (-0.15,3.3) {offline,\\lokal};
+        \node[rotate=90, font=\small\bfseries, anchor=south, align=center] at (-0.15,1.1) {cloud-\\gebunden};
+        \node[align=center] at (2.5,3.3) {Anki (Sprache)\\AdventureLog (Reise)};
+        \node[align=center] at (2.5,1.1) {Wanderlog, TripIt (Reise)\\LingoDeer (Sprache)};
+        \node[align=center, draw, rounded corners=2pt, fill=black!12, thick, inner sep=6pt] at (7.5,3.3) {Prototyp dieser Arbeit};
+        \node[align=center, text=black!60] at (7.5,1.1) {kein betrachtetes System};
+    \end{tikzpicture}
+    \caption{Einordnung der betrachteten Systeme nach Funktionsumfang und Betriebsmodell (eigene Darstellung)}
+    \label{fig:luecke}
+\end{figure}
+
 \section{Abgeleitete Lücke}
 Der Vergleich zeigt, dass Reiseplanung und Sprachenlernen am Markt getrennt bedient werden. Für die Reiseplanung gibt es Produkte, die aber entweder cloudgebunden sind oder, wie AdventureLog, zwar lokal betrieben werden, jedoch keinen Sprachlernbereich bieten. Für das Sprachenlernen gilt das Umgekehrte: LingoDeer liefert fertige Lerninhalte, bindet sie aber an ein Abonnement und an die Infrastruktur des Anbieters; Anki arbeitet lokal und offline, bringt aber weder Lerninhalte noch einen Reisebezug mit.
 
-Die Lücke liegt in der Kombination: beide Bereiche in einer Anwendung, vollständige Offlinefähigkeit, Datenhaltung auf eigener Hardware und keine laufenden Kosten gibt es jeweils einzeln, aber in keinem der Systeme zusammen. Abbildung~\ref{fig:luecke} ordnet die Systeme nach den beiden Dimensionen ein, die den Prototyp ausmachen. Lokale Datenhaltung findet sich bei Anki und AdventureLog, der Funktionsumfang orientiert sich an Wanderlog und LingoDeer. Der Prototyp soll diese vier Eigenschaften zusammen erfüllen. Damit ist Aufgabe~1 bearbeitet. Ob potenzielle Nutzer diese Lücke ebenso sehen und welche Funktionen ihnen wichtig sind, klärt Kapitel~4.
+Die Lücke liegt in der Kombination: beide Bereiche in einer Anwendung, vollständige Offlinefähigkeit, Datenhaltung auf eigener Hardware und keine laufenden Kosten gibt es jeweils einzeln, aber in keinem der Systeme zusammen. Lokale Datenhaltung findet sich bei Anki und AdventureLog, der Funktionsumfang orientiert sich an Wanderlog und LingoDeer. Der Prototyp soll diese vier Eigenschaften zusammen erfüllen. Damit ist Aufgabe~1 bearbeitet. Ob potenzielle Nutzer diese Lücke ebenso sehen und welche Funktionen ihnen wichtig sind, klärt Kapitel~4.
 
-% Platzhalterzeilen in den leeren Kapiteln: ohne Text kann LaTeX zwischen den Ueberschriften
-% nicht umbrechen (ergab eine leere Seite). Beim Schreiben einfach ersetzen.
+% Gliederung der Kapitel 4 bis 10 als Skelett (05.11.2026). Platzhalterzeilen beim Schreiben ersetzen;
+% ohne Text kann LaTeX zwischen leeren Ueberschriften nicht umbrechen.
+% Kapitel 4 und 5: Schayan. Kapitel 6: Backend Michael, Frontend/Daten/Pi Schayan. Kapitel 7 bis 10: gemeinsam.
 \chapter{Anforderungsanalyse}
 Dieses Kapitel wird derzeit bearbeitet.
-\section{Umfrage und Datenerhebung}
+\section{Umfrage}
+\subsection{Entwicklung des Fragebogens}
+\subsection{Teilnehmer und Durchführung}
+\subsection{Ergebnisse der geschlossenen Fragen}
+\subsection{Freitextantworten}
+\subsection{Limitationen}
+\section{Use Cases}
+\subsection{Akteur}
+\subsection{Anwendungsfalldiagramm}
+\subsection{Beschreibung der Anwendungsfälle}
 \section{Funktionale Anforderungen}
+\subsection{Reisebereich}
+\subsection{Sprachbereich}
+\subsection{Benutzer und Profile}
 \section{Nichtfunktionale Anforderungen}
 \section{Priorisierung (MoSCoW)}
 
 \chapter{Konzeption}
 Dieses Kapitel wird derzeit bearbeitet.
 \section{Systemarchitektur}
+\subsection{Schichten der Anwendung}
+\subsection{Verteilung auf Raspberry Pi und Endgeräte}
+\subsection{Technologieentscheidungen}
 \section{Datenmodell}
-\section{Oberfläche und Wireframes}
+\subsection{ER-Modell}
+\subsection{Reisebereich}
+\subsection{Sprachbereich}
+\subsection{Lernfortschritt}
+\section{Oberfläche}
+\subsection{Navigationskonzept}
+\subsection{Reise-Screens}
+\subsection{Sprach-Screens}
+\subsection{Mockups}
+\section{Sicherheitskonzept}
 
 \chapter{Implementierung}
 Dieses Kapitel folgt mit der Implementierung des Prototyps.
+\section{Projektstruktur und Build}
 \section{Backend}
+\subsection{Profilauswahl und Sitzung}
+\subsection{Reise-Services}
+\subsection{Wiederholungslogik}
+\subsection{Quiz}
 \section{Frontend}
+\subsection{Templates}
+\subsection{Bootstrap im Offline-Betrieb}
 \section{Datenhaltung}
+\subsection{Entities und Repositories}
+\subsection{H2-Datenbankdatei}
+\subsection{Laden der Sprachdaten}
 \section{Betrieb auf dem Raspberry Pi}
+\subsection{Betriebssystem und Java}
+\subsection{Dienst und Autostart}
+\subsection{Hostname und Erreichbarkeit}
+\section{Automatisierte Tests}
 
 % ============================ 7 ERGEBNIS (Evaluation) ============================
 \chapter{Evaluation}
 Dieses Kapitel folgt nach der Implementierung.
-\section{Verifikation (Funktions- und Datenbanktests)}
-\section{Validierung (Usability-Test)}
+\section{Verifikation}
+\subsection{Unit-Tests}
+\subsection{Funktionstests je Anwendungsfall}
+\subsection{Datenbanktests}
+\subsection{Offline-Test}
+\subsection{Antwortzeiten}
+\section{Validierung}
+\subsection{Testdesign}
+\subsection{Teilnehmer}
+\subsection{Aufgaben}
+\subsection{Ergebnis des System Usability Scale}
+\subsection{Beobachtungen}
+\section{Abgleich mit den Anforderungen}
 
 % ============================ 8 KRITISCHE REFLEXION ============================
 \chapter{Kritische Reflexion}
 Dieses Kapitel folgt nach der Evaluation.
+\section{Methodik}
+\section{Prototyp}
+\section{Vorgehen und Zusammenarbeit}
 
 % ============================ 9 AUSBLICK ============================
 \chapter{Ausblick}
 Dieses Kapitel folgt nach der Evaluation.
+\section{Funktionale Erweiterungen}
+\section{Technische Erweiterungen}
+\section{Weitere Untersuchungen}
 
 % ============================ 10 METHODEN UND VERFAHREN ============================
 % HINWEIS (Schultheis): dieses Kapitel ZULETZT schreiben (Versionen am Ende fixieren).
-% Stand der Versionen: pom.xml im Repo (02.11.2026).
+% Stand der Versionen: pom.xml im Repo (04.11.2026).
 \chapter{Methoden und Verfahren}
+Dieses Kapitel wird zum Abschluss der Arbeit vervollständigt.
 \section{Vorgehen}
 \section{Eingesetzte Werkzeuge und Versionen}
-\begin{tabular}{lll}
-    \toprule
-    Werkzeug / Bibliothek & Version & Zweck \\
-    \midrule
-    Java (OpenJDK) & 21 & Programmiersprache \\
-    Spring Boot & 3.5.16 & Backend-Framework \\
-    Thymeleaf & 3.1.5 & Server-seitiges Rendering \\
-    Bootstrap & 5.3.8 & Oberfläche \\
-    Bootstrap Icons & 1.13.2 & Icons \\
-    H2 Database & 2.3.232 & lokale Datenbank \\
-    Maven & 3.10.0 & Build \\
-    \bottomrule
-\end{tabular}
+Tabelle~\ref{tab:versionen} listet die verwendeten Werkzeuge und Bibliotheken mit den Versionen, die zum Abgabezeitpunkt in der \texttt{pom.xml} des Projekts stehen.
+\begin{table}[!htb]
+    \centering
+    \begin{tabular}{lll}
+        \toprule
+        Werkzeug / Bibliothek & Version & Zweck \\
+        \midrule
+        Java (OpenJDK) & 21 & Programmiersprache \\
+        Spring Boot & 3.5.16 & Backend-Framework \\
+        Thymeleaf & 3.1.5 & Server-seitiges Rendering \\
+        Bootstrap & 5.3.8 & Oberfläche \\
+        Bootstrap Icons & 1.13.2 & Icons \\
+        H2 Database & 2.3.232 & lokale Datenbank \\
+        Maven & 3.10.0 & Build \\
+        \bottomrule
+    \end{tabular}
+    \caption{Eingesetzte Werkzeuge und Bibliotheken mit Versionen (Stand 4. November 2026)}
+    \label{tab:versionen}
+\end{table}
+\section{Nachvollziehbarkeit}
+
 
 % ============================ LITERATUR ============================
 \clearpage
