@@ -3,7 +3,7 @@
 Abgeleitet aus den Anforderungen (`docs/recherche/anforderungen.md`). Das UML-Use-Case-Diagramm dazu liegt in `use-case-diagramm.svg`.
 
 ## Akteur
-- Reisende/r: ein einzelner Nutzer. Die App läuft lokal auf dem Raspberry Pi, ohne Account und ohne Login. Es gibt also nur einen Akteur.
+- Reisende/r: die Person, die den Pi gerade benutzt. Die App läuft lokal, ohne Account und ohne Passwort; wer sie nutzt, wählt beim Start nur sein Profil aus (mehrere Profile auf einem Pi, damit sich Reisen und Lernstände nicht vermischen). Es gibt also nur einen Akteur.
 
 ## Use Cases im Überblick
 Reisebereich:

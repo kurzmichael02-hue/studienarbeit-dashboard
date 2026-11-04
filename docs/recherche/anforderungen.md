@@ -1,12 +1,12 @@
 # Anforderungen
 
-Abgeleitet aus der Umfrage (12 Teilnehmer, anonym). Rohdaten im Studium-Ordner (Umfrage_Rohdaten_1-12.xlsx). Priorisierung aus den Bewertungen (quantitativ) und den Freitext-Antworten (qualitativ).
+Abgeleitet aus der Umfrage (12 Teilnehmer, anonym, MS Forms, 9. bis 11. Oktober 2026, verteilt über Kontakte und SurveyCircle). Rohdaten im Studium-Ordner (Umfrage_Rohdaten_1-12.xlsx). Priorisierung aus den Bewertungen (quantitativ) und den Freitext-Antworten (qualitativ).
 
 ## Überblick der Stichprobe
-- Reisehäufigkeit: überwiegend mehrmals im Jahr (8), dazu etwa 1x im Jahr (3), selten (1).
+- Reisehäufigkeit: überwiegend mehrmals im Jahr (9), dazu etwa 1x im Jahr (2), selten (1).
 - Sprache vor der Reise lernen: 3x immer, 6x manchmal, 3x nie.
-- Genutzte Apps: Reise vor allem Google Maps und Notizen-App, Sprache vor allem Duolingo (dazu Anki, Babbel).
-- 11 von 12 würden so eine App grundsätzlich nutzen.
+- Genutzte Apps: Reise vor allem Notizen-App (9) und Google Maps (8), Wanderlog nur 1x. Sprache vor allem Duolingo (8), dazu Anki (3), Babbel (2), 3x keine.
+- Würden so eine App nutzen: 6x ja, 5x vielleicht, 1x nein.
 - Altersgruppen: vor allem 18-25 (7), dazu 26-35 (2), 36-50 (1), über 50 (2).
 
 ## Wichtigkeit der Funktionen (Durchschnitt 1-5, n=12)
@@ -24,7 +24,7 @@ Abgeleitet aus der Umfrage (12 Teilnehmer, anonym). Rohdaten im Studium-Ordner (
 | Notizen | 2,8 |
 | Quiz | 2,5 |
 
-Vokabeln und Reisephrasen liegen im Schnitt nur bei 3,1, weil 3 Teilnehmer nie Sprache lernen und dort 1 gaben. Bei den Sprachlernenden sind Reisephrasen klar wichtig, und im Freitext ist der Sprachteil ein Hauptargument.
+Vokabeln und Reisephrasen liegen im Schnitt nur bei 3,1, weil 3 Teilnehmer nie Sprache lernen und dort 1 gaben. Nur die 9 Sprachlernenden gerechnet: Reisephrasen 3,6, Vokabeln 3,3, Lernfortschritt 2,9, Quiz 2,3. Im Freitext ist der Sprachteil ein Hauptargument.
 
 ## Was die Teilnehmer im Freitext sagen
 - Hauptschmerz, mehrfach genannt: alles auf mehrere Apps verteilt, ständiges Wechseln ("reiseplan in der einen, sprache in der anderen, und offline geht duolingo kaum").

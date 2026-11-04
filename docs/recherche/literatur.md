@@ -42,7 +42,44 @@ Systematische Erhebung von Anforderungen: Interviews, Leitfaden, Fragebogen-Desi
 - KIT: Anforderungsmanagement. https://publikationen.bibliothek.kit.edu/1000028693/2225737
 - Dresing & Pehl: Praxisbuch Interview, Transkription und Analyse. Buch.
 
+## Im Bericht bereits verwendet (Stand 05.11.2026, 53 Quellen)
+Zitierweise: IEEE (numerisch, biblatex/biber), Bib liegt in `docs/bericht/main.tex`. Volltexte der Normen und der Springer-Kapitel liegen nicht im Repo (Lizenz), nur bei uns lokal. Alle DOIs über Crossref, alle URLs per Abruf geprüft.
+
+Normen und Standards
+- ISO/IEC 25010:2023 und DIN EN ISO 9241-11:2018, beide über Nautos (DHBW-Bibliothek) als Volltext.
+- ISO 9:1995 (Transliteration Kyrillisch). RFC 9110 (HTTP), RFC 6265 (Cookies), RFC 6762 (mDNS). OMG UML 2.5.1.
+- DSGVO, Verordnung (EU) 2016/679 (EUR-Lex), Art. 5 Datenminimierung.
+
+Bücher und Buchkapitel
+- Herrmann (2022): Grundlagen der Anforderungsanalyse, Springer Vieweg, Kap. 1, 5, 9 (SpringerLink).
+- Döring/Bortz (2016): Forschungsmethoden und Evaluation, 5. Aufl., Springer, Kap. 9 Stichprobenziehung (SpringerLink).
+- Wexler/Shaffer/Cotgreave (2017): The Big Book of Dashboards, Wiley (O'Reilly Learning, Einleitung gelesen). Dashboard-Definition.
+- Few (2006): Information Dashboard Design, O'Reilly. Engere Dashboard-Definition, S. 34 (gelesen über die Leihbibliothek von archive.org, print auch in der DHBW-Bib).
+- Ebbinghaus (1885): Über das Gedächtnis, Volltext auf archive.org.
+- Leitner (1999): So lernt man lernen, Weltbild-Lizenzausgabe der Herder-Erstauflage 1972. Lernkartei S. 64, Regel für die fünf Fächer S. 71 (gelesen über die Leihbibliothek von archive.org).
+- Clegg/Barker (1994): Case Method Fast-Track, Addison-Wesley. MoSCoW.
+- Ater (2017): Building Progressive Web Apps, O'Reilly (O'Reilly Learning, Kap. 2 gelesen). Service Worker, HTTPS-Pflicht. Ersetzt Liebel (2019), der nur print verfügbar ist.
+- Brooke (1996): SUS, A Quick and Dirty Usability Scale, in Usability Evaluation in Industry, Taylor & Francis.
+
+Zeitschriften und Konferenzen
+- Falcón/Arias (2024): Instrumental and Integrative Motivation in University Students, Revista Scientific 9(34).
+- Cepeda et al. (2006): Distributed practice in verbal recall tasks, Psychological Bulletin 132(3). Meta-Analyse zum verteilten Lernen.
+- Karpicke/Roediger (2008): The Critical Importance of Retrieval for Learning, Science 319(5865). Abrufen schlägt Wiederlesen.
+- Nielsen/Molich (1990): Heuristic evaluation of user interfaces, CHI '90. Nielsen/Landauer (1993): A mathematical model of the finding of usability problems, CHI '93 (warum 5 Testnutzer).
+- Bangor/Kortum/Miller (2008): An Empirical Evaluation of the SUS, Int. J. Human-Computer Interaction 24(6). Vergleichswerte.
+- Chen (1976): The entity-relationship model, ACM TODS 1(1). Likert (1932): A Technique for the Measurement of Attitudes, Archives of Psychology 140.
+
+Berichte und Behörden
+- FUR Reiseanalyse 2026 (Erste Ergebnisse), Bundesnetzagentur (Roaming 2023), Verbraucherzentrale NRW (Roaming).
+- Council of Europe (2020): CEFR Companion Volume (Sprachniveaus A1/A2).
+- Library of Congress: ALA-LC Romanization Tables Japanese. National Institute of Korean Language: Romanization of Korean.
+
+Offizielle Dokumentation (für Technik-Fakten)
+- Spring Boot Reference, Spring Framework Reference (Web MVC, Stereotypes), Thymeleaf, Bootstrap 5.3, WebJars, H2, Jakarta Persistence 3.1, Hibernate ORM, OpenJDK 21, Maven, Git, Raspberry Pi 5 (Produktseite + Remote-Access-Doku), MDN (PWA), Nielsen/NN/g (10 Heuristiken, 5 Users), SurveyCircle.
+
+Marktanalyse
+- Preis- und App-Store-Seiten von Wanderlog, TripIt, Anki, LingoDeer, AdventureLog (siehe marktanalyse.md).
+
 ## Offen
-- Schwache Quellen (reine Blogs) durch Fachquellen ersetzen.
-- ISO-Normen über die DHBW-Bibliothek besorgen.
-- Zitierweise mit Jürgen klären, dann einheitlich.
+- Clegg/Barker (1994) ist als einzige Quelle noch nicht im Original gelesen, nur per Fernleihe über den DHBW-Katalog zu bekommen. Few und Leitner sind seit dem 05.11.2026 über archive.org geprüft.
+- Blog-Quellen aus der Startliste oben werden nicht verwendet. Weitere Fachartikel kommen mit Kapitel 7 (Usability-Test) dazu.
