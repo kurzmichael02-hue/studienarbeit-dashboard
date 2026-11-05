@@ -1,21 +1,22 @@
 package de.dhbw.reisedashboard.model;
 
 
-import java.time.LocalDateTime;
-import java.math.BigDecimal;
+import java.time.LocalDate;
+
+import java.time.LocalTime;
 
 
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "aktivitaet")
+@Table(name = "ausgabe")
 
 
 public class Aktivitaet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer aktivitaetID;
+    private Integer ausgabeID;
 
     //Fremdschlüssel von Reise ID
     @ManyToOne(fetch = FetchType.LAZY)
@@ -23,27 +24,27 @@ public class Aktivitaet {
     private Reise reise;
 
     @Column(nullable = false)
-    private String kategorie;
+    private LocalDate datum;
 
     @Column(nullable = false)
-    private BigDecimal betrag;
+    private LocalTime uhrzeit;
 
     @Column(nullable = false)
-    private LocalDateTime datum;
+    private String titel;
 
     public Aktivitaet(){
 
     }
 
-    public Aktivitaet(Reise reise, String kategorie, BigDecimal betrag, LocalDateTime datum){
+    public Aktivitaet(Reise reise, LocalDate datum, LocalTime uhrzeit, String titel){
         this.reise = reise;
-        this.kategorie = kategorie;
-        this.betrag = betrag;
         this.datum = datum;
+        this.uhrzeit = uhrzeit;
+        this.titel = titel;
     }
 
-    public Integer getAktivitaetID(){
-        return aktivitaetID;
+    public Integer getAusgabeID(){
+        return ausgabeID;
     }
 
     public Reise getReise(){
@@ -53,25 +54,24 @@ public class Aktivitaet {
         this.reise = reise;
     }
 
-    public String getKategorie(){
-        return kategorie;
-    }
-    public void setKategorie(String kategorie){
-        this.kategorie = kategorie;
-    }
-
-    public BigDecimal getBetrag(){
-        return betrag;
-    }
-    public void setBetrag(BigDecimal betrag){
-        this.betrag = betrag;
-    }
-
-    public LocalDateTime getDatum(){
+    public LocalDate getDatum(){
         return datum;
     }
-    public void setDatum(LocalDateTime datum){
+    public void setDatum(LocalDate datum){
         this.datum = datum;
     }
-}
 
+    public LocalTime getUhrzeit(){
+        return uhrzeit;
+    }
+    public void setUhrzeit(LocalTime uhrzeit){
+        this.uhrzeit = uhrzeit;
+    }
+
+    public String getTitel(){
+        return titel;
+    }
+    public void setTitel(String titel){
+        this.titel = titel;
+    }
+}
