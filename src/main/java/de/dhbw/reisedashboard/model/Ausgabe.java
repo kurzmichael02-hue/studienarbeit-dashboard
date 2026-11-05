@@ -8,14 +8,14 @@ import java.math.BigDecimal;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "aktivitaet")
+@Table(name = "ausgabe")
 
 
 public class Ausgabe {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer aktivitaetID;
+    private Integer ausgabeID;
 
     //Fremdschlüssel von Reise ID
     @ManyToOne(fetch = FetchType.LAZY)
@@ -42,8 +42,8 @@ public class Ausgabe {
         this.datum = datum;
     }
 
-    public Integer getAktivitaetID(){
-        return aktivitaetID;
+    public Integer getAusgabeID(){
+        return ausgabeID;
     }
 
     public Reise getReise(){

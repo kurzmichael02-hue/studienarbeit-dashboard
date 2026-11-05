@@ -9,14 +9,14 @@ import java.time.LocalTime;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "ausgabe")
+@Table(name = "aktivität")
 
 
 public class Aktivitaet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer ausgabeID;
+    private Integer aktivitaetID;
 
     //Fremdschlüssel von Reise ID
     @ManyToOne(fetch = FetchType.LAZY)
@@ -43,8 +43,8 @@ public class Aktivitaet {
         this.titel = titel;
     }
 
-    public Integer getAusgabeID(){
-        return ausgabeID;
+    public Integer getAktivitaetID(){
+        return aktivitaetID;
     }
 
     public Reise getReise(){
