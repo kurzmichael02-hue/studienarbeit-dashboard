@@ -11,8 +11,9 @@ public class WebConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new LoginInterceptor())
                 .addPathPatterns("/**")
-                // Login-Seite selbst, Logout und die statischen Dateien muessen ohne Session gehen,
-                // sonst kommt die Login-Seite ohne CSS und man kaeme nie rein.
-                .excludePathPatterns("/login", "/logout", "/error", "/css/**", "/webjars/**");
+                // Login-Seite selbst, das Anlegen eines neuen Profils, Logout und die statischen
+                // Dateien muessen ohne Session gehen, sonst kommt die Login-Seite ohne CSS und man
+                // kaeme nie rein (und koennte sich nie das erste Profil anlegen).
+                .excludePathPatterns("/login", "/benutzer/neu", "/logout", "/error", "/css/**", "/webjars/**");
     }
 }

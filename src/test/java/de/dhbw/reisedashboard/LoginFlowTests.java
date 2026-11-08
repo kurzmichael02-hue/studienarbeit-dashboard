@@ -1,12 +1,16 @@
 package de.dhbw.reisedashboard;
 
 import de.dhbw.reisedashboard.config.LoginInterceptor;
+import de.dhbw.reisedashboard.model.Benutzer;
+import de.dhbw.reisedashboard.repository.BenutzerRepository;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.mock.web.MockHttpSession;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.transaction.annotation.Transactional;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -16,10 +20,20 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
+@Transactional
 class LoginFlowTests {
 
     @Autowired
     private MockMvc mockMvc;
+    @Autowired
+    private BenutzerRepository benutzerRepository;
+
+    private Integer benutzerId;
+
+    @BeforeEach
+    void profilAnlegen() {
+        benutzerId = benutzerRepository.save(new Benutzer("Michael", "Kurz", 0)).getBenutzerID();
+    }
 
     @Test
     void ohneSessionGehtsZurLoginSeite() throws Exception {
@@ -31,7 +45,7 @@ class LoginFlowTests {
     @Test
     void mitSessionKommtManRein() throws Exception {
         MockHttpSession session = new MockHttpSession();
-        session.setAttribute(LoginInterceptor.SESSION_BENUTZER, 1L);
+        session.setAttribute(LoginInterceptor.SESSION_BENUTZER, benutzerId);
 
         mockMvc.perform(get("/").session(session))
                 .andExpect(status().isOk());
@@ -39,16 +53,31 @@ class LoginFlowTests {
 
     @Test
     void anmeldenSetztSessionUndLeitetUm() throws Exception {
-        mockMvc.perform(post("/login").param("benutzerId", "1"))
+        mockMvc.perform(post("/login").param("benutzerId", benutzerId.toString()))
                 .andExpect(status().is3xxRedirection())
                 .andExpect(redirectedUrl("/"))
-                .andExpect(request().sessionAttribute(LoginInterceptor.SESSION_BENUTZER, 1L));
+                .andExpect(request().sessionAttribute(LoginInterceptor.SESSION_BENUTZER, benutzerId));
+    }
+
+    @Test
+    void unbekanntesProfilKommtNichtRein() throws Exception {
+        mockMvc.perform(post("/login").param("benutzerId", "99999"))
+                .andExpect(status().is3xxRedirection())
+                .andExpect(redirectedUrl("/login"))
+                .andExpect(request().sessionAttribute(LoginInterceptor.SESSION_BENUTZER, (Object) null));
+    }
+
+    @Test
+    void neuesProfilWirdAngelegtUndAngemeldet() throws Exception {
+        mockMvc.perform(post("/benutzer/neu").param("vorname", "Schayan").param("nachname", "Goudarzi"))
+                .andExpect(status().is3xxRedirection())
+                .andExpect(redirectedUrl("/"));
     }
 
     @Test
     void abmeldenLoeschtSession() throws Exception {
         MockHttpSession session = new MockHttpSession();
-        session.setAttribute(LoginInterceptor.SESSION_BENUTZER, 1L);
+        session.setAttribute(LoginInterceptor.SESSION_BENUTZER, benutzerId);
 
         mockMvc.perform(post("/logout").session(session))
                 .andExpect(status().is3xxRedirection())
