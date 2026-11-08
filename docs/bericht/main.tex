@@ -212,12 +212,11 @@
   year      = {2022},
   doi       = {10.1007/978-3-658-35460-2}
 }
-@book{clegg1994,
-  author    = {Clegg, Dai and Barker, Richard},
-  title     = {Case Method Fast-Track: A RAD Approach},
-  publisher = {Addison-Wesley},
-  address   = {Wokingham},
-  year      = {1994}
+@online{agilebusiness,
+  author    = {{Agile Business Consortium}},
+  title     = {What is MoSCoW Prioritization?},
+  url       = {https://www.agilebusiness.org/resource/what-is-moscow-prioritization/},
+  urldate   = {2026-11-05}
 }
 @book{doering2016,
   author    = {Döring, Nicola and Bortz, Jürgen},
@@ -754,7 +753,7 @@ Als Erhebungstechnik kommt in dieser Arbeit eine quantitative Online-Befragung m
 Die Teilnehmenden einer Befragung können selten zufällig aus der Zielgruppe gezogen werden. Werden stattdessen Personen einbezogen, die gerade zur Verfügung stehen oder leicht zugänglich sind, etwa über persönliche Kontakte oder eine öffentliche Online-Umfrage, spricht man von einer Gelegenheitsstichprobe. Das Schneeballverfahren geht einen Schritt weiter: Teilnehmende werden gebeten, die Befragung in ihren eigenen Netzwerken weiterzugeben. Beide Verfahren sind nach Döring und Bortz nicht-probabilistisch und können keine Repräsentativität beanspruchen; Rückschlüsse sind nur auf die Gesamtheit möglich, aus der die Stichprobe tatsächlich stammt \cite[Abschn.~9.3.1]{doering2016}. Die Umfrage in Kapitel~4 beschreibt deshalb nur den befragten Personenkreis.
 
 \subsection{Priorisierung mit MoSCoW}
-Zur Priorisierung der ermittelten Anforderungen dient die MoSCoW-Methode, die jede Anforderung einer von vier Klassen zuordnet: Must (zwingend), Should (wichtig, aber nicht zwingend), Could (wünschenswert) und Won't (bewusst ausgeschlossen) \cite{clegg1994}. Sie wurde für die schnelle Anwendungsentwicklung entworfen und eignet sich für einen Prototyp mit begrenzter Entwicklungszeit, weil sie den verbindlichen Kern von den Erweiterungen trennt und mit der Won't-Klasse auch festhält, was nicht gebaut wird.
+Zur Priorisierung der ermittelten Anforderungen dient die MoSCoW-Methode aus dem agilen Vorgehensmodell DSDM. Sie ordnet jede Anforderung einer von vier Klassen zu: Must Have (ohne diese Anforderung ist die Lösung nicht einsetzbar), Should Have (wichtig, aber mit Umweg verzichtbar), Could Have (wünschenswert, wird bei Zeitnot als erstes gestrichen) und Won't Have this time (für diesen Zeitraum bewusst ausgeschlossen) \cite{agilebusiness}. DSDM setzt Zeit und Kosten eines Projekts fest und verhandelt stattdessen den Funktionsumfang; die Could-Klasse bildet dabei den Puffer. Das passt zu einem Prototyp mit festem Abgabetermin, weil die Methode den verbindlichen Kern von den Erweiterungen trennt und mit der Won't-Klasse auch festhält, was nicht gebaut wird.
 
 \subsection{Use Cases und das Anwendungsfalldiagramm}
 Ein Use Case (Anwendungsfall) beschreibt nach der UML-Spezifikation der Object Management Group eine Menge von Aktionen, die ein System für einen Akteur ausführt und die zu einem für diesen Akteur beobachtbaren Ergebnis führen; ein Akteur ist eine Rolle, die eine Person oder ein anderes System gegenüber dem betrachteten System einnimmt \cite{omguml}. Das Anwendungsfalldiagramm stellt Akteure als Strichmännchen, Anwendungsfälle als Ellipsen und die Beteiligung als Verbindungslinien dar. Es zeigt, welche Funktionen ein System nach außen anbietet; den internen Ablauf lässt es offen. Für die Details eines Anwendungsfalls wird deshalb zusätzlich eine textuelle Beschreibung mit Vorbedingung, Ablauf und Nachbedingung verwendet.
