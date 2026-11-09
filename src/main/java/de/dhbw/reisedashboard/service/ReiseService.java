@@ -3,10 +3,12 @@ package de.dhbw.reisedashboard.service;
 import de.dhbw.reisedashboard.model.Aktivitaet;
 import de.dhbw.reisedashboard.model.Ausgabe;
 import de.dhbw.reisedashboard.model.Benutzer;
+import de.dhbw.reisedashboard.model.Packliste;
 import de.dhbw.reisedashboard.model.Reise;
 import de.dhbw.reisedashboard.model.Sprache;
 import de.dhbw.reisedashboard.repository.AktivitaetRepository;
 import de.dhbw.reisedashboard.repository.AusgabeRepository;
+import de.dhbw.reisedashboard.repository.PacklisteRepository;
 import de.dhbw.reisedashboard.repository.ReiseRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,6 +18,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Geschaeftslogik rund um eine Reise: anlegen, den Tagesplan liefern und den Budgetstand
@@ -28,13 +31,16 @@ public class ReiseService {
     private final ReiseRepository reiseRepository;
     private final AktivitaetRepository aktivitaetRepository;
     private final AusgabeRepository ausgabeRepository;
+    private final PacklisteRepository packlisteRepository;
 
     public ReiseService(ReiseRepository reiseRepository,
                         AktivitaetRepository aktivitaetRepository,
-                        AusgabeRepository ausgabeRepository) {
+                        AusgabeRepository ausgabeRepository,
+                        PacklisteRepository packlisteRepository) {
         this.reiseRepository = reiseRepository;
         this.aktivitaetRepository = aktivitaetRepository;
         this.ausgabeRepository = ausgabeRepository;
+        this.packlisteRepository = packlisteRepository;
     }
 
     /**
@@ -63,6 +69,12 @@ public class ReiseService {
     public Reise reiseFinden(Integer reiseID) {
         return reiseRepository.findById(reiseID)
                 .orElseThrow(() -> new IllegalArgumentException("Reise " + reiseID + " gibt es nicht."));
+    }
+
+    // Eine Reise, aber nur wenn sie dem Benutzer gehoert. Leer, wenn es sie nicht gibt oder sie
+    // einem anderen Profil gehoert; der Controller macht daraus ein 404.
+    public Optional<Reise> reiseFuerBenutzer(Integer reiseID, Benutzer benutzer) {
+        return reiseRepository.findByReiseIDAndBenutzer(reiseID, benutzer);
     }
 
     // Tagesplan einer Reise, chronologisch sortiert.
@@ -96,5 +108,25 @@ public class ReiseService {
         BigDecimal ausgegeben = ausgabeRepository.summeBetrag(reise);
         BigDecimal verbleibend = reise.getBudget().subtract(ausgegeben);
         return new BudgetStand(reise.getBudget(), ausgegeben, verbleibend);
+    }
+
+    // Die Packliste einer Reise in der Reihenfolge, in der die Eintraege angelegt wurden.
+    public List<Packliste> packliste(Reise reise) {
+        return packlisteRepository.findByReiseOrderByPackeintragIDAsc(reise);
+    }
+
+    @Transactional
+    public Packliste packeintragHinzufuegen(Reise reise, String bezeichnung) {
+        return packlisteRepository.save(new Packliste(reise, bezeichnung, false));
+    }
+
+    // Hakt einen Packlisten-Eintrag ab oder wieder an (umschalten). Der Eintrag wird innerhalb der
+    // uebergebenen Reise gesucht, damit kein fremder Eintrag ueber die URL geaendert werden kann.
+    @Transactional
+    public void packeintragUmschalten(Reise reise, Integer packeintragID) {
+        Packliste eintrag = packlisteRepository.findByPackeintragIDAndReise(packeintragID, reise)
+                .orElseThrow(() -> new IllegalArgumentException("Packeintrag " + packeintragID + " gibt es in dieser Reise nicht."));
+        eintrag.setErledigt(!eintrag.getErledigt());
+        packlisteRepository.save(eintrag);
     }
 }
