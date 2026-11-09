@@ -57,7 +57,6 @@ Bücher und Buchkapitel
 - Few (2006): Information Dashboard Design, O'Reilly. Engere Dashboard-Definition, S. 34 (gelesen über die Leihbibliothek von archive.org, print auch in der DHBW-Bib).
 - Ebbinghaus (1885): Über das Gedächtnis, Volltext auf archive.org.
 - Leitner (1999): So lernt man lernen, Weltbild-Lizenzausgabe der Herder-Erstauflage 1972. Lernkartei S. 64, Regel für die fünf Fächer S. 71 (gelesen über die Leihbibliothek von archive.org).
-- Clegg/Barker (1994): Case Method Fast-Track, Addison-Wesley. MoSCoW.
 - Ater (2017): Building Progressive Web Apps, O'Reilly (O'Reilly Learning, Kap. 2 gelesen). Service Worker, HTTPS-Pflicht. Ersetzt Liebel (2019), der nur print verfügbar ist.
 - Brooke (1996): SUS, A Quick and Dirty Usability Scale, in Usability Evaluation in Industry, Taylor & Francis.
 
@@ -76,10 +75,11 @@ Berichte und Behörden
 
 Offizielle Dokumentation (für Technik-Fakten)
 - Spring Boot Reference, Spring Framework Reference (Web MVC, Stereotypes), Thymeleaf, Bootstrap 5.3, WebJars, H2, Jakarta Persistence 3.1, Hibernate ORM, OpenJDK 21, Maven, Git, Raspberry Pi 5 (Produktseite + Remote-Access-Doku), MDN (PWA), Nielsen/NN/g (10 Heuristiken, 5 Users), SurveyCircle.
+- Agile Business Consortium: What is MoSCoW Prioritization? (DSDM-Seite mit den vier Klassen, ersetzt Clegg/Barker 1994, das nur per Fernleihe zu bekommen war).
 
 Marktanalyse
 - Preis- und App-Store-Seiten von Wanderlog, TripIt, Anki, LingoDeer, AdventureLog (siehe marktanalyse.md).
 
 ## Offen
-- Clegg/Barker (1994) ist als einzige Quelle noch nicht im Original gelesen, nur per Fernleihe über den DHBW-Katalog zu bekommen. Few und Leitner sind seit dem 05.11.2026 über archive.org geprüft.
+- Alle Quellen im Original gelesen (Stand 05.11.2026). Few und Leitner über archive.org, MoSCoW über die DSDM-Seite statt Clegg/Barker.
 - Blog-Quellen aus der Startliste oben werden nicht verwendet. Weitere Fachartikel kommen mit Kapitel 7 (Usability-Test) dazu.
